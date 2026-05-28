@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maps — Savoy, Texas</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span class="nav-star">★</span>
+      <div class="nav-title">
+        <strong>Savoy</strong>
+        <span>Grayson County, Texas</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="newspapers.html">Newspapers</a></li>
+      <li><a href="documents.html">Documents</a></li>
+      <li><a href="maps.html" class="active">Maps</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-banner">
+  <h1>Historic Maps</h1>
+  <p>Maps charting Savoy's geography, town layout, and the 1880 cyclone path</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> <span>›</span> <span>Maps</span>
+  </div>
+</div>
+
+<section>
+  <div class="inner">
+    <div class="section-head">
+      <p class="section-label">Cartography &amp; Plats</p>
+      <h2>Savoy, Texas — Through the Map</h2>
+      <div class="ornament"><span class="ornament-line"></span><span class="ornament-star">★</span><span class="ornament-line"></span></div>
+      <p>Two historic maps survive in the archive — click any map to view full size.</p>
+    </div>
+
+    <div class="map-grid">
+
+      <div class="map-card" onclick="openLB(0)">
+        <img src="Images/Maps/1880-Maps-Cyclone.jpg" alt="1880 Cyclone Map" loading="lazy" />
+        <div class="map-card-body">
+          <h3>1880 Cyclone Path Map</h3>
+          <p>
+            A map documenting the path of the devastating 1880 cyclone that struck Savoy.
+            This is one of the earliest cartographic records of the town and its surroundings,
+            drawn in the immediate aftermath of the disaster to document its scope.
+            The cyclone, covered by newspapers across Texas, left a lasting mark on the community.
+          </p>
+          <br/>
+          <a href="#" onclick="event.preventDefault(); openLB(0);" class="card-arrow-link">View Full Map</a>
+        </div>
+      </div>
+
+      <div class="map-card" onclick="openLB(1)">
+        <img src="Images/Maps/SavoyMap_RowByRow.jpeg" alt="Savoy Town Map — Row by Row" loading="lazy" />
+        <div class="map-card-body">
+          <h3>Savoy Town Map — Row by Row</h3>
+          <p>
+            A detailed plat map of Savoy, Texas showing the town's layout row by row —
+            lots, blocks, and the street grid as it was recorded. This map provides a
+            blueprint of the community's physical organization and serves as an essential
+            reference for understanding the town's geography and property boundaries.
+          </p>
+          <br/>
+          <a href="#" onclick="event.preventDefault(); openLB(1);" class="card-arrow-link">View Full Map</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Aerial section -->
+<section class="alt">
+  <div class="inner">
+    <div class="section-head">
+      <p class="section-label">Aerial Views</p>
+      <h2>Savoy from Above</h2>
+      <div class="ornament"><span class="ornament-line"></span><span class="ornament-star">★</span><span class="ornament-line"></span></div>
+      <p>Aerial photographs provide a bird's-eye perspective on Savoy's layout across different decades.</p>
+    </div>
+
+    <div class="map-grid">
+
+      <div class="map-card" onclick="openLBAerial(0)">
+        <img src="Images/Photos-1940-1959/savoy_oldaerialshotw5401940.jpg" alt="Aerial view of Savoy c.1940" loading="lazy" />
+        <div class="map-card-body">
+          <h3>Aerial View — c. 1940</h3>
+          <p>An aerial photograph of Savoy taken around 1940–1954, showing the town's street grid and building footprint at mid-century.</p>
+          <br/>
+          <a href="#" onclick="event.preventDefault(); openLBAerial(0);" class="card-arrow-link">View Full Size</a>
+        </div>
+      </div>
+
+      <div class="map-card" onclick="openLBAerial(1)">
+        <img src="Images/Photos-2000-2019/savoyBirdsEye1.png" alt="Bird's Eye View of Savoy" loading="lazy" />
+        <div class="map-card-body">
+          <h3>Bird's Eye View — 2000s</h3>
+          <p>A contemporary bird's-eye view of Savoy, Texas, showing the present-day layout of the community in Grayson County.</p>
+          <br/>
+          <a href="#" onclick="event.preventDefault(); openLBAerial(1);" class="card-arrow-link">View Full Size</a>
+        </div>
+      </div>
+
+      <div class="map-card" onclick="openLBAerial(2)">
+        <img src="Images/Photos-2000-2019/savoyBirdsEye2.png" alt="Bird's Eye View of Savoy (2)" loading="lazy" />
+        <div class="map-card-body">
+          <h3>Bird's Eye View — 2000s (2)</h3>
+          <p>A second contemporary aerial perspective of Savoy, providing a broader view of the surrounding countryside and road network.</p>
+          <br/>
+          <a href="#" onclick="event.preventDefault(); openLBAerial(2);" class="card-arrow-link">View Full Size</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button class="lb-close" id="lb-close" aria-label="Close">×</button>
+  <button class="lb-nav" id="lb-prev" aria-label="Previous">‹</button>
+  <img id="lightbox-img" src="" alt="" />
+  <button class="lb-nav" id="lb-next" aria-label="Next">›</button>
+  <p id="lightbox-caption"></p>
+  <p id="lightbox-counter"></p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="f-logo">
+        <span class="f-star">★</span>
+        <div class="f-logo-text">
+          <strong>Savoy, Texas</strong>
+          <span>Historical Reference</span>
+        </div>
+      </div>
+      <p>A community archive preserving the history of Savoy, Texas — Grayson County.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="photos.html">Photo Gallery</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Archive</h4>
+      <ul>
+        <li><a href="maps.html">Historic Maps</a></li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html#pdf">College PDF</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Savoy, Texas Historical Archive · Grayson County, Texas
+  </div>
+</footer>
+
+<script>
+const MAPS = [
+  ['Images/Maps/1880-Maps-Cyclone.jpg',    '1880 Cyclone Path Map — Savoy, Texas'],
+  ['Images/Maps/SavoyMap_RowByRow.jpeg',   'Savoy Town Plat Map — Row by Row'],
+];
+
+const AERIALS = [
+  ['Images/Photos-1940-1959/savoy_oldaerialshotw5401940.jpg', 'Aerial View of Savoy — c. 1940'],
+  ['Images/Photos-2000-2019/savoyBirdsEye1.png',              "Savoy Bird's Eye View — 2000s"],
+  ['Images/Photos-2000-2019/savoyBirdsEye2.png',              "Savoy Bird's Eye View (2) — 2000s"],
+];
+
+let lbImages = [];
+let lbIdx = 0;
+
+function openLightbox(images, idx) {
+  lbImages = images; lbIdx = idx; showLB();
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function openLB(idx)        { openLightbox(MAPS, idx); }
+function openLBAerial(idx)  { openLightbox(AERIALS, idx); }
+
+function showLB() {
+  const [src, cap] = lbImages[lbIdx];
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox-img').alt = cap;
+  document.getElementById('lightbox-caption').textContent = cap;
+  document.getElementById('lightbox-counter').textContent = (lbIdx+1) + ' / ' + lbImages.length;
+}
+function closeLB() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+  document.getElementById('lightbox-img').src = '';
+}
+
+document.getElementById('lb-close').onclick = closeLB;
+document.getElementById('lb-prev').onclick = () => { lbIdx=(lbIdx-1+lbImages.length)%lbImages.length; showLB(); };
+document.getElementById('lb-next').onclick = () => { lbIdx=(lbIdx+1)%lbImages.length; showLB(); };
+document.getElementById('lightbox').addEventListener('click', e => { if(e.target===e.currentTarget) closeLB(); });
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key==='Escape') closeLB();
+  if (e.key==='ArrowLeft') { lbIdx=(lbIdx-1+lbImages.length)%lbImages.length; showLB(); }
+  if (e.key==='ArrowRight') { lbIdx=(lbIdx+1)%lbImages.length; showLB(); }
+});
+</script>
+
+</body>
+</html>
