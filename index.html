@@ -4,402 +4,421 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Savoy, Texas — Our Town, Our History</title>
+
+  <!-- Google Fonts: Rye (western display), Oswald (labels/nav), Lora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
   <style>
-    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-    html { font-size:16px; }
+    /* ══════════════════════════════════════════
+       RESET & BASE
+    ══════════════════════════════════════════ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --nav-bg:        #3d2010;   /* warm dark brown — matches mockup nav */
+      --nav-border:    #c4943a;
+      --hero-bg:       #ede8d8;   /* light cream — matches sky tone in hero photo */
+      --parchment:     #f0e8d4;   /* three-column section background */
+      --parchment-dk:  #e0d0b0;   /* darker parchment */
+      --section-alt:   #e8dcc4;   /* alternating section */
+      --brown-deep:    #1e0e04;   /* headings */
+      --brown-mid:     #4a2c14;   /* body text */
+      --brown-light:   #7a5030;   /* secondary text */
+      --red:           #8b2000;   /* accent / buttons */
+      --red-dark:      #6a1800;
+      --gold:          #c4943a;
+      --gold-dk:       #a07828;
+      --cream:         #f5efdf;
+      --border:        #c8a870;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
 
     body {
-      font-family: Georgia, 'Times New Roman', serif;
-      background: #f0e8d4;
-      color: #2c1810;
+      font-family: 'Lora', Georgia, serif;
+      background: var(--parchment);
+      color: var(--brown-deep);
     }
 
     a { text-decoration: none; color: inherit; }
-    img { display: block; max-width: 100%; }
+    img { display: block; }
 
-    /* ─────────────────────────────────────────
-       NAV
-    ───────────────────────────────────────── */
-    .nav {
-      background: #1e0e06;
-      border-bottom: 2px solid #c4943a;
+    /* ══════════════════════════════════════════
+       NAVIGATION — two-bar layout
+    ══════════════════════════════════════════ */
+    .site-nav {
       position: sticky;
       top: 0;
-      z-index: 200;
+      z-index: 300;
     }
 
-    .nav-inner {
-      max-width: 1280px;
+    /* ── Top parchment bar: seal + brand + search ── */
+    .nav-top {
+      background: var(--parchment);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-top-inner {
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    /* ── Badge / Seal ── */
+    .nav-seal {
+      flex-shrink: 0;
+      width: 66px;
+      height: 66px;
+    }
+    .nav-seal svg { width: 100%; height: 100%; }
+
+    /* ── Brand text (in top bar) ── */
+    .nav-brand {
+      flex-shrink: 0;
+      line-height: 1.15;
+    }
+    .nav-brand-name {
+      display: block;
+      font-family: 'Rye', serif;
+      font-size: 1.5rem;
+      color: var(--brown-deep);
+      letter-spacing: 0.03em;
+    }
+    .nav-brand-sub {
+      display: block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.62rem;
+      font-weight: 400;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+    .nav-brand-tag {
+      display: block;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.52rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--brown-light);
+    }
+
+    .nav-search-btn {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--brown-light);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color 0.2s;
+    }
+    .nav-search-btn:hover { color: var(--red); }
+
+    /* ── Bottom dark bar: nav links ── */
+    .nav-links-bar {
+      background: var(--nav-bg);
+      border-bottom: 2px solid var(--nav-border);
+    }
+    .nav-links-inner {
+      max-width: 1260px;
       margin: 0 auto;
       padding: 0 1.5rem;
       display: flex;
       align-items: center;
-      height: 70px;
-      gap: 1rem;
     }
 
-    /* Badge / Seal */
-    .nav-badge {
-      flex-shrink: 0;
-      width: 56px;
-      height: 56px;
-      position: relative;
-    }
-
-    .nav-badge svg { width: 100%; height: 100%; }
-
-    .nav-brand {
-      flex-shrink: 0;
-      color: #f0e8d4;
-      line-height: 1.15;
-      margin-right: 0.5rem;
-    }
-
-    .nav-brand-est {
-      font-size: 0.6rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: #c4943a;
-    }
-
-    .nav-brand-name {
-      font-size: 1.2rem;
-      font-weight: bold;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      display: block;
-    }
-
-    .nav-brand-state {
-      font-size: 0.62rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: #b89070;
-      display: block;
-    }
-
-    .nav-brand-tagline {
-      font-size: 0.55rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: #6a4020;
-      display: block;
-    }
-
+    /* ── Nav links ── */
     .nav-links {
       display: flex;
       list-style: none;
-      margin-left: auto;
+      gap: 0;
     }
-
     .nav-links a {
       display: flex;
       align-items: center;
-      gap: 0.25rem;
-      height: 70px;
-      padding: 0 0.75rem;
-      color: #d4c4a8;
+      gap: 0.2rem;
+      height: 44px;
+      padding: 0 0.85rem;
+      font-family: 'Oswald', sans-serif;
       font-size: 0.72rem;
+      font-weight: 400;
       letter-spacing: 0.1em;
       text-transform: uppercase;
+      color: #c4b090;
       border-bottom: 3px solid transparent;
       transition: color 0.2s, border-color 0.2s;
       white-space: nowrap;
     }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #f0e8d4;
-      border-bottom-color: #c4943a;
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--cream);
+      border-bottom-color: var(--gold);
     }
-
-    .nav-caret { font-size: 0.55rem; opacity: 0.7; }
-
-    .nav-search {
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-      color: #b89070;
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 0 0.5rem;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-
-    .nav-search:hover { color: #f0e8d4; }
+    .nav-caret { font-size: 0.5rem; opacity: 0.7; }
 
     .nav-toggle {
       display: none;
       background: none;
       border: none;
-      color: #f0e8d4;
+      color: var(--cream);
       font-size: 1.5rem;
       cursor: pointer;
       margin-left: auto;
     }
 
-    /* ─────────────────────────────────────────
-       HERO — split layout
-    ───────────────────────────────────────── */
+    /* ══════════════════════════════════════════
+       HERO — warm tan bg, photo fades in from right
+    ══════════════════════════════════════════ */
     .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 540px;
-      background: #0f0702;
-    }
-
-    .hero-left {
-      padding: 3.5rem 3rem 3.5rem 4rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background: #0f0702;
       position: relative;
+      min-height: 520px;
+      background: var(--hero-bg);
+      /* subtle aged paper texture via repeating gradient */
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          rgba(0,0,0,0.012) 0px, rgba(0,0,0,0.012) 1px,
+          transparent 1px, transparent 4px
+        ),
+        linear-gradient(160deg, #f0ece0 0%, #ede8d8 35%, #e4deca 65%, #e8e0d0 100%);
       overflow: hidden;
     }
 
-    /* warm vignette glow from center */
-    .hero-left::before {
-      content: '';
+    /* The fading photo — positioned on right, masked to fade left edge */
+    .hero-photo {
       position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 30% 60%, rgba(90,40,10,0.45) 0%, transparent 70%);
-      pointer-events: none;
+      right: 0;
+      top: 0;
+      width: 58%;
+      height: 100%;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 12%, rgba(0,0,0,0.75) 28%, black 50%);
+      mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 12%, rgba(0,0,0,0.75) 28%, black 50%);
+    }
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      filter: sepia(55%) contrast(0.88) brightness(0.82);
     }
 
-    /* grain texture */
-    .hero-left::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      opacity: 0.6;
+    /* Text content */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 5rem;
+      width: 100%;
     }
-
-    .hero-left > * { position: relative; z-index: 1; }
 
     .hero-est {
-      font-size: 0.65rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
       letter-spacing: 0.35em;
       text-transform: uppercase;
-      color: #c4943a;
-      margin-bottom: 1rem;
+      color: var(--red);
+      margin-bottom: 0.9rem;
       display: flex;
       align-items: center;
       gap: 0.75rem;
     }
-
-    .hero-est::before,
-    .hero-est::after {
+    .hero-est::before, .hero-est::after {
       content: '';
-      flex: 1;
-      max-width: 50px;
       height: 1px;
-      background: #c4943a;
-      opacity: 0.6;
+      width: 40px;
+      background: var(--red);
+      opacity: 0.5;
     }
 
     .hero-discover {
-      font-size: 1.15rem;
-      letter-spacing: 0.18em;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
       text-transform: uppercase;
-      color: #c8b490;
-      font-weight: normal;
-      line-height: 1.45;
-      margin-bottom: 0.05rem;
+      color: var(--brown-light);
+      line-height: 1.5;
     }
 
     .hero-title {
-      font-size: clamp(4rem, 7vw, 6.5rem);
-      font-weight: bold;
-      color: #f5f0e6;
+      font-family: 'Rye', serif;
+      font-size: clamp(4rem, 8.5vw, 7rem);
+      font-weight: 400;   /* Rye only has one weight */
+      color: var(--brown-deep);
       line-height: 0.95;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.1rem;
       letter-spacing: 0.02em;
-      text-transform: uppercase;
-      font-style: italic;
-      text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+      text-shadow: 1px 2px 8px rgba(0,0,0,0.10);
     }
 
     .hero-desc {
+      font-family: 'Lora', serif;
       font-size: 0.9rem;
-      color: #b89070;
-      line-height: 1.75;
-      max-width: 420px;
-      margin-bottom: 2rem;
+      color: var(--brown-light);
+      line-height: 1.8;
+      max-width: 400px;
+      margin-bottom: 1.75rem;
     }
 
     .btn-hero {
       display: inline-flex;
       align-items: center;
       gap: 0.6rem;
-      padding: 0.7rem 1.6rem;
-      background: #7a2000;
-      color: #f5f0e6;
-      font-size: 0.75rem;
-      letter-spacing: 0.18em;
+      padding: 0.72rem 1.6rem;
+      background: var(--red);
+      color: var(--cream);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      border: 1px solid #9a3010;
-      align-self: flex-start;
+      border: 1px solid var(--red-dark);
       transition: background 0.2s;
     }
+    .btn-hero:hover { background: var(--red-dark); }
 
-    .btn-hero:hover { background: #9a3010; }
-    .btn-hero .arrow { font-size: 0.9rem; }
-
-    .hero-right {
-      overflow: hidden;
-      position: relative;
-    }
-
-    .hero-right img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      filter: sepia(50%) contrast(0.88) brightness(0.8);
-    }
-
-    /* Left-edge vignette to blend with dark panel */
-    .hero-right::before {
-      content: '';
+    /* ── Torn paper bottom edge of hero ── */
+    .hero-torn {
       position: absolute;
-      inset: 0;
-      background: linear-gradient(to right, rgba(15,7,2,0.7) 0%, rgba(15,7,2,0.1) 30%, transparent 55%);
-      z-index: 1;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      line-height: 0;
+      z-index: 3;
     }
+    .hero-torn svg { width: 100%; height: 55px; }
 
-    /* Bottom vignette */
-    .hero-right::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 40%;
-      background: linear-gradient(to top, rgba(15,7,2,0.3), transparent);
-      z-index: 1;
-    }
-
-    /* ─────────────────────────────────────────
+    /* ══════════════════════════════════════════
        THREE-COLUMN FEATURE STRIP
-    ───────────────────────────────────────── */
+    ══════════════════════════════════════════ */
     .feature-strip {
-      background: #f0e8d4;
-      border-top: 3px solid #c4943a;
-      border-bottom: 1px solid #d4b882;
+      background: var(--parchment);
+      position: relative;
+      z-index: 2;
     }
 
     .feature-strip-inner {
-      max-width: 1280px;
+      max-width: 1260px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
     }
 
     .feat-col {
-      padding: 2.25rem 2rem;
-      border-right: 1px solid #d4b882;
+      padding: 2.25rem 2rem 2rem;
+      border-right: 1px solid var(--border);
     }
-
     .feat-col:last-child { border-right: none; }
 
     .feat-heading {
-      font-size: 0.72rem;
-      letter-spacing: 0.28em;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.3em;
       text-transform: uppercase;
-      color: #2c1810;
+      color: var(--brown-deep);
       margin-bottom: 0.6rem;
-      font-weight: bold;
     }
 
+    /* Full-width red rule under heading */
     .feat-rule {
       height: 2px;
-      background: #7a2000;
+      background: var(--red);
       margin-bottom: 1.25rem;
       width: 100%;
-      max-width: 100%;
     }
 
-    /* Gallery column */
     .feat-gallery-img {
       width: 100%;
-      height: 120px;
+      height: 110px;
       object-fit: cover;
-      filter: sepia(30%);
-      margin-bottom: 0.9rem;
-      border: 1px solid #d4b882;
+      filter: sepia(35%) contrast(0.9);
+      margin-bottom: 0.85rem;
+      border: 1px solid var(--border);
     }
 
     .feat-text {
-      font-size: 0.83rem;
-      color: #5c3a22;
-      line-height: 1.65;
+      font-family: 'Lora', serif;
+      font-size: 0.82rem;
+      color: var(--brown-mid);
+      line-height: 1.7;
       margin-bottom: 1rem;
     }
 
     .feat-link {
-      font-size: 0.7rem;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: #7a2000;
+      color: var(--red);
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
     }
-
-    .feat-link:hover { text-decoration: underline; }
+    .feat-link:hover { border-bottom-color: var(--red); }
 
     /* Timeline column */
     .tl-mini { list-style: none; margin-bottom: 1rem; }
-
     .tl-mini li {
-      padding: 0.6rem 0;
-      border-bottom: 1px solid #e0c898;
-      font-size: 0.82rem;
-      color: #5c3a22;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid #d8c898;
+      font-family: 'Lora', serif;
+      font-size: 0.8rem;
+      color: var(--brown-mid);
       line-height: 1.5;
     }
-
     .tl-mini li:last-child { border-bottom: none; }
-
     .tl-mini strong {
       display: block;
-      font-size: 0.78rem;
-      color: #7a2000;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.74rem;
+      font-weight: 600;
+      color: var(--red);
       letter-spacing: 0.06em;
-      margin-bottom: 0.15rem;
+      margin-bottom: 0.12rem;
     }
 
-    /* Archives / Search column */
+    /* Search column */
     .search-row {
       display: flex;
-      margin-bottom: 1rem;
-      border: 1px solid #c8a070;
+      border: 1px solid var(--border);
+      margin-bottom: 0.85rem;
     }
-
     .search-input {
       flex: 1;
       padding: 0.55rem 0.75rem;
       background: #faf6ee;
       border: none;
-      font-family: Georgia, serif;
-      font-size: 0.82rem;
-      color: #2c1810;
+      font-family: 'Lora', serif;
+      font-size: 0.8rem;
+      color: var(--brown-mid);
       outline: none;
     }
-
     .search-btn {
-      background: #7a2000;
+      background: var(--red);
       border: none;
       padding: 0 0.85rem;
-      color: #f0e8d4;
+      color: var(--cream);
       cursor: pointer;
-      font-size: 0.95rem;
+      font-size: 0.85rem;
     }
-
-    .search-btn:hover { background: #9a3010; }
+    .search-btn:hover { background: var(--red-dark); }
 
     .cat-grid {
       display: grid;
@@ -407,179 +426,157 @@
       gap: 0.4rem;
       margin-bottom: 1rem;
     }
-
     .cat-btn {
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.45rem 0.6rem;
-      background: #faf6ee;
-      border: 1px solid #d4b882;
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
+      padding: 0.42rem 0.65rem;
+      background: #f5f0e4;
+      border: 1px solid var(--border);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #2c1810;
+      color: var(--brown-mid);
       cursor: pointer;
-      font-family: Georgia, serif;
       transition: background 0.15s;
       text-decoration: none;
     }
+    .cat-btn:hover { background: var(--parchment-dk); }
+    .cat-btn i { color: var(--red); font-size: 0.8rem; width: 14px; }
 
-    .cat-btn:hover { background: #e8d5aa; }
-    .cat-icon { font-size: 0.9rem; }
-
-    /* ─────────────────────────────────────────
+    /* ══════════════════════════════════════════
        MORE WAYS TO EXPLORE
-    ───────────────────────────────────────── */
+    ══════════════════════════════════════════ */
     .explore-section {
-      background: #e8dcc4;
+      background: var(--section-alt);
       padding: 2.75rem 1.5rem;
+      position: relative;
     }
 
-    .explore-section-inner {
-      max-width: 1280px;
-      margin: 0 auto;
+    /* Torn top edge */
+    .torn-top {
+      position: absolute;
+      top: -1px; left: 0; right: 0;
+      line-height: 0;
+      z-index: 2;
     }
+    .torn-top svg { width: 100%; height: 40px; }
 
-    .section-heading {
+    .section-head {
       text-align: center;
       margin-bottom: 2rem;
     }
 
-    .section-heading-label {
-      font-size: 0.68rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: #8b6040;
-      margin-bottom: 0.5rem;
-    }
-
-    .section-heading h2 {
-      font-size: 1.6rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #2c1810;
-      font-weight: bold;
-      margin-bottom: 0.75rem;
-    }
-
-    .ornament-row {
+    .section-rule-wrap {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 0.75rem;
-      color: #c4943a;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
-
-    .ornament-row span { font-size: 0.9rem; }
-
-    .ornament-row::before,
-    .ornament-row::after {
-      content: '';
+    .section-rule-line {
       flex: 1;
-      max-width: 200px;
+      max-width: 180px;
       height: 1px;
-      background: linear-gradient(to right, transparent, #c4943a, #c4943a);
+      background: var(--gold-dk);
+    }
+    .section-rule-star {
+      font-size: 1rem;
+      color: var(--gold);
     }
 
-    .ornament-row::after {
-      background: linear-gradient(to left, transparent, #c4943a, #c4943a);
+    .section-head h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--brown-deep);
     }
 
     .explore-tiles {
+      max-width: 1260px;
+      margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 1rem;
     }
 
     .explore-tile {
-      background: #f5f0e6;
-      border: 1px solid #d4b882;
+      background: var(--parchment);
+      border: 1px solid var(--border);
       overflow: hidden;
       transition: box-shadow 0.2s, transform 0.2s;
       display: flex;
       flex-direction: column;
     }
-
     .explore-tile:hover {
-      box-shadow: 0 4px 14px rgba(26,12,4,0.18);
-      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(62,32,10,0.18);
+      transform: translateY(-3px);
     }
 
-    .explore-tile-img {
-      height: 120px;
-      overflow: hidden;
-    }
-
-    .explore-tile-img img {
+    .tile-img { height: 115px; overflow: hidden; }
+    .tile-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: sepia(35%);
+      filter: sepia(40%) contrast(0.88);
       transition: filter 0.3s;
     }
+    .explore-tile:hover .tile-img img { filter: sepia(10%); }
 
-    .explore-tile:hover .explore-tile-img img { filter: sepia(10%); }
-
-    .explore-tile-icon-wrap {
-      height: 120px;
-      background: #2c1810;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-    }
-
-    .explore-tile-body {
-      padding: 1rem 0.9rem;
+    .tile-body {
+      padding: 0.9rem 0.85rem;
       flex: 1;
       display: flex;
       flex-direction: column;
-      border-top: 3px solid #c4943a;
+      border-top: 3px solid var(--gold);
     }
 
-    .explore-tile-heading {
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
+    .tile-heading {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #2c1810;
-      font-weight: bold;
+      color: var(--brown-deep);
       margin-bottom: 0.5rem;
     }
 
-    .explore-tile-text {
-      font-size: 0.78rem;
-      color: #5c3a22;
+    .tile-text {
+      font-family: 'Lora', serif;
+      font-size: 0.76rem;
+      color: var(--brown-mid);
       line-height: 1.55;
       flex: 1;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.7rem;
     }
 
-    .explore-tile-link {
-      font-size: 0.66rem;
-      letter-spacing: 0.14em;
+    .tile-link {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.64rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: #7a2000;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
+      color: var(--red);
     }
+    .tile-link:hover { text-decoration: underline; }
 
-    .explore-tile-link:hover { text-decoration: underline; }
-
-    /* ─────────────────────────────────────────
+    /* ══════════════════════════════════════════
        CTA STRIP
-    ───────────────────────────────────────── */
+    ══════════════════════════════════════════ */
     .cta-strip {
-      background: #1e0e06;
-      border-top: 2px solid #c4943a;
-      border-bottom: 2px solid #c4943a;
-      padding: 2.5rem 1.5rem;
+      background: #2a1408;
+      border-top: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
+      padding: 2.4rem 1.5rem;
+      position: relative;
     }
 
-    .cta-strip-inner {
-      max-width: 1280px;
+    .cta-inner {
+      max-width: 1260px;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -587,288 +584,307 @@
       gap: 2rem;
     }
 
-    .cta-strip-text h2 {
+    .cta-text h2 {
+      font-family: 'Oswald', sans-serif;
       font-size: 1.4rem;
-      letter-spacing: 0.12em;
+      font-weight: 600;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: #f5f0e6;
-      margin-bottom: 0.4rem;
+      color: var(--cream);
+      margin-bottom: 0.35rem;
     }
 
-    .cta-strip-text p {
+    .cta-text p {
+      font-family: 'Lora', serif;
       font-size: 0.85rem;
-      color: #b89070;
-      line-height: 1.6;
+      color: #8b6040;
+      line-height: 1.65;
       max-width: 600px;
     }
 
     .btn-cta {
       flex-shrink: 0;
-      padding: 0.75rem 1.75rem;
-      background: #7a2000;
-      color: #f5f0e6;
-      font-size: 0.75rem;
-      letter-spacing: 0.18em;
+      padding: 0.72rem 1.75rem;
+      background: var(--red);
+      color: var(--cream);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      border: 1px solid #9a3010;
+      border: 1px solid #a03010;
       white-space: nowrap;
       transition: background 0.2s;
     }
+    .btn-cta:hover { background: var(--red-dark); }
 
-    .btn-cta:hover { background: #9a3010; }
-
-    /* ─────────────────────────────────────────
+    /* ══════════════════════════════════════════
        FOOTER
-    ───────────────────────────────────────── */
+    ══════════════════════════════════════════ */
     footer {
-      background: #160900;
-      padding: 3rem 1.5rem 1.25rem;
+      background: #1a0b03;
+      padding: 3rem 1.5rem 1.5rem;
     }
 
     .footer-grid {
-      max-width: 1280px;
+      max-width: 1260px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1.6fr 1fr 1.4fr 1.2fr;
+      grid-template-columns: 1.7fr 1fr 1.5fr 1.2fr;
       gap: 2.5rem;
       padding-bottom: 2rem;
       border-bottom: 1px solid rgba(196,148,58,0.2);
     }
 
-    .footer-brand-wrap {
+    .footer-brand-top {
       display: flex;
       align-items: flex-start;
-      gap: 1rem;
+      gap: 0.9rem;
       margin-bottom: 0.9rem;
     }
+    .footer-seal { width: 68px; height: 68px; flex-shrink: 0; }
+    .footer-seal svg { width: 100%; height: 100%; }
 
-    .footer-badge { width: 64px; height: 64px; flex-shrink: 0; }
-    .footer-badge svg { width: 100%; height: 100%; }
-
-    .footer-brand-text strong {
+    .footer-brand-info strong {
       display: block;
-      font-size: 0.95rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #f0e8d4;
+      font-family: 'Rye', serif;
+      font-size: 1.1rem;
+      color: var(--cream);
+      letter-spacing: 0.04em;
     }
-
-    .footer-brand-text small {
-      font-size: 0.62rem;
-      letter-spacing: 0.2em;
+    .footer-brand-info span {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.6rem;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: #8b6040;
+      color: var(--gold-dk);
     }
 
     footer h4 {
+      font-family: 'Oswald', sans-serif;
       font-size: 0.68rem;
-      letter-spacing: 0.25em;
+      font-weight: 600;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: #c4943a;
+      color: var(--gold);
       margin-bottom: 1rem;
     }
 
     footer p, footer li {
-      font-size: 0.82rem;
-      color: #8b6040;
+      font-family: 'Lora', serif;
+      font-size: 0.8rem;
+      color: #7a5030;
       line-height: 1.75;
     }
 
     .footer-learn {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      font-size: 0.68rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #c4943a;
       margin-top: 0.75rem;
     }
-
     .footer-learn:hover { text-decoration: underline; }
 
     footer ul { list-style: none; }
-
+    footer ul li { margin-bottom: 0.4rem; }
     footer ul li a {
-      font-size: 0.82rem;
-      color: #8b6040;
+      font-family: 'Lora', serif;
+      font-size: 0.8rem;
+      color: #7a5030;
       transition: color 0.2s;
     }
-
-    footer ul li a:hover { color: #c4943a; }
-    footer ul li { margin-bottom: 0.4rem; }
+    footer ul li a:hover { color: var(--gold); }
 
     /* Events */
-    .event-item {
-      display: flex;
-      gap: 0.75rem;
-      margin-bottom: 0.9rem;
-      align-items: flex-start;
-    }
+    .event-item { display: flex; gap: 0.75rem; margin-bottom: 0.9rem; align-items: flex-start; }
 
     .event-badge {
       flex-shrink: 0;
-      width: 40px;
+      width: 42px;
       text-align: center;
-      background: #7a2000;
-      color: #f0e8d4;
-      padding: 0.2rem 0.3rem;
+      background: var(--red);
+      color: var(--cream);
+      padding: 0.2rem 0.3rem 0.4rem;
     }
-
-    .event-badge .month {
+    .event-badge .ev-month {
       display: block;
-      font-size: 0.55rem;
-      letter-spacing: 0.1em;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.52rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      background: #5a1600;
-      margin: -0.2rem -0.3rem 0.15rem;
+      background: rgba(0,0,0,0.25);
+      margin: -0.2rem -0.3rem 0.2rem;
       padding: 0.15rem;
     }
-
-    .event-badge .day {
-      font-size: 1.25rem;
-      font-weight: bold;
+    .event-badge .ev-day {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
       line-height: 1;
     }
 
-    .event-text strong {
+    .event-info strong {
       display: block;
-      font-size: 0.78rem;
-      color: #d4c4a8;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: #c4b090;
       margin-bottom: 0.1rem;
     }
-
-    .event-text span {
+    .event-info span {
+      font-family: 'Lora', serif;
       font-size: 0.72rem;
-      color: #6a4020;
+      color: #5a3818;
     }
 
     .view-all-link {
-      font-size: 0.68rem;
-      letter-spacing: 0.14em;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: #c4943a;
+      color: var(--gold);
       display: inline-flex;
       align-items: center;
-      gap: 0.4rem;
-      margin-top: 0.5rem;
+      gap: 0.35rem;
     }
 
-    /* Social */
-    .social-row {
-      display: flex;
-      gap: 0.6rem;
-      margin-top: 1rem;
-    }
-
+    .social-row { display: flex; gap: 0.6rem; margin-top: 1rem; }
     .social-btn {
-      width: 34px;
-      height: 34px;
-      background: #2c1810;
+      width: 34px; height: 34px;
+      background: #2c1507;
       border: 1px solid #5c3a22;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.9rem;
-      color: #b89070;
-      transition: background 0.2s;
+      color: #7a5030;
+      transition: background 0.2s, color 0.2s;
+      font-size: 0.85rem;
     }
-
-    .social-btn:hover { background: #7a2000; color: #f0e8d4; }
+    .social-btn:hover { background: var(--red); color: var(--cream); }
 
     .footer-bottom {
-      max-width: 1280px;
+      max-width: 1260px;
       margin: 1.25rem auto 0;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      font-size: 0.7rem;
-      color: #4a2810;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.06em;
+      color: #3a2010;
     }
+    .footer-bottom a { color: #5a3818; }
+    .footer-bottom a:hover { color: var(--gold); }
 
-    .footer-bottom a { color: #6a4020; }
-    .footer-bottom a:hover { color: #c4943a; }
-
-    /* ─────────────────────────────────────────
+    /* ══════════════════════════════════════════
        RESPONSIVE
-    ───────────────────────────────────────── */
+    ══════════════════════════════════════════ */
     @media (max-width: 1024px) {
       .explore-tiles { grid-template-columns: repeat(3, 1fr); }
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-      .nav-links a { padding: 0 0.55rem; }
     }
-
     @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-right { height: 260px; }
-      .hero-left { padding: 2.5rem 1.5rem; }
+      .nav-links { display: none; flex-direction: column; width: 100%; }
+      .nav-links.open { display: flex; }
+      .nav-links a { height: auto; padding: 0.9rem 1.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .nav-toggle { display: block; }
+      .nav-search-btn { display: none; }
+      .hero-photo { width: 100%; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 20%, black 60%); mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 20%, black 60%); }
+      .hero-content { padding: 3rem 1rem 5rem; }
       .feature-strip-inner { grid-template-columns: 1fr; }
-      .feat-col { border-right: none; border-bottom: 1px solid #d4b882; }
+      .feat-col { border-right: none; border-bottom: 1px solid var(--border); }
       .feat-col:last-child { border-bottom: none; }
       .explore-tiles { grid-template-columns: repeat(2, 1fr); }
-      .cta-strip-inner { flex-direction: column; align-items: flex-start; }
+      .cta-inner { flex-direction: column; }
       .footer-grid { grid-template-columns: 1fr; }
-      .nav-links { display: none; position: absolute; top: 70px; left: 0; right: 0; background: #1e0e06; flex-direction: column; border-top: 1px solid rgba(196,148,58,0.2); }
-      .nav-links.open { display: flex; }
-      .nav-links a { height: auto; padding: 0.85rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
-      .nav-toggle { display: block; }
-      .nav-search { display: none; }
     }
   </style>
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════
-     NAVIGATION
-═══════════════════════════════════════ -->
-<nav class="nav">
-  <div class="nav-inner">
+<!-- ═══════════════════════════════════════════
+     NAVIGATION — two-bar
+═══════════════════════════════════════════ -->
+<nav class="site-nav">
 
-    <!-- Seal / Badge -->
-    <a href="index.html" class="nav-badge" title="Savoy, Texas">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="47" fill="none" stroke="#c4943a" stroke-width="1.5"/>
-        <circle cx="50" cy="50" r="42" fill="none" stroke="#c4943a" stroke-width="0.5"/>
-        <!-- Star -->
-        <polygon points="50,18 56.5,36 76,36 60.5,47.5 67,66 50,55 33,66 39.5,47.5 24,36 43.5,36" fill="#c4943a"/>
-        <!-- Arc text approximated with straight text -->
-        <text x="50" y="10" text-anchor="middle" font-size="7" fill="#c4943a" letter-spacing="2" font-family="Georgia, serif">EST. · 1885 ·</text>
-        <text x="50" y="93" text-anchor="middle" font-size="6" fill="#c4943a" letter-spacing="1.5" font-family="Georgia, serif">OUR TOWN · OUR HISTORY</text>
-      </svg>
-    </a>
+  <!-- TOP BAR: parchment — seal, brand, search -->
+  <div class="nav-top">
+    <div class="nav-top-inner">
 
-    <!-- Brand name -->
-    <a href="index.html" class="nav-brand">
-      <span class="nav-brand-est">★</span>
-      <span class="nav-brand-name">Savoy</span>
-      <span class="nav-brand-state">Texas</span>
-    </a>
+      <!-- Circular Seal / Badge -->
+      <a href="index.html" class="nav-seal" title="Savoy, Texas Historical Archive">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+          <defs>
+            <path id="arc-top" d="M 18,60 A 42,42 0 0,1 102,60"/>
+            <path id="arc-bot" d="M 22,68 A 38,38 0 0,0 98,68"/>
+          </defs>
+          <circle cx="60" cy="60" r="57" fill="#2c1507" stroke="#c4943a" stroke-width="2"/>
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#c4943a" stroke-width="1"/>
+          <circle cx="60" cy="10"  r="2" fill="#c4943a"/>
+          <circle cx="60" cy="110" r="2" fill="#c4943a"/>
+          <circle cx="10" cy="60"  r="2" fill="#c4943a"/>
+          <circle cx="110" cy="60" r="2" fill="#c4943a"/>
+          <polygon points="60,22 66,40 86,40 70,52 77,70 60,58 43,70 50,52 34,40 54,40" fill="#c4943a"/>
+          <text font-family="Oswald, sans-serif" font-size="9" fill="#c4943a" letter-spacing="3">
+            <textPath href="#arc-top" startOffset="10%">GRAYSON COUNTY</textPath>
+          </text>
+          <text font-family="Oswald, sans-serif" font-size="8" fill="#c4943a" letter-spacing="2.5">
+            <textPath href="#arc-bot" startOffset="12%">EST. · 1885 · TEXAS</textPath>
+          </text>
+        </svg>
+      </a>
 
-    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <!-- Brand -->
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-name">Savoy</span>
+        <span class="nav-brand-sub">Texas</span>
+        <span class="nav-brand-tag">Our Town · Our History</span>
+      </a>
 
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="history.html">History <span class="nav-caret">▾</span></a></li>
-      <li><a href="timeline.html">Timeline</a></li>
-      <li><a href="photos.html">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
-      <li><a href="newspapers.html">Newspapers</a></li>
-      <li><a href="documents.html">Documents <span class="nav-caret">▾</span></a></li>
-      <li><a href="maps.html">Maps</a></li>
-    </ul>
+      <!-- Search link -->
+      <a href="#archives" class="nav-search-btn">
+        <i class="fa fa-magnifying-glass"></i> Search the Site
+      </a>
 
-    <a href="#search-archives" class="nav-search">
-      <span>🔍</span> Search the Site
-    </a>
-
+    </div>
   </div>
+
+  <!-- BOTTOM BAR: dark brown — nav links -->
+  <div class="nav-links-bar">
+    <div class="nav-links-inner">
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="history.html">History <span class="nav-caret">▾</span></a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="photos.html">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents <span class="nav-caret">▾</span></a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </div>
+
 </nav>
 
-<!-- ═══════════════════════════════════════
-     HERO — split layout
-═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
 <div class="hero">
 
-  <div class="hero-left">
+  <!-- Fading photo (right side) -->
+  <div class="hero-photo">
+    <img src="Images/Photos-1850-1899/IMG_5108.jpg" alt="Historic Savoy, Texas" />
+  </div>
+
+  <!-- Text content (left, on top of tan bg) -->
+  <div class="hero-content">
     <p class="hero-est">Est. c. 1867</p>
     <p class="hero-discover">Discover the<br>Story of</p>
     <h1 class="hero-title">Savoy</h1>
@@ -878,164 +894,163 @@
       to the close-knit community it remains today.
     </p>
     <a class="btn-hero" href="history.html">
-      Explore Our History <span class="arrow">▶</span>
+      Explore Our History &nbsp;&#9658;
     </a>
   </div>
 
-  <div class="hero-right">
-    <img src="Images/Photos-1850-1899/IMG_5108.jpg" alt="Historic Savoy, Texas" />
+  <!-- Torn paper bottom edge — reveals parchment section below -->
+  <div class="hero-torn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 55" preserveAspectRatio="none">
+      <path d="M0,55 L0,42 L12,28 L24,44 L36,18 L48,36 L60,10 L72,30 L84,22 L96,40 L108,8 L120,32 L132,48 L144,20 L156,38 L168,14 L180,34 L192,24 L204,46 L216,12 L228,30 L240,42 L252,18 L264,36 L276,8 L288,26 L300,44 L312,16 L324,34 L336,22 L348,48 L360,12 L372,30 L384,42 L396,18 L408,36 L420,10 L432,28 L444,44 L456,16 L468,34 L480,24 L492,46 L504,8 L516,30 L528,42 L540,18 L552,36 L564,12 L576,28 L588,44 L600,16 L612,34 L624,22 L636,48 L648,10 L660,30 L672,42 L684,18 L696,36 L708,8 L720,28 L732,44 L744,16 L756,34 L768,22 L780,48 L792,12 L804,30 L816,42 L828,18 L840,36 L852,10 L864,28 L876,44 L888,16 L900,34 L912,22 L924,46 L936,8 L948,30 L960,42 L972,18 L984,36 L996,12 L1008,28 L1020,44 L1032,16 L1044,34 L1056,24 L1068,48 L1080,10 L1092,30 L1104,42 L1116,18 L1128,36 L1140,8 L1152,28 L1164,44 L1176,16 L1188,34 L1200,22 L1212,48 L1224,12 L1236,30 L1248,42 L1260,18 L1272,36 L1284,10 L1296,28 L1308,44 L1320,16 L1332,34 L1344,22 L1356,46 L1368,12 L1380,30 L1392,42 L1404,18 L1416,36 L1428,10 L1440,28 L1440,55 Z"
+        fill="#f0e8d4"/>
+    </svg>
   </div>
 
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- ═══════════════════════════════════════════
      THREE-COLUMN FEATURE STRIP
-═══════════════════════════════════════ -->
+═══════════════════════════════════════════ -->
 <div class="feature-strip">
   <div class="feature-strip-inner">
 
-    <!-- Column 1: Photo Gallery -->
+    <!-- Gallery -->
     <div class="feat-col">
       <p class="feat-heading">Photo Gallery</p>
       <div class="feat-rule"></div>
-      <img class="feat-gallery-img"
-           src="Images/Photos-1850-1899/downtown-savoy_small.jpg"
+      <img class="feat-gallery-img" src="Images/Photos-1850-1899/downtown-savoy_small.jpg"
            alt="Historic downtown Savoy" loading="lazy" />
       <p class="feat-text">
-        Browse hundreds of historic photographs that capture life in Savoy
-        through the years — from pioneer days to the present.
+        Browse hundreds of historic photographs that capture life in Savoy through the years — from pioneer days to the present.
       </p>
-      <a class="feat-link" href="photos.html">View Gallery →</a>
+      <a class="feat-link" href="photos.html">View Gallery &rarr;</a>
     </div>
 
-    <!-- Column 2: Timeline -->
+    <!-- Timeline -->
     <div class="feat-col">
       <p class="feat-heading">Timeline</p>
       <div class="feat-rule"></div>
       <ul class="tl-mini">
-        <li>
-          <strong>c. 1867</strong>
-          Savoy is settled by the Savoy family in Grayson County, Texas.
-        </li>
-        <li>
-          <strong>1876</strong>
-          R.R. Halsell founds the Savoy Male &amp; Female College, bringing higher education to North Texas.
-        </li>
-        <li>
-          <strong>1880</strong>
-          A devastating cyclone strikes the town; newspapers across Texas cover the disaster.
-        </li>
-        <li>
-          <strong>1885+</strong>
-          Savoy receives its town charter. Commerce, churches, and schools flourish.
-        </li>
+        <li><strong>c. 1867</strong>Savoy is settled by the Savoy family in Grayson County, Texas.</li>
+        <li><strong>1876</strong>R.R. Halsell founds the Savoy Male &amp; Female College, bringing higher education to North Texas.</li>
+        <li><strong>1880</strong>A devastating cyclone strikes the town; newspapers across Texas cover the disaster.</li>
+        <li><strong>1885+</strong>Savoy receives its town charter. Commerce, churches, and schools flourish for generations.</li>
       </ul>
-      <a class="feat-link" href="timeline.html">Explore the Timeline →</a>
+      <a class="feat-link" href="timeline.html">Explore the Timeline &rarr;</a>
     </div>
 
-    <!-- Column 3: Search Archives -->
-    <div class="feat-col" id="search-archives">
+    <!-- Archives / Search -->
+    <div class="feat-col" id="archives">
       <p class="feat-heading">Search Our Archives</p>
       <div class="feat-rule"></div>
-      <p class="feat-text">
-        Search hundreds of records, documents, newspaper articles, photos, and more.
-      </p>
+      <p class="feat-text">Search hundreds of records, documents, newspaper articles, photos, and more.</p>
       <div class="search-row">
         <input class="search-input" type="text" placeholder="Search by keyword, name, event…" id="site-search" />
-        <button class="search-btn" onclick="doSearch()">🔍</button>
+        <button class="search-btn" onclick="doSearch()"><i class="fa fa-magnifying-glass"></i></button>
       </div>
       <div class="cat-grid">
-        <a class="cat-btn" href="photos.html"><span class="cat-icon">👤</span> People</a>
-        <a class="cat-btn" href="photos.html"><span class="cat-icon">🏠</span> Places</a>
-        <a class="cat-btn" href="history.html#college"><span class="cat-icon">🏛</span> College</a>
-        <a class="cat-btn" href="newspapers.html"><span class="cat-icon">📰</span> Newspapers</a>
-        <a class="cat-btn" href="maps.html"><span class="cat-icon">🗺</span> Maps</a>
-        <a class="cat-btn" href="documents.html"><span class="cat-icon">📜</span> Documents</a>
+        <a class="cat-btn" href="photos.html"><i class="fa fa-user"></i> People</a>
+        <a class="cat-btn" href="photos.html"><i class="fa fa-location-dot"></i> Places</a>
+        <a class="cat-btn" href="history.html#college"><i class="fa fa-building-columns"></i> College</a>
+        <a class="cat-btn" href="newspapers.html"><i class="fa fa-newspaper"></i> Newspapers</a>
+        <a class="cat-btn" href="maps.html"><i class="fa fa-map"></i> Maps</a>
+        <a class="cat-btn" href="documents.html"><i class="fa fa-scroll"></i> Documents</a>
       </div>
-      <a class="feat-link" href="photos.html">Advanced Search →</a>
+      <a class="feat-link" href="photos.html">Advanced Search &rarr;</a>
     </div>
 
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- ═══════════════════════════════════════════
      MORE WAYS TO EXPLORE
-═══════════════════════════════════════ -->
+═══════════════════════════════════════════ -->
 <div class="explore-section">
-  <div class="explore-section-inner">
+  <!-- Torn top edge — the parchment tears away revealing this section -->
+  <div class="torn-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 40" preserveAspectRatio="none">
+      <path d="M0,0 L0,20 L18,8 L36,22 L54,5 L72,18 L90,2 L108,14 L126,28 L144,10 L162,22 L180,6 L198,20 L216,8 L234,25 L252,10 L270,22 L288,4 L306,18 L324,28 L342,8 L360,20 L378,6 L396,22 L414,10 L432,25 L450,8 L468,20 L486,4 L504,18 L522,28 L540,10 L558,22 L576,6 L594,20 L612,8 L630,24 L648,10 L666,22 L684,4 L702,18 L720,28 L738,8 L756,20 L774,6 L792,22 L810,10 L828,24 L846,8 L864,20 L882,4 L900,18 L918,28 L936,10 L954,22 L972,6 L990,20 L1008,8 L1026,24 L1044,10 L1062,22 L1080,4 L1098,18 L1116,28 L1134,8 L1152,20 L1170,6 L1188,22 L1206,10 L1224,24 L1242,8 L1260,20 L1278,4 L1296,18 L1314,28 L1332,10 L1350,22 L1368,6 L1386,20 L1404,8 L1422,24 L1440,12 L1440,0 Z"
+        fill="#f0e8d4"/>
+    </svg>
+  </div>
 
-    <div class="section-heading">
-      <div class="ornament-row"><span>★</span></div>
-      <h2>More Ways to Explore</h2>
+  <div style="height: 2rem;"></div>
+
+  <div class="section-head">
+    <div class="section-rule-wrap">
+      <span class="section-rule-line"></span>
+      <span class="section-rule-star">&#9733;</span>
+      <span class="section-rule-line"></span>
     </div>
+    <h2>More Ways to Explore</h2>
+  </div>
 
-    <div class="explore-tiles">
+  <div class="explore-tiles">
 
-      <a class="explore-tile" href="maps.html">
-        <div class="explore-tile-img">
-          <img src="Images/Maps/1880-Maps-Cyclone.jpg" alt="Historic Maps" loading="lazy" />
-        </div>
-        <div class="explore-tile-body">
-          <p class="explore-tile-heading">Historic Maps</p>
-          <p class="explore-tile-text">Explore city maps and see how Savoy's layout has changed over time — including the 1880 cyclone path.</p>
-          <span class="explore-tile-link">View Maps →</span>
-        </div>
-      </a>
+    <a class="explore-tile" href="maps.html">
+      <div class="tile-img">
+        <img src="Images/Maps/1880-Maps-Cyclone.jpg" alt="Historic Maps" loading="lazy" />
+      </div>
+      <div class="tile-body">
+        <p class="tile-heading">Historic Maps</p>
+        <p class="tile-text">Explore city maps and see how Savoy's layout has changed — including the 1880 cyclone path.</p>
+        <span class="tile-link">View Maps &rarr;</span>
+      </div>
+    </a>
 
-      <a class="explore-tile" href="newspapers.html">
-        <div class="explore-tile-img">
-          <img src="Images/Newspapers/1954fire1-0.jpg" alt="Newspaper Archive" loading="lazy" />
-        </div>
-        <div class="explore-tile-body">
-          <p class="explore-tile-heading">Newspaper Archive</p>
-          <p class="explore-tile-text">Read historic newspapers and learn how Savoy's story has been told over the decades, from 1880 to 2007.</p>
-          <span class="explore-tile-link">Browse Articles →</span>
-        </div>
-      </a>
+    <a class="explore-tile" href="newspapers.html">
+      <div class="tile-img">
+        <img src="Images/Newspapers/1954fire1-0.jpg" alt="Newspaper Archive" loading="lazy" />
+      </div>
+      <div class="tile-body">
+        <p class="tile-heading">Newspaper Archive</p>
+        <p class="tile-text">Read historic newspapers and learn how Savoy's story has been told, from 1880 to 2007.</p>
+        <span class="tile-link">Browse Articles &rarr;</span>
+      </div>
+    </a>
 
-      <a class="explore-tile" href="history.html#college">
-        <div class="explore-tile-img">
-          <img src="Images/Photos-1850-1899/savoycollege.jpeg" alt="Savoy College" loading="lazy" />
-        </div>
-        <div class="explore-tile-body">
-          <p class="explore-tile-heading">Landmarks &amp; Places</p>
-          <p class="explore-tile-text">Explore the buildings, homes, and institutions that shaped Savoy — from the college to the downtown.</p>
-          <span class="explore-tile-link">Explore Places →</span>
-        </div>
-      </a>
+    <a class="explore-tile" href="history.html#college">
+      <div class="tile-img">
+        <img src="Images/Photos-1850-1899/savoycollege.jpeg" alt="Landmarks and Places" loading="lazy" />
+      </div>
+      <div class="tile-body">
+        <p class="tile-heading">Landmarks &amp; Places</p>
+        <p class="tile-text">Explore the buildings, homes, and institutions that shaped Savoy — from the college to downtown.</p>
+        <span class="tile-link">Explore Places &rarr;</span>
+      </div>
+    </a>
 
-      <a class="explore-tile" href="photos.html?decade=1850">
-        <div class="explore-tile-img">
-          <img src="Images/Photos-1850-1899/WrennFamily.jpeg" alt="People of Savoy" loading="lazy" />
-        </div>
-        <div class="explore-tile-body">
-          <p class="explore-tile-heading">People of Savoy</p>
-          <p class="explore-tile-text">Discover the families and individuals who shaped Savoy — the Savoys, Halsells, Arterberrys, and more.</p>
-          <span class="explore-tile-link">Learn More →</span>
-        </div>
-      </a>
+    <a class="explore-tile" href="photos.html?decade=1850">
+      <div class="tile-img">
+        <img src="Images/Photos-1850-1899/WrennFamily.jpeg" alt="People of Savoy" loading="lazy" />
+      </div>
+      <div class="tile-body">
+        <p class="tile-heading">People of Savoy</p>
+        <p class="tile-text">Discover the families and individuals who shaped Savoy — the Savoys, Halsells, Arterberrys, and more.</p>
+        <span class="tile-link">Learn More &rarr;</span>
+      </div>
+    </a>
 
-      <a class="explore-tile" href="documents.html">
-        <div class="explore-tile-img">
-          <img src="Images/Documents/1885-Docs-SavoyCharter.jpeg" alt="Historical Documents" loading="lazy" />
-        </div>
-        <div class="explore-tile-body">
-          <p class="explore-tile-heading">Documents &amp; Records</p>
-          <p class="explore-tile-text">Primary sources: census records, church registers, marriage certificates, and the 1885 town charter.</p>
-          <span class="explore-tile-link">View Records →</span>
-        </div>
-      </a>
+    <a class="explore-tile" href="documents.html">
+      <div class="tile-img">
+        <img src="Images/Documents/1885-Docs-SavoyCharter.jpeg" alt="Documents and Records" loading="lazy" />
+      </div>
+      <div class="tile-body">
+        <p class="tile-heading">Documents &amp; Records</p>
+        <p class="tile-text">Census records, church registers, marriage certificates, and the 1885 town charter.</p>
+        <span class="tile-link">View Records &rarr;</span>
+      </div>
+    </a>
 
-    </div>
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- ═══════════════════════════════════════════
      CTA STRIP
-═══════════════════════════════════════ -->
+═══════════════════════════════════════════ -->
 <div class="cta-strip">
-  <div class="cta-strip-inner">
-    <div class="cta-strip-text">
+  <div class="cta-inner">
+    <div class="cta-text">
       <h2>Help Preserve Our History</h2>
       <p>Our history belongs to all of us. Share your photos, stories, and artifacts to help keep Savoy's past alive for future generations.</p>
     </div>
@@ -1043,36 +1058,42 @@
   </div>
 </div>
 
-<!-- ═══════════════════════════════════════
+<!-- ═══════════════════════════════════════════
      FOOTER
-═══════════════════════════════════════ -->
+═══════════════════════════════════════════ -->
 <footer>
   <div class="footer-grid">
 
-    <!-- Col 1: About -->
+    <!-- About -->
     <div>
-      <div class="footer-brand-wrap">
-        <div class="footer-badge">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="47" fill="none" stroke="#c4943a" stroke-width="1.5"/>
-            <circle cx="50" cy="50" r="42" fill="none" stroke="#c4943a" stroke-width="0.5"/>
-            <polygon points="50,18 56.5,36 76,36 60.5,47.5 67,66 50,55 33,66 39.5,47.5 24,36 43.5,36" fill="#c4943a"/>
-            <text x="50" y="10" text-anchor="middle" font-size="7" fill="#c4943a" letter-spacing="2" font-family="Georgia, serif">EST. · 1885 ·</text>
-            <text x="50" y="93" text-anchor="middle" font-size="6" fill="#c4943a" letter-spacing="1.5" font-family="Georgia, serif">OUR TOWN · OUR HISTORY</text>
+      <div class="footer-brand-top">
+        <div class="footer-seal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+            <defs>
+              <path id="f-arc-top" d="M 18,60 A 42,42 0 0,1 102,60"/>
+              <path id="f-arc-bot" d="M 22,68 A 38,38 0 0,0 98,68"/>
+            </defs>
+            <circle cx="60" cy="60" r="57" fill="#2c1507" stroke="#c4943a" stroke-width="2"/>
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#c4943a" stroke-width="1"/>
+            <polygon points="60,22 66,40 86,40 70,52 77,70 60,58 43,70 50,52 34,40 54,40" fill="#c4943a"/>
+            <text font-family="Oswald, sans-serif" font-size="9" fill="#c4943a" letter-spacing="3">
+              <textPath href="#f-arc-top" startOffset="10%">GRAYSON COUNTY</textPath>
+            </text>
+            <text font-family="Oswald, sans-serif" font-size="8" fill="#c4943a" letter-spacing="2.5">
+              <textPath href="#f-arc-bot" startOffset="12%">EST. · 1885 · TEXAS</textPath>
+            </text>
           </svg>
         </div>
-        <div class="footer-brand-text">
+        <div class="footer-brand-info">
           <strong>Savoy</strong>
-          <small>Texas</small>
+          <span>Texas Historical Archive</span>
         </div>
       </div>
-      <p>
-        The Savoy Historical Archive is dedicated to preserving and sharing the rich history of our town in Grayson County, Texas, for future generations.
-      </p>
-      <a class="footer-learn" href="history.html">Learn More →</a>
+      <p>The Savoy Historical Archive is dedicated to preserving and sharing the history of our town for future generations.</p>
+      <a class="footer-learn" href="history.html">Learn More &rarr;</a>
     </div>
 
-    <!-- Col 2: Quick Links -->
+    <!-- Quick Links -->
     <div>
       <h4>Quick Links</h4>
       <ul>
@@ -1085,16 +1106,16 @@
       </ul>
     </div>
 
-    <!-- Col 3: Upcoming Events -->
+    <!-- Highlights (events-style) -->
     <div>
-      <h4>Highlights</h4>
+      <h4>Historic Highlights</h4>
 
       <div class="event-item">
         <div class="event-badge">
-          <span class="month">1876</span>
-          <span class="day">★</span>
+          <span class="ev-month">1876</span>
+          <span class="ev-day">&#9733;</span>
         </div>
-        <div class="event-text">
+        <div class="event-info">
           <strong>Savoy Male &amp; Female College</strong>
           <span>Founded by R.R. Halsell — the heart of early Savoy education</span>
         </div>
@@ -1102,10 +1123,10 @@
 
       <div class="event-item">
         <div class="event-badge">
-          <span class="month">1880</span>
-          <span class="day">★</span>
+          <span class="ev-month">1880</span>
+          <span class="ev-day">&#9733;</span>
         </div>
-        <div class="event-text">
+        <div class="event-info">
           <strong>The Great Cyclone</strong>
           <span>A defining disaster — and a testament to community resilience</span>
         </div>
@@ -1113,67 +1134,52 @@
 
       <div class="event-item">
         <div class="event-badge">
-          <span class="month">1954</span>
-          <span class="day">★</span>
+          <span class="ev-month">1954</span>
+          <span class="ev-day">&#9733;</span>
         </div>
-        <div class="event-text">
+        <div class="event-info">
           <strong>The Great Fire</strong>
           <span>A devastating downtown fire that reshaped the town center</span>
         </div>
       </div>
 
-      <a class="view-all-link" href="timeline.html">View Full Timeline →</a>
+      <a class="view-all-link" href="timeline.html">View Full Timeline &rarr;</a>
     </div>
 
-    <!-- Col 4: Stay Connected -->
+    <!-- Stay Connected -->
     <div>
       <h4>Stay Connected</h4>
-      <p>
-        Share your memories, family photos, or documents with the Savoy historical archive.
-        Every piece of history matters.
-      </p>
+      <p>Share your memories, family photos, or documents with the Savoy historical archive. Every piece of history matters.</p>
       <div class="social-row">
-        <a class="social-btn" href="#" title="Facebook">f</a>
-        <a class="social-btn" href="#" title="Twitter/X">𝕏</a>
-        <a class="social-btn" href="mailto:savoytexashistory@gmail.com" title="Email">✉</a>
+        <a class="social-btn" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a class="social-btn" href="#" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        <a class="social-btn" href="mailto:savoytexashistory@gmail.com" title="Email"><i class="fa fa-envelope"></i></a>
       </div>
-      <p style="margin-top:1rem; font-size:0.75rem; color:#4a2810;">
-        Have photos or documents to share?<br>
-        <a href="mailto:savoytexashistory@gmail.com" style="color:#c4943a;">Contact the archive →</a>
+      <p style="margin-top:1rem; font-size:0.74rem; color:#3a2010;">
+        Have photos to share?<br>
+        <a href="mailto:savoytexashistory@gmail.com" style="color:var(--gold);">Contact the archive &rarr;</a>
       </p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    <span>&copy; 2025 Savoy, Texas Historical Archive · Grayson County, Texas</span>
-    <span>
-      <a href="#">Privacy Policy</a>
-    </span>
+    <span>&copy; 2025 Savoy, Texas Historical Archive &nbsp;&middot;&nbsp; Grayson County, Texas</span>
+    <span><a href="#">Privacy Policy</a></span>
   </div>
 </footer>
 
 <script>
 function doSearch() {
-  const q = document.getElementById('site-search').value.trim();
+  const q = document.getElementById('site-search').value.trim().toLowerCase();
   if (!q) return;
-  // Simple keyword routing
-  const kw = q.toLowerCase();
-  if (kw.includes('map') || kw.includes('cyclone path')) {
-    window.location.href = 'maps.html';
-  } else if (kw.includes('paper') || kw.includes('news') || kw.includes('fire')) {
-    window.location.href = 'newspapers.html';
-  } else if (kw.includes('doc') || kw.includes('charter') || kw.includes('census')) {
-    window.location.href = 'documents.html';
-  } else if (kw.includes('photo') || kw.includes('gallery') || kw.includes('picture')) {
-    window.location.href = 'photos.html';
-  } else if (kw.includes('timeline') || kw.includes('history')) {
-    window.location.href = 'timeline.html';
-  } else {
-    window.location.href = 'photos.html';
-  }
+  if (q.includes('map') || q.includes('cyclone path')) window.location.href = 'maps.html';
+  else if (q.includes('paper') || q.includes('news') || q.includes('fire')) window.location.href = 'newspapers.html';
+  else if (q.includes('doc') || q.includes('charter') || q.includes('census')) window.location.href = 'documents.html';
+  else if (q.includes('photo') || q.includes('gallery')) window.location.href = 'photos.html';
+  else if (q.includes('timeline') || q.includes('history')) window.location.href = 'timeline.html';
+  else window.location.href = 'photos.html';
 }
-
 document.getElementById('site-search').addEventListener('keydown', e => {
   if (e.key === 'Enter') doSearch();
 });
