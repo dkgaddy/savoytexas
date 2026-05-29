@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yearbooks — Savoy, Texas</title>
+  <!-- Fonts: Rye (display), Oswald (labels/nav), Lora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/site.js" defer></script>
+  <script src="data/yearbooks-data.js"></script>
+  <style>
+    /* ── Shelf ─────────────────────────────────────────── */
+    .shelf-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.8rem 1.4rem;
+    }
+    .shelf-book {
+      cursor: pointer;
+      text-align: center;
+      transition: transform .18s ease;
+    }
+    .shelf-book:hover { transform: translateY(-6px); }
+    .shelf-cover {
+      position: relative;
+      aspect-ratio: 2300 / 3260;
+      background: var(--parchment-dk, #e0d0b0);
+      border-radius: 3px 7px 7px 3px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(30,14,4,.34),
+                  inset 9px 0 14px -8px rgba(0,0,0,.45);
+      border: 1px solid var(--border, #c8a870);
+    }
+    .shelf-cover::before {  /* spine highlight */
+      content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 9px;
+      background: linear-gradient(90deg, rgba(0,0,0,.30), rgba(0,0,0,0));
+      z-index: 2;
+    }
+    .shelf-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .shelf-meta { margin-top: .55rem; }
+    .shelf-year {
+      font-family: 'Rye', serif; font-size: 1.45rem; color: var(--red, #8b2000);
+      line-height: 1;
+    }
+    .shelf-pages {
+      font-family: 'Oswald', sans-serif; font-size: .72rem; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--brown-light, #7a5030); margin-top: .15rem;
+    }
+
+    /* ── Viewer ────────────────────────────────────────── */
+    #viewer { display: none; }
+    #viewer.open { display: block; }
+
+    .yb-toolbar {
+      display: flex; align-items: center; flex-wrap: wrap; gap: .6rem;
+      margin-bottom: 1.2rem;
+    }
+    .yb-btn {
+      font-family: 'Oswald', sans-serif; font-size: .8rem; letter-spacing: .06em;
+      text-transform: uppercase; cursor: pointer;
+      background: var(--red, #8b2000); color: #f5ead2; border: none;
+      padding: .5rem .9rem; border-radius: 3px; transition: background .15s;
+      display: inline-flex; align-items: center; gap: .4rem;
+    }
+    .yb-btn:hover { background: var(--red-dark, #6a1800); }
+    .yb-btn.ghost { background: transparent; color: var(--brown-mid, #4a2c14);
+      border: 1px solid var(--border, #c8a870); }
+    .yb-btn.ghost:hover { background: var(--parchment-dk, #e0d0b0); }
+    .yb-btn:disabled { opacity: .4; cursor: default; }
+    .yb-title {
+      font-family: 'Rye', serif; font-size: 1.5rem; color: var(--red, #8b2000);
+      margin: 0 .4rem;
+    }
+    .yb-count {
+      font-family: 'Oswald', sans-serif; font-size: .8rem; letter-spacing: .06em;
+      color: var(--brown-light, #7a5030); margin-left: auto;
+    }
+    .yb-jump {
+      font-family: 'Oswald', sans-serif; font-size: .8rem;
+      padding: .45rem .5rem; border: 1px solid var(--border, #c8a870);
+      border-radius: 3px; background: var(--parchment, #f0e8d4);
+      color: var(--brown-mid, #4a2c14);
+    }
+
+    /* Book stage */
+    .book-stage {
+      position: relative;
+      display: flex; justify-content: center; align-items: center;
+      perspective: 2600px;
+      padding: 1.2rem 0 2rem;
+      min-height: 60vh;
+    }
+    .book {
+      position: relative;
+      height: min(80vh, 760px);
+      display: flex;
+      transform-style: preserve-3d;
+      box-shadow: 0 18px 40px rgba(30,14,4,.4);
+      background: #2a1606;
+    }
+    .page {
+      position: relative;
+      height: 100%;
+      aspect-ratio: 2300 / 3260;
+      background: #f3ead6 url('Images/Photos-1850-1899/ColWilliamSavoy.jpg') no-repeat;
+      background-size: 0;             /* placeholder color only */
+      overflow: hidden;
+    }
+    .page.blank { background: #ece2cc; }
+    .page img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      cursor: zoom-in;
+      -webkit-user-select: none; user-select: none; -webkit-user-drag: none;
+    }
+    .page.left  { border-radius: 4px 0 0 4px;
+      box-shadow: inset -16px 0 26px -16px rgba(0,0,0,.5); }
+    .page.right { border-radius: 0 4px 4px 0;
+      box-shadow: inset 16px 0 26px -16px rgba(0,0,0,.5); }
+    /* center spine shadow */
+    .book::after {
+      content: ""; position: absolute; top: 0; bottom: 0; left: 50%;
+      width: 26px; transform: translateX(-50%); z-index: 6; pointer-events: none;
+      background: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,.28) 48%,
+                  rgba(0,0,0,.28) 52%, rgba(0,0,0,0));
+    }
+
+    /* Flipping leaf */
+    .leaf {
+      position: absolute; top: 0; height: 100%;
+      transform-style: preserve-3d;
+      z-index: 8;
+      transition: transform .62s cubic-bezier(.4,.07,.3,1);
+      transform-origin: left center;
+    }
+    .leaf-face {
+      position: absolute; inset: 0;
+      backface-visibility: hidden; -webkit-backface-visibility: hidden;
+      overflow: hidden; background: #ece2cc;
+    }
+    .leaf-face img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .leaf-front { transform: rotateY(0deg); box-shadow: inset 16px 0 26px -16px rgba(0,0,0,.5); }
+    .leaf-back  { transform: rotateY(180deg); box-shadow: inset -16px 0 26px -16px rgba(0,0,0,.5); }
+    .leaf-shade {
+      position: absolute; inset: 0; z-index: 3; pointer-events: none;
+      background: linear-gradient(90deg, rgba(0,0,0,.25), rgba(0,0,0,0));
+      opacity: 0; transition: opacity .3s;
+    }
+
+    /* hint arrows on hover halves */
+    .turn-hint {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      z-index: 7; font-size: 1.6rem; color: #f5ead2;
+      background: rgba(40,22,6,.55); width: 46px; height: 46px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; opacity: 0; transition: opacity .2s; border: none;
+    }
+    .book-stage:hover .turn-hint { opacity: .85; }
+    .turn-hint:hover { opacity: 1 !important; background: var(--red, #8b2000); }
+    .turn-hint.prev { left: 8px; } .turn-hint.next { right: 8px; }
+    .turn-hint:disabled { display: none; }
+
+    /* ── Zoom overlay ──────────────────────────────────── */
+    #ybZoom {
+      position: fixed; inset: 0; z-index: 9999; display: none;
+      background: rgba(20,10,2,.94); cursor: zoom-out; overflow: hidden;
+    }
+    #ybZoom.open { display: block; }
+    #ybZoom img {
+      position: absolute; top: 0; left: 0; cursor: zoom-out;
+      max-width: none; will-change: transform;
+      box-shadow: 0 0 40px rgba(0,0,0,.6);
+    }
+    #ybZoom .zoom-close {
+      position: fixed; top: 18px; right: 24px; z-index: 2;
+      font-size: 2.2rem; color: #f5ead2; background: none; border: none;
+      cursor: pointer; line-height: 1;
+    }
+    #ybZoom .zoom-hint {
+      position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+      z-index: 2; font-family: 'Oswald', sans-serif; font-size: .8rem;
+      letter-spacing: .08em; color: #d9c9a8; text-transform: uppercase;
+      background: rgba(40,22,6,.6); padding: .4rem .9rem; border-radius: 3px;
+    }
+
+    @media (max-width: 640px) {
+      .book .page.left { display: none; }   /* single page on phones */
+      .book::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <form class="site-search" onsubmit="return runSearch(this.q.value)">
+        <input name="q" type="text" placeholder="Search the site" aria-label="Search the site" />
+        <button type="submit" title="Search"><i class="fa fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History <span class="nav-caret">▾</span></a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="photos.html">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
+        <li><a href="yearbooks.html" class="active">Yearbooks</a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents <span class="nav-caret">▾</span></a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="badge-layer">
+    <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
+      <span class="badge-name">Savoy</span>
+      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">Texas</span>
+    </a>
+  </div>
+</header>
+
+<div class="page-banner">
+  <h1>Savoy School Yearbooks</h1>
+  <p>Open a virtual yearbook and turn the pages — Savoy High School, 1941–1988</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> <span>›</span> <span>Yearbooks</span>
+  </div>
+</div>
+
+<section>
+  <div class="inner">
+
+    <!-- SHELF -->
+    <div id="shelf">
+      <p style="font-family:'Lora',serif; color:var(--brown-mid,#4a2c14); max-width:62ch; margin:0 0 1.8rem;">
+        Each volume below is a complete scan of a Savoy High School yearbook. Click a cover to
+        open the book, then turn the pages with the arrows or by clicking the page edges. Hover a
+        page and click to zoom in for a closer look.
+      </p>
+      <div class="shelf-grid" id="shelf-grid"></div>
+    </div>
+
+    <!-- VIEWER -->
+    <div id="viewer">
+      <div class="yb-toolbar">
+        <button class="yb-btn ghost" id="yb-back"><i class="fa fa-arrow-left"></i> Shelf</button>
+        <span class="yb-title" id="yb-title">—</span>
+        <button class="yb-btn" id="yb-prev"><i class="fa fa-chevron-left"></i> Prev</button>
+        <button class="yb-btn" id="yb-next">Next <i class="fa fa-chevron-right"></i></button>
+        <select class="yb-jump" id="yb-jump" title="Jump to page"></select>
+        <span class="yb-count" id="yb-count"></span>
+      </div>
+
+      <div class="book-stage" id="book-stage">
+        <button class="turn-hint prev" id="hint-prev" aria-label="Previous pages">‹</button>
+        <div class="book" id="book"></div>
+        <button class="turn-hint next" id="hint-next" aria-label="Next pages">›</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ZOOM OVERLAY -->
+<div id="ybZoom">
+  <button class="zoom-close" aria-label="Close zoom">×</button>
+  <img id="ybZoomImg" src="" alt="" />
+  <div class="zoom-hint">Move mouse to pan · click to zoom out · Esc to close</div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="f-logo">
+        <span class="f-star">★</span>
+        <div class="f-logo-text">
+          <strong>Savoy, Texas</strong>
+          <span>Historical Reference</span>
+        </div>
+      </div>
+      <p>A community archive preserving the history of Savoy, Texas — Grayson County.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="photos.html">Photo Gallery</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="documents.html">Documents</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Archives</h4>
+      <ul>
+        <li><a href="yearbooks.html">Yearbooks</a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Savoy, Texas Historical Archive · Grayson County, Texas
+  </div>
+</footer>
+
+<script>
+(function () {
+  const DATA = (window.SAVOY_YEARBOOKS || { dir: 'Images/YearBooks/', books: [] });
+  const DIR = DATA.dir;
+  const BOOKS = DATA.books;
+
+  // Build src for a page file (folder names numeric, filenames may have spaces)
+  function pageSrc(book, file) {
+    return DIR + book.folder + '/' + encodeURIComponent(file);
+  }
+
+  // ── Shelf ───────────────────────────────────────────────
+  const shelfGrid = document.getElementById('shelf-grid');
+  BOOKS.forEach((book, i) => {
+    const el = document.createElement('div');
+    el.className = 'shelf-book';
+    el.innerHTML =
+      '<div class="shelf-cover"><img loading="lazy" alt="' + book.year +
+      ' yearbook cover" src="' + pageSrc(book, book.pages[0]) + '"></div>' +
+      '<div class="shelf-meta"><div class="shelf-year">' + book.year + '</div>' +
+      '<div class="shelf-pages">' + book.count + ' pages</div></div>';
+    el.onclick = () => openBook(i);
+    shelfGrid.appendChild(el);
+  });
+
+  // ── Viewer state ────────────────────────────────────────
+  const shelf   = document.getElementById('shelf');
+  const viewer  = document.getElementById('viewer');
+  const bookEl  = document.getElementById('book');
+  const titleEl = document.getElementById('yb-title');
+  const countEl = document.getElementById('yb-count');
+  const jumpEl  = document.getElementById('yb-jump');
+  const prevBtn = document.getElementById('yb-prev');
+  const nextBtn = document.getElementById('yb-next');
+  const hintPrev = document.getElementById('hint-prev');
+  const hintNext = document.getElementById('hint-next');
+
+  let curBook = null;   // current book object
+  let view = 0;         // view 0 = front cover alone; view v = pages (2v-1,2v)
+  let animating = false;
+
+  function pageAt(idx) {            // returns file or null (blank)
+    if (!curBook || idx < 0 || idx >= curBook.pages.length) return null;
+    return curBook.pages[idx];
+  }
+  // page index shown on each half for a given view
+  function leftIdx(v)  { return v === 0 ? -1 : 2 * v - 1; }   // -1 = blank
+  function rightIdx(v) { return v === 0 ? 0 : 2 * v; }
+  function maxView() {
+    return Math.floor(curBook.pages.length / 2);
+  }
+
+  function makePage(side, idx) {
+    const file = pageAt(idx);
+    const d = document.createElement('div');
+    d.className = 'page ' + side + (file ? '' : ' blank');
+    if (file) {
+      const img = document.createElement('img');
+      img.src = pageSrc(curBook, file);
+      img.alt = curBook.year + ' yearbook, page ' + (idx + 1);
+      img.dataset.idx = idx;
+      img.addEventListener('click', () => openZoom(idx));
+      d.appendChild(img);
+    }
+    return d;
+  }
+
+  function renderSpread() {
+    bookEl.innerHTML = '';
+    bookEl.appendChild(makePage('left', leftIdx(view)));
+    bookEl.appendChild(makePage('right', rightIdx(view)));
+    updateChrome();
+    preload(view);
+  }
+
+  function updateChrome() {
+    const total = curBook.pages.length;
+    if (view === 0) {
+      countEl.textContent = 'Front cover · ' + total + ' pages';
+    } else {
+      const ri = rightIdx(view);
+      const a = leftIdx(view) + 1, b = ri + 1;
+      countEl.textContent = 'Pages ' + a + (ri < total ? '–' + b : '') + ' of ' + total;
+    }
+    prevBtn.disabled = hintPrev.disabled = (view === 0);
+    nextBtn.disabled = hintNext.disabled = (view >= maxView());
+    jumpEl.value = String(view);
+  }
+
+  function preload(v) {
+    [rightIdx(v + 1), leftIdx(v + 1), rightIdx(v - 1), leftIdx(v - 1)].forEach(idx => {
+      const f = pageAt(idx);
+      if (f) { const im = new Image(); im.src = pageSrc(curBook, f); }
+    });
+  }
+
+  // ── Page turn animation (single hinged leaf at the spine) ─
+  function turn(dir) {                    // dir = +1 forward, -1 back
+    if (animating) return;
+    if (dir > 0 && view >= maxView()) return;
+    if (dir < 0 && view <= 0) return;
+    animating = true;
+
+    const rightPage = bookEl.querySelector('.page.right');
+    const leftPage  = bookEl.querySelector('.page.left');
+    const w = rightPage.offsetWidth, h = rightPage.offsetHeight;
+
+    // faces depend on direction
+    let frontIdx, backIdx;
+    if (dir > 0) {                        // forward: turn current right leaf
+      frontIdx = rightIdx(view);          // current right (cover on view 0)
+      backIdx  = leftIdx(view + 1);       // next left
+    } else {                              // backward: bring a leaf from the left
+      frontIdx = rightIdx(view - 1);      // target-view right
+      backIdx  = leftIdx(view);           // current left
+    }
+
+    const leaf = document.createElement('div');
+    leaf.className = 'leaf';
+    leaf.style.width = w + 'px';
+    leaf.style.height = h + 'px';
+    leaf.style.left = '50%';              // hinge at spine (book center)
+    leaf.innerHTML =
+      '<div class="leaf-face leaf-front">' + faceImg(frontIdx) + '<div class="leaf-shade"></div></div>' +
+      '<div class="leaf-face leaf-back">'  + faceImg(backIdx)  + '<div class="leaf-shade" style="background:linear-gradient(270deg,rgba(0,0,0,.25),rgba(0,0,0,0))"></div></div>';
+
+    // Prepare the underlying pages for the destination so they show as the leaf moves
+    if (dir > 0) {
+      // reveal next-right underneath; keep current left
+      rightPage.replaceWith(makePage('right', rightIdx(view + 1)));
+      leaf.style.transform = 'rotateY(0deg)';
+    } else {
+      // reveal target left underneath; keep current right
+      leftPage.replaceWith(makePage('left', leftIdx(view - 1)));
+      leaf.style.transform = 'rotateY(-180deg)';
+    }
+    bookEl.appendChild(leaf);
+
+    // force reflow then animate
+    void leaf.offsetWidth;
+    const shades = leaf.querySelectorAll('.leaf-shade');
+    if (dir > 0) {
+      leaf.style.transform = 'rotateY(-180deg)';
+      shades[0].style.opacity = '0'; shades[1].style.opacity = '.0';
+      shades.forEach(s => { s.style.opacity = '.0'; });
+      // animate a passing shadow
+      requestAnimationFrame(() => { shades[0].style.opacity = '.6'; });
+    } else {
+      leaf.style.transform = 'rotateY(0deg)';
+      requestAnimationFrame(() => { shades[1].style.opacity = '.6'; });
+    }
+
+    leaf.addEventListener('transitionend', function te(e) {
+      if (e.propertyName !== 'transform') return;
+      leaf.removeEventListener('transitionend', te);
+      view += dir;
+      renderSpread();
+      animating = false;
+    });
+  }
+
+  function faceImg(idx) {
+    const f = pageAt(idx);
+    if (!f) return '';
+    return '<img src="' + pageSrc(curBook, f) + '" alt="">';
+  }
+
+  // ── Open / close book ───────────────────────────────────
+  function openBook(i) {
+    curBook = BOOKS[i];
+    view = 0;
+    titleEl.textContent = curBook.year + ' Yearbook';
+    jumpEl.innerHTML = '';
+    const total = curBook.pages.length;
+    for (let v = 0; v <= maxView(); v++) {
+      const o = document.createElement('option');
+      o.value = v;
+      if (v === 0) {
+        o.textContent = 'Front cover';
+      } else {
+        const a = leftIdx(v) + 1, b = rightIdx(v) + 1;
+        o.textContent = 'Pages ' + a + (rightIdx(v) < total ? '–' + b : '');
+      }
+      jumpEl.appendChild(o);
+    }
+    shelf.style.display = 'none';
+    viewer.classList.add('open');
+    renderSpread();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  function closeBook() {
+    viewer.classList.remove('open');
+    shelf.style.display = '';
+    curBook = null;
+  }
+
+  document.getElementById('yb-back').onclick = closeBook;
+  prevBtn.onclick = () => turn(-1);
+  nextBtn.onclick = () => turn(+1);
+  hintPrev.onclick = () => turn(-1);
+  hintNext.onclick = () => turn(+1);
+  jumpEl.onchange = () => {
+    if (animating) return;
+    view = parseInt(jumpEl.value, 10) || 0;
+    renderSpread();
+  };
+
+  // ── Zoom overlay ────────────────────────────────────────
+  const zoom    = document.getElementById('ybZoom');
+  const zoomImg = document.getElementById('ybZoomImg');
+  let zoomNat = { w: 0, h: 0 };
+
+  function openZoom(idx) {
+    const f = pageAt(idx);
+    if (!f) return;
+    zoomImg.src = pageSrc(curBook, f);
+    zoom.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    zoomImg.onload = () => {
+      zoomNat = { w: zoomImg.naturalWidth, h: zoomImg.naturalHeight };
+      // scale so the page is taller than the viewport for a real magnified view
+      const scale = (window.innerHeight * 1.6) / zoomNat.h;
+      zoomImg.style.width = (zoomNat.w * scale) + 'px';
+      zoomImg.style.height = (zoomNat.h * scale) + 'px';
+      panTo(window.innerWidth / 2, window.innerHeight / 2);
+    };
+  }
+  function panTo(mx, my) {
+    const iw = zoomImg.offsetWidth, ih = zoomImg.offsetHeight;
+    const px = Math.min(1, Math.max(0, mx / window.innerWidth));
+    const py = Math.min(1, Math.max(0, my / window.innerHeight));
+    const x = (window.innerWidth  - iw) * px;
+    const y = (window.innerHeight - ih) * py;
+    zoomImg.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+  }
+  function closeZoom() {
+    zoom.classList.remove('open');
+    zoomImg.src = '';
+    document.body.style.overflow = '';
+  }
+  zoom.addEventListener('mousemove', e => {
+    if (!zoom.classList.contains('open')) return;
+    panTo(e.clientX, e.clientY);
+  });
+  zoom.addEventListener('click', closeZoom);
+  document.querySelector('#ybZoom .zoom-close').addEventListener('click', e => {
+    e.stopPropagation(); closeZoom();
+  });
+
+  // ── Keyboard ────────────────────────────────────────────
+  document.addEventListener('keydown', e => {
+    if (zoom.classList.contains('open')) {
+      if (e.key === 'Escape') closeZoom();
+      return;
+    }
+    if (!viewer.classList.contains('open')) return;
+    if (e.key === 'ArrowRight') turn(+1);
+    if (e.key === 'ArrowLeft')  turn(-1);
+    if (e.key === 'Escape') closeBook();
+  });
+
+  // Deep link ?y=1952
+  const qy = new URLSearchParams(location.search).get('y');
+  if (qy) {
+    const idx = BOOKS.findIndex(b => b.year === qy);
+    if (idx >= 0) openBook(idx);
+  }
+})();
+</script>
+
+</body>
+</html>
