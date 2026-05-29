@@ -1,0 +1,14 @@
+{
+  "id": "elk-55",
+  "source_id": "elk-55",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 55.jpeg",
+  "title": "Savoy Funeral Held Today For Mrs. Wrenn",
+  "date": "",
+  "text": "Savoy Funeral Held Today For Mrs. Wrenn\n\nSAVOY. — Funeral services for Mrs. R. W. Wrenn, 62, who died at her home in Savoy Thursday, were conducted in the Savoy Baptist Church today at 3 p.m. with the Rev. Claude Johnston of Sherman, the Rev. J. D. Flemings of Whitewright and the Rev. Everett Springfield of Savoy officiating.\n\nMrs. Wrenn, a life-long resident of Savoy, was ill for two years preceding her death. She was born in Savoy in 1885, and was married to Mr. Wrenn in 1907. She was a Sunday School teacher for several years in the Baptist Church of which she was a member.\n\nShe is survived by her husband, two brothers, Allen T. Short of Whitewright; G. M. Short of Savoy; two nieces and a nephew.\n\nBurial, directed by Earnheart Funeral Home of Whitewright and Strickland Funeral Home of Savoy, was in Sunside Cemetery, Savoy.\n\nActive pallbearers were members of her Sunday School class, Jack Morgan, Pierce Bibby, Joe Lynn Dodson, Newt Morgan, A. C. Lyles, and Frank Morgan. Honorary pallbearers were other members of the class.",
+  "people": ["R. W. Wrenn", "Claude Johnston", "J. D. Flemings", "Everett Springfield", "Allen T. Short", "G. M. Short", "Jack Morgan", "Pierce Bibby", "Joe Lynn Dodson", "Newt Morgan", "A. C. Lyles", "Frank Morgan"],
+  "places": ["Savoy", "Sherman", "Whitewright", "Sunside Cemetery"],
+  "dates": ["1885", "1907"],
+  "topics": ["obituary", "funeral", "Baptist Church", "Sunday School"],
+  "notes": "Cemetery name transcribed as printed: 'Sunside Cemetery' (possibly Sunnyside Cemetery)."
+}

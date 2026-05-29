@@ -1,0 +1,14 @@
+{
+  "id": "elk-64",
+  "source_id": "elk-64",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 64.jpeg",
+  "title": "James Blakey Dies Saturday",
+  "date": "Feb. 26, 1966",
+  "text": "James Blakey Dies Saturday\n\nSAVOY (Spl.) — James T. Blakey, 72, of Savoy, died Saturday morning, Feb. 26, 1966, at 11:10 o'clock in a Bonham hospital.\n\nFuneral services will be held Sunday afternoon in the Pentacostal Faith church in Savoy at 2:30 o'clock. The pastor, the Rev. Cecil Watson, assisted by the Rev. J. D. Flanagan of Sherman, will officiate. Earnheart Funeral home of Whitewright will direct interment in Sunnyside cemetery at Savoy.\n\nA retired farmer and member of the Pentacostal church, Mr. Blakey was born Jan. 3, 1894, at Whitewright, and was the son of the late Robert and Rebecca Blakey. He married Miss Lizzey Burris Nov. 12, 1916 at Savoy.\n\nSurvivors include his widow of the home in Savoy; two sons, Robert Blakey of Wylie and Joe Lee Blakey of Maysville, Okla.; a daughter, Mrs. D. B. Withrow of Garland; a sister, Mrs. Ina Elk of Savoy; 15 grandchildren and nine great grandchildren.\n\n[Text continues, cut off:] Serv[ices] [at a Bonham]",
+  "people": ["James T. Blakey", "Cecil Watson", "J. D. Flanagan", "Robert Blakey", "Rebecca Blakey", "Lizzey Burris", "Robert Blakey", "Joe Lee Blakey", "Mrs. D. B. Withrow", "D. B. Withrow", "Mrs. Ina Elk"],
+  "places": ["Savoy", "Bonham", "Whitewright", "Sunnyside Cemetery", "Sherman", "Wylie", "Maysville, Okla.", "Garland"],
+  "dates": ["Feb. 26, 1966", "Jan. 3, 1894", "Nov. 12, 1916"],
+  "topics": ["obituary", "funeral", "death"],
+  "notes": "Bottom of article slightly cut off. Sister listed as Mrs. Ina Elk of Savoy."
+}

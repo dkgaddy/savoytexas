@@ -1,0 +1,14 @@
+{
+  "id": "elk-25",
+  "source_id": "elk-25",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 25.jpeg",
+  "title": "William Dault Buried",
+  "date": "",
+  "text": "William Dault Buried\n\nSAVOY.—Graveside service was held Tuesday at 2:30 p.m. in Sunnyside Cemetery, near Savoy, for William F. Dault, 93, who died in his home here Monday at 1:40 p.m. after a two-year illness. He was a native of Tennessee.\n\nW. H. Secoy, minister of the Savoy Church of Christ, officiated. Arrangements were in charge of Earnheart Funeral Home.\n\nSurvivors are one son, Preston Dault of Fort Worth; two daughters, Mrs. Helen Bennett of St. Louis, Mo., and Mrs. Hazel Miller of Savoy; one sister, Mrs. Maggie Hale of Palacios.",
+  "people": ["William F. Dault", "W. H. Secoy", "Preston Dault", "Mrs. Helen Bennett", "Mrs. Hazel Miller", "Mrs. Maggie Hale"],
+  "places": ["Savoy", "Sunnyside Cemetery", "Tennessee", "Fort Worth", "St. Louis, Mo.", "Palacios"],
+  "dates": [],
+  "topics": ["obituary", "death", "funeral", "Church of Christ", "Earnheart Funeral Home"],
+  "notes": ""
+}

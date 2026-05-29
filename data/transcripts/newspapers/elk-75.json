@@ -1,0 +1,14 @@
+{
+  "id": "elk-75",
+  "source_id": "elk-75",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 75.jpeg",
+  "title": "Pvt. Joe Lee Blakey Stationed At Howze",
+  "date": "",
+  "text": "Pvt. Joe Lee Blakey Stationed At Howze\n\nCamp Howze is the army home of Pvt. Joe Lee Blakey, son of Mr. and Mrs. Tom Blakey of Savoy. Young Blakey, who was 20 years old July 28, was inducted Jan. 26 of this year at Camp Wolters and later was assigned to Camp Howze. He was a student at Savoy High School at the time of his induction.\n\nHis brother and sister, Robert and Mabelle Blakey, live at the family home in Savoy.",
+  "people": ["Joe Lee Blakey", "Tom Blakey", "Robert Blakey", "Mabelle Blakey"],
+  "places": ["Savoy", "Camp Howze", "Camp Wolters"],
+  "dates": ["July 28", "Jan. 26"],
+  "topics": ["World War II", "military service", "induction", "portrait"],
+  "notes": "Portrait photograph of Pvt. Joe Lee Blakey in uniform accompanies the article."
+}

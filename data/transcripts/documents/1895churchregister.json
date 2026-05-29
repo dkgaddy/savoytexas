@@ -1,0 +1,52 @@
+{
+  "id": "1895churchregister",
+  "source_id": "1895churchregister",
+  "type": "document",
+  "image": "Images/Documents/1895ChurchRegister.jpg",
+  "title": "Church Register — Savoy, Texas (c. 1895)",
+  "doc_type": "other",
+  "date": "1895",
+  "text": "REGISTER OF\n\nNo. | Names | To whom Married | Baptism | When and How Rec'd / Years / Certificate\n\n[1]  Mrs. E. B. Powers | -- | -- | 25 Dec. [?]\n[2]  Mrs. A. L. Powers | -- | -- | \"\n[3]  Blackburn Power | -- | -- | \"\n[4]  H. J. Heair[?] | -- | -- | \"\n[5]  Mrs. J. Heair[?] | -- | -- | \"\n[6]  J. M. Himbree[?] | -- | 21 Mar. 1895 | 21 March 18[?]\n[7]  H. J. Bray | -- | -- | 21 + March 189[?]\n[8]  Nora Bray | -- | -- | \"\n[9]  S. F. McShadden[?] | -- | 24 March 1895 | \"\n[10] R. P. Roberts | -- | 24 Mar. 1895 | \"\n[11] Mary Buford | -- | 14 March 1895 | \"\n[12] Minnie McSpadden[?] | Mrs. Hodges | -- | \"\n[13] Agnes Wrenn | May[?] | -- | \"\n[14] Minnie Harper | Coop[?][illegible] | -- | \"\n[15] Ada L. Savoy | By Certificate | -- | \"\n[16] J. H. Hollis | -- | 14 Mar. 1895 | \"\n[145] Walter Bales | -- | 10 Mar. 1895 | \"\n[146] Samuel D. Martin[?] | -- | -- | \"\n[147] John Head | By Certificate | 10 Mar. 1895 | \"\n[148] Jas. Gale | -- | 10 Mar. 1895 | \"\n[149] Walter Cole | -- | 10 Mar. 1895 | \"\n[150] Joseph Savoy | -- | 14 Mar. 1895 | \"\n[151] D. J. Jacke[?] | -- | -- | \"\n[152] Mrs. D. J. Jacke[?] | By[?] mm[?] | -- | 21 + Mar. [?]\n[153] J. E. Jacke[?] | -- | -- | \"\n[154] J. A. Mitchell Jr. | -- | -- | 24 Mar. 1895\n[155] Otto J. Hite[?] | -- | 24 Mar. 1895 | \"",
+  "people": [
+    "Mrs. E. B. Powers",
+    "Mrs. A. L. Powers",
+    "Blackburn Power",
+    "H. J. Heair[?]",
+    "Mrs. J. Heair[?]",
+    "J. M. Himbree[?]",
+    "H. J. Bray",
+    "Nora Bray",
+    "S. F. McShadden[?]",
+    "R. P. Roberts",
+    "Mary Buford",
+    "Minnie McSpadden[?]",
+    "Mrs. Hodges",
+    "Agnes Wrenn",
+    "Minnie Harper",
+    "Ada L. Savoy",
+    "J. H. Hollis",
+    "Walter Bales",
+    "Samuel D. Martin[?]",
+    "John Head",
+    "Jas. Gale",
+    "Walter Cole",
+    "Joseph Savoy",
+    "D. J. Jacke[?]",
+    "Mrs. D. J. Jacke[?]",
+    "J. E. Jacke[?]",
+    "J. A. Mitchell Jr.",
+    "Otto J. Hite[?]"
+  ],
+  "places": [
+    "Savoy, Texas"
+  ],
+  "dates": [
+    "25 December",
+    "21 March 1895",
+    "24 March 1895",
+    "14 March 1895",
+    "10 March 1895"
+  ],
+  "topics": ["church register", "membership", "baptism", "certificate", "Savoy church"],
+  "notes": "Page header reads 'REGISTER OF' — likely a church membership or communicants register. Some surnames are difficult to read in cursive. Several entries marked 'By Certificate' in the 'To whom Married' or received column, indicating transfer by certificate from another congregation. Row numbers jump from [16] to [145] suggesting this is a partial page from a larger register. Some last names are uncertain: McShadden, Himbree, Heair, McSpadden, Jacke, Hite are best-effort readings of the handwriting."
+}

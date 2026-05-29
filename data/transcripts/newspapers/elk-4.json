@@ -1,0 +1,14 @@
+{
+  "id": "elk-4",
+  "source_id": "elk-4",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/elk 4.jpeg",
+  "title": "Savoy Housing Unit Occupied — photo caption",
+  "date": "",
+  "text": "SAVOY HOUSING UNIT OCCUPIED—Glenn McKinney, a carpenter currently working in Denison, is pictured moving into the Savoy low-rent housing project. McKinney has three children. He and Carter Price, who also has three children, were the first to move in. Les Cates, with three children, and the Rev. H. K. Davis, the Methodist Church pastor who has two children, moved in Saturday. Only four of the six units at Savoy are being occupied at this time.\n(Staff Photo)",
+  "people": ["Glenn McKinney", "Carter Price", "Les Cates", "Rev. H. K. Davis"],
+  "places": ["Savoy", "Denison"],
+  "dates": [],
+  "topics": ["housing", "low-rent housing project", "Methodist Church"],
+  "notes": "Photograph shows a man carrying furniture into a low brick housing unit; a child's chair is visible outside. Caption is the full text of the clipping."
+}

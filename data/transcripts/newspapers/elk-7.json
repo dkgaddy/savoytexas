@@ -1,0 +1,14 @@
+{
+  "id": "elk-7",
+  "source_id": "elk-7",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/elk 7.jpeg",
+  "title": "C. C. GLASS",
+  "date": "",
+  "text": "C. C. GLASS.\n\nSavoy has an up-to-date confectionery and cold drink stand owned and operated by C. C. Glass. He carries a nice line of fresh confections and drinks and through the summer he has a cream parlor[.]",
+  "people": ["C. C. Glass"],
+  "places": ["Savoy"],
+  "dates": [],
+  "topics": ["business", "advertisement", "confectionery", "cold drinks", "ice cream"],
+  "notes": "Text is cut off at the bottom of the clipping. Business profile/advertisement from early Savoy publication. Last word 'parlor' and any continuation is truncated."
+}

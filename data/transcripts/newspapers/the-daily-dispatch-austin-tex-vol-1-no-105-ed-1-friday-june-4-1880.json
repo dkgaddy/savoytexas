@@ -1,0 +1,15 @@
+{
+  "id": "the-daily-dispatch-austin-tex-vol-1-no-105-ed-1-friday-june-4-1880",
+  "source_id": "the-daily-dispatch-austin-tex-vol-1-no-105-ed-1-friday-june-4-1880",
+  "type": "newspaper",
+  "image": "Images/Newspapers/The Daily Dispatch (Austin, Tex.), Vol. 1, No. 105, Ed. 1, Friday, June 4, 1880.png",
+  "title": "Dallas dispatch on Savoy cyclone — The Daily Dispatch, June 4, 1880",
+  "publication": "The Daily Dispatch",
+  "date": "1880-06-04",
+  "text": "DALLAS\n\nDallas, June 2.—Five hundred dollars was raised here to-day for Savoy sufferers by the cyclone. A committee of the citizens of Savoy will publish to-morrow morning the names of all the numerous favors that have been extended to the sufferers, and after reciting the appalling condition of the town, send out sixty in number, appeal for further aid.",
+  "people": [],
+  "places": ["Dallas", "Savoy"],
+  "dates": ["1880-06-02", "1880-06-04"],
+  "topics": ["1880 cyclone", "disaster relief", "tornado", "fundraising"],
+  "notes": "Brief dateline dispatch from Dallas. Reports $500 raised for Savoy cyclone sufferers, with a committee publishing names of donors and appealing for further aid."
+}

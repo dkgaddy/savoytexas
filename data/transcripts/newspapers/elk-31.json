@@ -1,0 +1,14 @@
+{
+  "id": "elk-31",
+  "source_id": "elk-31",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 31.jpeg",
+  "title": "Mrs. John Moore, 81, Dies at Savoy Home",
+  "date": "",
+  "text": "Mrs. John Moore, 81, Dies at Savoy Home\n\nSAVOY — Funeral services for Mrs. John Moore, 81, who died Thursday morning at her home here, were to be held at 3 p.m. Friday in Savoy Methodist Church. Burial was to be in Rose Hill Cemetery, Bells.\n\nMrs. Moore had been ill six months. She moved to Savoy from Bells 10 years ago.\n\nA native of Lynville, Tenn., Mrs. Moore was Miss Kate Matthews before her marriage in Bells Dec. 31, 1873. She was a member of Savoy Methodist Church.\n\nSurviving are twin sons, C. H. Moore of Savoy and Clarence Moore of Denison; two daughters, Mrs. Grady Stone of Bells and Mrs. T. L. Beckham of Savoy; a sister, Mrs. Ethel Webber of Austin; 10 grandchildren and seven great grandchildren.",
+  "people": ["John Moore", "Mrs. John Moore", "Kate Matthews", "C. H. Moore", "Clarence Moore", "Mrs. Grady Stone", "Grady Stone", "Mrs. T. L. Beckham", "T. L. Beckham", "Mrs. Ethel Webber"],
+  "places": ["Savoy", "Savoy Methodist Church", "Rose Hill Cemetery", "Bells", "Lynville, Tenn.", "Denison", "Austin"],
+  "dates": ["Dec. 31, 1873"],
+  "topics": ["obituary", "funeral", "death"],
+  "notes": ""
+}

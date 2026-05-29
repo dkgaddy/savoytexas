@@ -1,0 +1,14 @@
+{
+  "id": "elk-5",
+  "source_id": "elk-5",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/elk 5.jpeg",
+  "title": "Savoy news briefs — 1908",
+  "date": "1908",
+  "text": "Miss Noda West has returned from a visit to relatives in Lehigh Oklahoma.\n\nDon't forget that the Star office is the place to get Post Cards of all kinds.\n\nBetter try our Big Price Concession sale. It will do you good.\nW. P. Carter.\n\nWalter Jenkins spent Sunday with homefolks, J. J. Jenkins and family.\n\nA son of John Proctor, who lives North of town had the misfortune to get his arm broken while at school one day this week.\n\nWe are sending out a number of sample copies this week. If you receive one and like it, we would be glad to put your name on our book for 1908.",
+  "people": ["Noda West", "W. P. Carter", "Walter Jenkins", "J. J. Jenkins", "John Proctor"],
+  "places": ["Savoy", "Lehigh, Oklahoma"],
+  "dates": ["1908"],
+  "topics": ["community news", "Star office", "post cards", "Price Concession sale", "school accident", "subscription"],
+  "notes": "Collection of short news items and notices. The final notice referencing 'our book for 1908' suggests this is from a 1907 or early 1908 issue of The Elk."
+}

@@ -4,31 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Photo Gallery — Savoy, Texas</title>
+  <!-- Fonts: Rye (display), Oswald (labels/nav), Lora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/site.js" defer></script>
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="nav-logo" href="index.html">
-      <span class="nav-star">★</span>
-      <div class="nav-title">
-        <strong>Savoy</strong>
-        <span>Grayson County, Texas</span>
-      </div>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="history.html">History</a></li>
-      <li><a href="photos.html" class="active">Photos</a></li>
-      <li><a href="timeline.html">Timeline</a></li>
-      <li><a href="newspapers.html">Newspapers</a></li>
-      <li><a href="documents.html">Documents</a></li>
-      <li><a href="maps.html">Maps</a></li>
-    </ul>
+<header class="site-header">
+
+  <!-- TOP DARK BAR: search the site -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <form class="site-search" onsubmit="return runSearch(this.q.value)">
+        <input name="q" type="text" placeholder="Search the site" aria-label="Search the site" />
+        <button type="submit" title="Search"><i class="fa fa-magnifying-glass"></i></button>
+      </form>
+    </div>
   </div>
-</nav>
+
+  <!-- PARCHMENT NAV BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History <span class="nav-caret">▾</span></a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="photos.html" class="active">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents <span class="nav-caret">▾</span></a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- OVERLAPPING BADGE — William Savoy portrait -->
+  <div class="badge-layer">
+    <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
+      <span class="badge-name">Savoy</span>
+      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">Texas</span>
+    </a>
+  </div>
+
+</header>
 
 <div class="page-banner">
   <h1>Photo Gallery</h1>

@@ -1,0 +1,14 @@
+{
+  "id": "elk-12",
+  "source_id": "elk-12",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/elk 12.jpeg",
+  "title": "J.W. BELL & Co.",
+  "date": "",
+  "text": "J.W. BELL & Co.\n\n[N]ext comes this popular firm [that] has been doing business about [several] years. The manager, J. W. [Bell] had many friends and ac[quain]tances before he went into [busi]ness. Having been constable [many] years, his knowledge of the [peop]le in this vicinity is very ex[tensi]ve and has been a great help [in m]aking the business successful. [The] firm also affords a market for [prod]uce, which influences the good [hou]sewives to make this store a [bure]au of exchange and this adds [mate]rially to the funds in the till.",
+  "people": ["J. W. Bell"],
+  "places": ["Savoy"],
+  "dates": [],
+  "topics": ["business", "advertisement", "general store", "constable"],
+  "notes": "Left edge of clipping cut off; words reconstructed in brackets based on context. Business profile/advertisement from early Savoy publication."
+}

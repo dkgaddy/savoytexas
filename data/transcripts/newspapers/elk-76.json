@@ -1,0 +1,14 @@
+{
+  "id": "elk-76",
+  "source_id": "elk-76",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 76.jpeg",
+  "title": "Savoy Farmer Dies at 82",
+  "date": "",
+  "text": "Savoy Farmer Dies at 82\n\nS. S. BAKER.\n\nSAVOY, Texas.—Sam S. Baker, 82, died suddenly of a heart attack at his home here Saturday evening. He had been in ill health about three years, but was feeling better than usual the past few days. Funeral services were held Monday afternoon at the Methodist church, conducted by the Rev. W. H. Vail of Van Alstyne and the Rev. Roy Bagley, local pastor.\n\nInterment was in Sunnyside, directed by Earnheart-Strickland. Pallbearers were nephews of the by, Otis Baker, Bob Baker and Ray Lewis.\n\nBorn in Marshfield, Mo., March 1, 1861, he was a son of John and Mary Baker. He was married to Miss Jessie Brake on Nov. 9, 1887, and the couple came to Texas in a covered wagon in 1888, settling at Weston. They moved to Savoy in 1904 and have resided here since that time. He was engaged in farming until his retirement about three years ago, at which time he purchased a house in Savoy and moved into it.\n\nSurvivors are his wife; a son, Elmer Baker of El Segundo, Calif.; two daughters, Mrs. Ed Reed of Savoy and Mrs. Alta Bell of Ector; seven grandchildren and three great grandchildren; a brother, A. M. Baker of Marshfield, and a sister, Mrs. Martha Hargess of Waurika, Okla.\n\nOut-of-town relatives attending the funeral were Mrs. E. T. Williams and Miss Alice Brake of Springfield, Mo., Mrs. Hargess of Waurika and Sgt. and Mrs. G. L. Reed of Camp Hearne.",
+  "people": ["Sam S. Baker", "S. S. Baker", "W. H. Vail", "Roy Bagley", "Otis Baker", "Bob Baker", "Ray Lewis", "John Baker", "Mary Baker", "Jessie Brake", "Elmer Baker", "Mrs. Ed Reed", "Ed Reed", "Mrs. Alta Bell", "A. M. Baker", "Mrs. Martha Hargess", "Mrs. E. T. Williams", "E. T. Williams", "Alice Brake", "Mrs. Hargess", "G. L. Reed", "Mrs. G. L. Reed"],
+  "places": ["Savoy", "Texas", "Sunnyside", "Marshfield, Mo.", "Weston", "El Segundo, Calif.", "Ector", "Waurika, Okla.", "Springfield, Mo.", "Camp Hearne", "Van Alstyne"],
+  "dates": ["March 1, 1861", "Nov. 9, 1887", "1888", "1904"],
+  "topics": ["obituary", "funeral", "death", "farmer"],
+  "notes": "Photo of S. S. Baker. Pallbearers listed as nephews; text reads 'nephews of the by' — likely 'nephews of the [dece]by[?]' or 'nephews of the body' — probable typo/scan artifact for 'deceased.'"
+}

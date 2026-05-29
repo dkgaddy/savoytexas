@@ -4,31 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>History — Savoy, Texas</title>
+  <!-- Fonts: Rye (display), Oswald (labels/nav), Lora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/site.js" defer></script>
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="nav-logo" href="index.html">
-      <span class="nav-star">★</span>
-      <div class="nav-title">
-        <strong>Savoy</strong>
-        <span>Grayson County, Texas</span>
-      </div>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="history.html" class="active">History</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="timeline.html">Timeline</a></li>
-      <li><a href="newspapers.html">Newspapers</a></li>
-      <li><a href="documents.html">Documents</a></li>
-      <li><a href="maps.html">Maps</a></li>
-    </ul>
+<header class="site-header">
+
+  <!-- TOP DARK BAR: search the site -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <form class="site-search" onsubmit="return runSearch(this.q.value)">
+        <input name="q" type="text" placeholder="Search the site" aria-label="Search the site" />
+        <button type="submit" title="Search"><i class="fa fa-magnifying-glass"></i></button>
+      </form>
+    </div>
   </div>
-</nav>
+
+  <!-- PARCHMENT NAV BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html" class="active">History <span class="nav-caret">▾</span></a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="photos.html">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents <span class="nav-caret">▾</span></a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- OVERLAPPING BADGE — William Savoy portrait -->
+  <div class="badge-layer">
+    <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
+      <span class="badge-name">Savoy</span>
+      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">Texas</span>
+    </a>
+  </div>
+
+</header>
 
 <div class="page-banner">
   <h1>The History of Savoy, Texas</h1>
@@ -85,15 +110,18 @@
           Texas's genuine centers of learning."
         </blockquote>
         <p>
-          The college closed around 1890. A notice in the <em>McKinney Democrat</em> of May 29, 1890 covered
-          events related to its closure. But the institution's memory proved durable. Alumni continued to
-          hold reunion gatherings for decades — in 1951, 1952, and beyond — and in 1938, when Savoy built
-          a new gymnasium for its public school, it was named the <em>Halsell Gymnasium</em>, a lasting
-          memorial to the college's founder.
+          The college came to an end when its building burned on July 3, 1890; attempts to revive it failed.
+          But the institution's memory proved durable. Alumni continued to
+          hold reunion gatherings for decades — the organized reunion began in 1937 with J. B. May and Prof.
+          Ed A. McMahon as its "ringleaders" and continued through 1951, 1952, and beyond — and Savoy built
+          a new gymnasium for its public school named the <em>Halsell Memorial Gymnasium</em>, a lasting
+          memorial to the college's founder, R. R. Halsell.
         </p>
         <p>
-          A comprehensive historical PDF document covering the college's full history — 1876 to 1890 — is
-          available in the <a href="documents.html#pdf">Documents section</a>.
+          A comprehensive history of the college — <em>History of Savoy Male and Female College, 1876–1890</em>,
+          written by Mattie Lee Boyd (a 1939 University of Texas master's thesis) — is
+          available in the <a href="documents.html#pdf">Documents section</a>, and its full text is now
+          <a href="search.html?q=college">searchable in the archive</a>.
         </p>
 
         <div style="margin:1.5rem 0; border:1px solid var(--border); overflow:hidden; max-width:380px;">
@@ -103,12 +131,24 @@
 
         <h2 id="cyclone">The Great Cyclone of 1880</h2>
         <p>
-          On or around June 1880, a powerful tornado struck Savoy, leaving the town in ruins. The disaster
-          was covered by newspapers across the state: the <em>Brenham Weekly Banner</em> ran two articles
-          in June 1880, the <em>Austin Daily Dispatch</em> published its own account on June 4, and regional
-          papers carried the story for weeks. A map documenting the cyclone's path was preserved, and
-          photographs of the aftermath survive — haunting images of destruction that speak to the violence
-          of frontier weather.
+          At about <strong>10:10 p.m. on Friday, May 28, 1880</strong> — the date preserved in a local rhyme,
+          "<em>'Twas in the year of 1880 on the 28th of May, that a tornado hit Savoy and blowed it all away</em>"
+          — a tornado roughly 178 yards wide tore centrally through Savoy. According to the <em>Bonham News</em>,
+          it demolished about forty houses and every business but one, killed nine people, and wounded fifty to
+          sixty more. (The town's Methodist church register, whose records were destroyed that night, dates the
+          storm to May 29.) The disaster
+          was covered by newspapers across the state and nation: the <em>Brenham Weekly Banner</em> ran articles on
+          June 4 and June 17, 1880, the <em>Austin Daily Dispatch</em> published its own account on June 4, and
+          a Kansas paper, the <em>Holton Recorder-Tribune</em>, still carried the story in 1888.
+        </p>
+        <p>
+          The seminary (the Academy) was turned into a hospital; it and the Methodist church were nearly the only
+          buildings left standing. Word reached Bonham, eleven miles east, only when a train pulled in at 1 a.m.,
+          and by morning relief engines were carrying physicians and nurses from Bonham, Dodd City, Bells, Sherman,
+          and Denison. Survivor stories endured: the blacksmith, Mr. Brooks, acted on a premonition and moved his
+          family out just before their house was destroyed; little Rilla Kerns, thrown forty or fifty yards clear
+          of any wreckage, was not found until daylight and died the next day. A heavy rain immediately after the
+          storm doused a fire that had broken out in McKnight's Drugstore, sparing the wounded trapped in the ruins.
         </p>
         <p>
           A list of tornado victims was also compiled, a somber document now held in the archive. The

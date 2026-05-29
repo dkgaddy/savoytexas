@@ -1,0 +1,24 @@
+{
+  "id": "savoytornadolist",
+  "source_id": "savoytornadolist",
+  "type": "document",
+  "image": "Images/Documents/savoytornadoList.jpg",
+  "title": "1880 Federal Census Mortality Schedule — Persons who Died, Savoy, Fannin County, Texas, year ending May 31, 1880",
+  "doc_type": "list",
+  "date": "1880",
+  "text": "Page 2 [or 26?]\n\nPersons who DIED during the Year ending May 31, 1880, enumerated by me in Savoy[?],\nFannin County, State of Texas.\n[Enumerator:] F. M. Murray\n\n[Column headers: No. / Name / Age / Sex / Color / Free or Slave / Married or Widowed / Place of Birth / Father's Birthplace / Mother's Birthplace / Profession/Occupation / Month Died / Cause of Death / Days ill / Whether attended by physician]\n\n[Row entries — Name | Age | Sex | Color | Marital | Birthplace | Father BP | Mother BP | Occupation | Month Died | Cause of Death | Days ill]\n\n[1]  [illegible] | -- | -- | -- | -- | -- | -- | -- | [illegible] | [?] | [illegible July?] | --\n[2]  [illegible] | -- | -- | -- | -- | -- | -- | -- | Manufacture[r?] | [?] | [?] Will[?] | --\n[3]  [illegible] | -- | Ala | Ala | Ala | -- | -- | Traveler [?] | July | -- | 7\n[4]  [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | Northmore[?] | [?] | 10 [?] | -- | 10\n[5]  Robert[?] | -- | -- | -- | -- | -- | -- | -- | Farmer | [?] | [?] | 10 | -- | 13\n[6]  [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --\n[7]  Thos[?] M[?] | -- | -- | -- | -- | -- | -- | -- | Farmer | [?] | [?] | 10 | -- | 18\n[8]  [illegible] | -- | La[?] b[?] | -- | -- | Carpenter[?] | [?] | [?] July [?] | --\n[9]  [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | -- | --\n[10] [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | -- | --\n[11] [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | -- | --\n[12] [illegible] | -- | La | La | -- | -- | -- | -- | -- | Jan. | -- | --\n[13] [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | -- | --\n[14] Albert [?] | 17[?] | M | -- | -- | Wg[?] | -- | -- | -- | Oct | Consumption | 16\n[15] [illegible] B | 5[?] | -- | -- | -- | La | -- | -- | -- | [?] | -- | 16\n[16] [illegible] | 6[?] | M | -- | -- | Lockjaw[?] Elizab[?][illegible] | [?] | -- | 16\n[17] [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | Sept. | Lung Dis[ease?] | -- | 21\n[18] [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 21\n[19] [illegible] | -- | -- | La | -- | -- | -- | -- | -- | -- | -- | 21\n[20] [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 21\n[21] [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | Oct | [illegible] | 21\n[22] [illegible] | -- | -- | -- | -- | -- | -- | -- | -- | Oct | A[?] Infant[?] | 21\n\n[REMARKS section at bottom, partially legible:]\nSo will be to know by reference to the [?] schedule that [?]\n[illegible several lines]\n[illegible]\nF. M. Murray",
+  "people": [
+    "Albert [?]",
+    "F. M. Murray"
+  ],
+  "places": [
+    "Savoy, Fannin County, Texas",
+    "Louisiana",
+    "Alabama"
+  ],
+  "dates": [
+    "Year ending May 31, 1880"
+  ],
+  "topics": ["mortality schedule", "1880 census", "deaths", "tornado victims", "Savoy Texas", "Fannin County", "cyclone 1880"],
+  "notes": "This is the 1880 Federal Census Mortality Schedule (Schedule 2) for Savoy/Fannin County, listing persons who died in the year ending May 31, 1880. This would include victims of the great cyclone of May 29, 1880. The document is heavily degraded with many names and values illegible. Enumerator is F. M. Murray (same as the regular census). Causes of death where visible include Consumption and what may be Lockjaw. Many rows are almost entirely illegible. The Remarks section at the bottom is signed by F. M. Murray but the text is largely illegible. This is a critical document for identifying tornado victims."
+}

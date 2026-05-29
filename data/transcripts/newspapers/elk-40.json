@@ -1,0 +1,14 @@
+{
+  "id": "elk-40",
+  "source_id": "elk-40",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 40.jpeg",
+  "title": "Lt. Samuel A. Miller and William E. Miller — servicemen photo",
+  "date": "",
+  "text": "LT. SAMUEL A. MILLER (left) has landed somewhere in France, according to word received by his mother, Mrs. Fay Miller of Savoy. On a pilot observation plane in the AAF, he entered service in 1939, received his commission in 1943, and received his wings at Pittsburgh. His wife and two children reside in Lawton, Okla. A brother, William E. Miller (right) seaso[?] first class, is on a LST and, with his crew, has been cited for bravery. He helped land the first troops on Gua[?] and at Antane in New Guinea. In service since 1941, he wears thr[?]",
+  "people": ["Lt. Samuel A. Miller", "Mrs. Fay Miller", "William E. Miller"],
+  "places": ["France", "Savoy", "Pittsburgh", "Lawton, Okla.", "New Guinea"],
+  "dates": ["1939", "1943", "1941"],
+  "topics": ["World War II", "military service", "AAF", "LST", "pilot", "servicemen"],
+  "notes": "Photo of two servicemen side by side. Caption text partially cut off at right margin on last several lines. Lt. Samuel A. Miller in Army uniform (left); William E. Miller in Navy uniform (right)."
+}

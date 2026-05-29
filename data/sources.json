@@ -1,0 +1,1201 @@
+{
+  "generated": "auto",
+  "count": 149,
+  "sources": [
+    {
+      "id": "ntxe_savoy_tornado_1880",
+      "title": "Savoy Tornado of 1880",
+      "author": "Allen Rich",
+      "type": "article",
+      "path": "https://ntxe-news.com/artman/publish/article_145577.shtml",
+      "publication": "North Texas e-News",
+      "date": "2026-05-29",
+      "transcript": "data/transcripts/articles/ntxe_savoy_tornado_1880.json"
+    },
+    {
+      "id": "college_history",
+      "title": "History of Savoy Male and Female College 1876-1890",
+      "author": "Mattie Lee Boyd",
+      "type": "book",
+      "path": "PDFs/Savoy_Male_and_Female_College_1876_1890.pdf",
+      "pages": 285,
+      "transcript_dir": "data/transcripts/college"
+    },
+    {
+      "id": "before_i_remember",
+      "title": "Before I Remember",
+      "type": "doc_pdf",
+      "path": "Images/Documents/BeforeIRemember.pdf",
+      "pages": 9,
+      "transcript_dir": "data/transcripts/documents"
+    },
+    {
+      "id": "reunion_news_1967",
+      "title": "1967 Savoy College Reunion News",
+      "type": "doc_pdf",
+      "path": "Images/Documents/1967SavoyCollegeReunionNews.pdf",
+      "pages": 9,
+      "transcript_dir": "data/transcripts/documents"
+    },
+    {
+      "id": "news_1930-news-cyclonepoem",
+      "title": "1930-News-CyclonePoem",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1930-News-CyclonePoem.jpeg",
+      "year": "1930",
+      "transcript": "data/transcripts/newspapers/1930-news-cyclonepoem.json"
+    },
+    {
+      "id": "news_1932-news-mcspadden",
+      "title": "1932-News-McSpadden",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1932-News-McSpadden.jpeg",
+      "year": "1932",
+      "transcript": "data/transcripts/newspapers/1932-news-mcspadden.json"
+    },
+    {
+      "id": "news_1932-news-halsell",
+      "title": "1932-News-halsell",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1932-News-halsell.jpg",
+      "year": "1932",
+      "transcript": "data/transcripts/newspapers/1932-news-halsell.json"
+    },
+    {
+      "id": "news_1946-news-marshallsavoy",
+      "title": "1946-News-MarshallSavoy",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1946-News-MarshallSavoy.jpeg",
+      "year": "1946",
+      "transcript": "data/transcripts/newspapers/1946-news-marshallsavoy.json"
+    },
+    {
+      "id": "news_1951-news-collegereunion",
+      "title": "1951-News-CollegeReunion",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1951-News-CollegeReunion.jpeg",
+      "year": "1951",
+      "transcript": "data/transcripts/newspapers/1951-news-collegereunion.json"
+    },
+    {
+      "id": "news_1952-news-cagers-1",
+      "title": "1952-News-Cagers 1",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1952-News-Cagers 1.jpeg",
+      "year": "1952",
+      "transcript": "data/transcripts/newspapers/1952-news-cagers-1.json"
+    },
+    {
+      "id": "news_1952-news-cagers-2",
+      "title": "1952-News-Cagers 2",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1952-News-Cagers 2.jpeg",
+      "year": "1952",
+      "transcript": "data/transcripts/newspapers/1952-news-cagers-2.json"
+    },
+    {
+      "id": "news_1952-news-collegereunion",
+      "title": "1952-News-CollegeReunion",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1952-News-CollegeReunion.jpeg",
+      "year": "1952",
+      "transcript": "data/transcripts/newspapers/1952-news-collegereunion.json"
+    },
+    {
+      "id": "news_1954fire1-0",
+      "title": "1954fire1-0",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire1-0.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire1-0.json"
+    },
+    {
+      "id": "news_1954fire2",
+      "title": "1954fire2",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire2.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire2.json"
+    },
+    {
+      "id": "news_1954fire3",
+      "title": "1954fire3",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire3.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire3.json"
+    },
+    {
+      "id": "news_1954fire4-1",
+      "title": "1954fire4-1",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire4-1.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire4-1.json"
+    },
+    {
+      "id": "news_1954fire4",
+      "title": "1954fire4",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire4.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire4.json"
+    },
+    {
+      "id": "news_1954fire5",
+      "title": "1954fire5",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire5.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire5.json"
+    },
+    {
+      "id": "news_1954fire6",
+      "title": "1954fire6",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire6.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire6.json"
+    },
+    {
+      "id": "news_1954fire7",
+      "title": "1954fire7",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire7.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire7.json"
+    },
+    {
+      "id": "news_1954fire8",
+      "title": "1954fire8",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire8.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire8.json"
+    },
+    {
+      "id": "news_1954fire9",
+      "title": "1954fire9",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1954fire9.jpg",
+      "year": "1954",
+      "transcript": "data/transcripts/newspapers/1954fire9.json"
+    },
+    {
+      "id": "news_1964-news-goldrush",
+      "title": "1964-News-GoldRush",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1964-News-GoldRush.jpeg",
+      "year": "1964",
+      "transcript": "data/transcripts/newspapers/1964-news-goldrush.json"
+    },
+    {
+      "id": "news_1966-news-school",
+      "title": "1966-News-School",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1966-News-School.jpg",
+      "year": "1966",
+      "transcript": "data/transcripts/newspapers/1966-news-school.json"
+    },
+    {
+      "id": "news_1967-news-watertower",
+      "title": "1967-News-WaterTower",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1967-News-WaterTower.jpeg",
+      "year": "1967",
+      "transcript": "data/transcripts/newspapers/1967-news-watertower.json"
+    },
+    {
+      "id": "news_1976-news-antiques",
+      "title": "1976-News-Antiques",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1976-News-Antiques.jpeg",
+      "year": "1976",
+      "transcript": "data/transcripts/newspapers/1976-news-antiques.json"
+    },
+    {
+      "id": "news_1978-news-basketball",
+      "title": "1978-News-Basketball",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1978-News-Basketball.jpeg",
+      "year": "1978",
+      "transcript": "data/transcripts/newspapers/1978-news-basketball.json"
+    },
+    {
+      "id": "news_1978-news-medicalclinic",
+      "title": "1978-News-MedicalClinic",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1978-News-MedicalClinic.jpeg",
+      "year": "1978",
+      "transcript": "data/transcripts/newspapers/1978-news-medicalclinic.json"
+    },
+    {
+      "id": "news_1979-news-buswreck-1",
+      "title": "1979-News-BusWreck 1",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1979-News-BusWreck 1.jpeg",
+      "year": "1979",
+      "transcript": "data/transcripts/newspapers/1979-news-buswreck-1.json"
+    },
+    {
+      "id": "news_1979-news-buswreck",
+      "title": "1979-News-BusWreck",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1979-News-BusWreck.jpeg",
+      "year": "1979",
+      "transcript": "data/transcripts/newspapers/1979-news-buswreck.json"
+    },
+    {
+      "id": "news_1987-news-watersystem",
+      "title": "1987-News-WaterSystem",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1987-News-WaterSystem.jpeg",
+      "year": "1987",
+      "transcript": "data/transcripts/newspapers/1987-news-watersystem.json"
+    },
+    {
+      "id": "news_1988-news-supersack",
+      "title": "1988-News-SuperSack",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1988-News-SuperSack.jpeg",
+      "year": "1988",
+      "transcript": "data/transcripts/newspapers/1988-news-supersack.json"
+    },
+    {
+      "id": "news_1993-news-cyclone",
+      "title": "1993-News-Cyclone",
+      "type": "newspaper",
+      "path": "Images/Newspapers/1993-News-Cyclone.jpeg",
+      "year": "1993",
+      "transcript": "data/transcripts/newspapers/1993-news-cyclone.json"
+    },
+    {
+      "id": "news_2002-news-haroldballard",
+      "title": "2002-News-HaroldBallard",
+      "type": "newspaper",
+      "path": "Images/Newspapers/2002-News-HaroldBallard.jpeg",
+      "year": "2002",
+      "transcript": "data/transcripts/newspapers/2002-news-haroldballard.json"
+    },
+    {
+      "id": "news_2005-news-firetruckwreck",
+      "title": "2005-News-FireTruckWreck",
+      "type": "newspaper",
+      "path": "Images/Newspapers/2005-News-FireTruckWreck.jpeg",
+      "year": "2005",
+      "transcript": "data/transcripts/newspapers/2005-news-firetruckwreck.json"
+    },
+    {
+      "id": "news_2005-news-sanctuarybell-1",
+      "title": "2005-News-SanctuaryBell 1",
+      "type": "newspaper",
+      "path": "Images/Newspapers/2005-News-SanctuaryBell 1.jpeg",
+      "year": "2005",
+      "transcript": "data/transcripts/newspapers/2005-news-sanctuarybell-1.json"
+    },
+    {
+      "id": "news_2005-news-sanctuarybell",
+      "title": "2005-News-SanctuaryBell",
+      "type": "newspaper",
+      "path": "Images/Newspapers/2005-News-SanctuaryBell.jpeg",
+      "year": "2005",
+      "transcript": "data/transcripts/newspapers/2005-news-sanctuarybell.json"
+    },
+    {
+      "id": "news_2007-news-eulaphillips",
+      "title": "2007-News-EulaPhillips",
+      "type": "newspaper",
+      "path": "Images/Newspapers/2007-News-EulaPhillips.jpeg",
+      "year": "2007",
+      "transcript": "data/transcripts/newspapers/2007-news-eulaphillips.json"
+    },
+    {
+      "id": "news_after78years1",
+      "title": "After78years1",
+      "type": "newspaper",
+      "path": "Images/Newspapers/After78years1.jpg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/after78years1.json"
+    },
+    {
+      "id": "news_after78years2",
+      "title": "After78years2",
+      "type": "newspaper",
+      "path": "Images/Newspapers/After78years2.jpg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/after78years2.json"
+    },
+    {
+      "id": "news_brenham-weekly-banner-brenham-tex-vol-15-no-23-ed-1-friday-june-4-1880-1",
+      "title": "Brenham Weekly Banner. (Brenham, Tex.), Vol. 15, No. 23, Ed. 1, Friday, June 4, 1880_1",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Brenham Weekly Banner. (Brenham, Tex.), Vol. 15, No. 23, Ed. 1, Friday, June 4, 1880_1.png",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/brenham-weekly-banner-brenham-tex-vol-15-no-23-ed-1-friday-june-4-1880-1.json"
+    },
+    {
+      "id": "news_brenham-weekly-banner-brenham-tex-vol-15-no-23-ed-1-friday-june-4-1880-2",
+      "title": "Brenham Weekly Banner. (Brenham, Tex.), Vol. 15, No. 23, Ed. 1, Friday, June 4, 1880_2",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Brenham Weekly Banner. (Brenham, Tex.), Vol. 15, No. 23, Ed. 1, Friday, June 4, 1880_2.png",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/brenham-weekly-banner-brenham-tex-vol-15-no-23-ed-1-friday-june-4-1880-2.json"
+    },
+    {
+      "id": "news_brenham-weekly-banner-brenham-tex-vol-15-no-25-ed-1-thursday-june-17-1880",
+      "title": "Brenham Weekly Banner. (Brenham, Tex.), Vol. 15, No. 25, Ed. 1, Thursday, June 17, 1880",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Brenham Weekly Banner. (Brenham, Tex.), Vol. 15, No. 25, Ed. 1, Thursday, June 17, 1880.png",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/brenham-weekly-banner-brenham-tex-vol-15-no-25-ed-1-thursday-june-17-1880.json"
+    },
+    {
+      "id": "news_elk-19",
+      "title": "Elk 19",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 19.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-19.json"
+    },
+    {
+      "id": "news_elk-20",
+      "title": "Elk 20",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 20.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-20.json"
+    },
+    {
+      "id": "news_elk-21",
+      "title": "Elk 21",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 21.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-21.json"
+    },
+    {
+      "id": "news_elk-22",
+      "title": "Elk 22",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 22.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-22.json"
+    },
+    {
+      "id": "news_elk-23",
+      "title": "Elk 23",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 23.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-23.json"
+    },
+    {
+      "id": "news_elk-24",
+      "title": "Elk 24",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 24.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-24.json"
+    },
+    {
+      "id": "news_elk-25",
+      "title": "Elk 25",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 25.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-25.json"
+    },
+    {
+      "id": "news_elk-26",
+      "title": "Elk 26",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 26.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-26.json"
+    },
+    {
+      "id": "news_elk-27",
+      "title": "Elk 27",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 27.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-27.json"
+    },
+    {
+      "id": "news_elk-28",
+      "title": "Elk 28",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 28.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-28.json"
+    },
+    {
+      "id": "news_elk-29",
+      "title": "Elk 29",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 29.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-29.json"
+    },
+    {
+      "id": "news_elk-30",
+      "title": "Elk 30",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 30.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-30.json"
+    },
+    {
+      "id": "news_elk-31",
+      "title": "Elk 31",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 31.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-31.json"
+    },
+    {
+      "id": "news_elk-32",
+      "title": "Elk 32",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 32.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-32.json"
+    },
+    {
+      "id": "news_elk-33",
+      "title": "Elk 33",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 33.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-33.json"
+    },
+    {
+      "id": "news_elk-34",
+      "title": "Elk 34",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 34.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-34.json"
+    },
+    {
+      "id": "news_elk-35",
+      "title": "Elk 35",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 35.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-35.json"
+    },
+    {
+      "id": "news_elk-36",
+      "title": "Elk 36",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 36.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-36.json"
+    },
+    {
+      "id": "news_elk-37",
+      "title": "Elk 37",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 37.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-37.json"
+    },
+    {
+      "id": "news_elk-38",
+      "title": "Elk 38",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 38.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-38.json"
+    },
+    {
+      "id": "news_elk-39",
+      "title": "Elk 39",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 39.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-39.json"
+    },
+    {
+      "id": "news_elk-40",
+      "title": "Elk 40",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 40.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-40.json"
+    },
+    {
+      "id": "news_elk-41",
+      "title": "Elk 41",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 41.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-41.json"
+    },
+    {
+      "id": "news_elk-43",
+      "title": "Elk 43",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 43.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-43.json"
+    },
+    {
+      "id": "news_elk-44",
+      "title": "Elk 44",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 44.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-44.json"
+    },
+    {
+      "id": "news_elk-45",
+      "title": "Elk 45",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 45.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-45.json"
+    },
+    {
+      "id": "news_elk-46",
+      "title": "Elk 46",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 46.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-46.json"
+    },
+    {
+      "id": "news_elk-47",
+      "title": "Elk 47",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 47.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-47.json"
+    },
+    {
+      "id": "news_elk-48",
+      "title": "Elk 48",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 48.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-48.json"
+    },
+    {
+      "id": "news_elk-49",
+      "title": "Elk 49",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 49.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-49.json"
+    },
+    {
+      "id": "news_elk-50",
+      "title": "Elk 50",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 50.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-50.json"
+    },
+    {
+      "id": "news_elk-51",
+      "title": "Elk 51",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 51.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-51.json"
+    },
+    {
+      "id": "news_elk-52",
+      "title": "Elk 52",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 52.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-52.json"
+    },
+    {
+      "id": "news_elk-53",
+      "title": "Elk 53",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 53.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-53.json"
+    },
+    {
+      "id": "news_elk-54",
+      "title": "Elk 54",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 54.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-54.json"
+    },
+    {
+      "id": "news_elk-55",
+      "title": "Elk 55",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 55.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-55.json"
+    },
+    {
+      "id": "news_elk-56",
+      "title": "Elk 56",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 56.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-56.json"
+    },
+    {
+      "id": "news_elk-57",
+      "title": "Elk 57",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 57.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-57.json"
+    },
+    {
+      "id": "news_elk-58",
+      "title": "Elk 58",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 58.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-58.json"
+    },
+    {
+      "id": "news_elk-59",
+      "title": "Elk 59",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 59.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-59.json"
+    },
+    {
+      "id": "news_elk-60",
+      "title": "Elk 60",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 60.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-60.json"
+    },
+    {
+      "id": "news_elk-61",
+      "title": "Elk 61",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 61.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-61.json"
+    },
+    {
+      "id": "news_elk-62",
+      "title": "Elk 62",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 62.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-62.json"
+    },
+    {
+      "id": "news_elk-63",
+      "title": "Elk 63",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 63.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-63.json"
+    },
+    {
+      "id": "news_elk-64",
+      "title": "Elk 64",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 64.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-64.json"
+    },
+    {
+      "id": "news_elk-65",
+      "title": "Elk 65",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 65.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-65.json"
+    },
+    {
+      "id": "news_elk-66",
+      "title": "Elk 66",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 66.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-66.json"
+    },
+    {
+      "id": "news_elk-67",
+      "title": "Elk 67",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 67.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-67.json"
+    },
+    {
+      "id": "news_elk-68",
+      "title": "Elk 68",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 68.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-68.json"
+    },
+    {
+      "id": "news_elk-69",
+      "title": "Elk 69",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 69.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-69.json"
+    },
+    {
+      "id": "news_elk-70",
+      "title": "Elk 70",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 70.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-70.json"
+    },
+    {
+      "id": "news_elk-71",
+      "title": "Elk 71",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 71.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-71.json"
+    },
+    {
+      "id": "news_elk-72",
+      "title": "Elk 72",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 72.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-72.json"
+    },
+    {
+      "id": "news_elk-73",
+      "title": "Elk 73",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 73.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-73.json"
+    },
+    {
+      "id": "news_elk-74",
+      "title": "Elk 74",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 74.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-74.json"
+    },
+    {
+      "id": "news_elk-75",
+      "title": "Elk 75",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 75.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-75.json"
+    },
+    {
+      "id": "news_elk-76",
+      "title": "Elk 76",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 76.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-76.json"
+    },
+    {
+      "id": "news_elk-77",
+      "title": "Elk 77",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 77.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-77.json"
+    },
+    {
+      "id": "news_elk-79",
+      "title": "Elk 79",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 79.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-79.json"
+    },
+    {
+      "id": "news_elk-80",
+      "title": "Elk 80",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 80.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-80.json"
+    },
+    {
+      "id": "news_elk-81",
+      "title": "Elk 81",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 81.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-81.json"
+    },
+    {
+      "id": "news_elk-82",
+      "title": "Elk 82",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 82.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-82.json"
+    },
+    {
+      "id": "news_elk-84",
+      "title": "Elk 84",
+      "type": "newspaper",
+      "path": "Images/Newspapers/Elk 84.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-84.json"
+    },
+    {
+      "id": "news_fannincountyfolkandfact-page43-1977-cyclone",
+      "title": "FanninCountyFolkAndFact_Page43_1977(cyclone)",
+      "type": "newspaper",
+      "path": "Images/Newspapers/FanninCountyFolkAndFact_Page43_1977(cyclone).jpg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/fannincountyfolkandfact-page43-1977-cyclone.json"
+    },
+    {
+      "id": "news_fannincountyfolkandfact-page60-1977-college",
+      "title": "FanninCountyFolkAndFact_Page60_1977(college)",
+      "type": "newspaper",
+      "path": "Images/Newspapers/FanninCountyFolkAndFact_Page60_1977(college).jpg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/fannincountyfolkandfact-page60-1977-college.json"
+    },
+    {
+      "id": "news_fannincountyfolkandfact-page61-1977-college",
+      "title": "FanninCountyFolkAndFact_Page61_1977(college)",
+      "type": "newspaper",
+      "path": "Images/Newspapers/FanninCountyFolkAndFact_Page61_1977(college).jpg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/fannincountyfolkandfact-page61-1977-college.json"
+    },
+    {
+      "id": "news_fannincountyfolkandfact-page63-1977-college",
+      "title": "FanninCountyFolkAndFact_Page63_1977(college)",
+      "type": "newspaper",
+      "path": "Images/Newspapers/FanninCountyFolkAndFact_Page63_1977(college).jpg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/fannincountyfolkandfact-page63-1977-college.json"
+    },
+    {
+      "id": "news_jameswblakey-marriagecertificate",
+      "title": "JamesWBlakey-MarriageCertificate",
+      "type": "newspaper",
+      "path": "Images/Newspapers/JamesWBlakey-MarriageCertificate.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/jameswblakey-marriagecertificate.json"
+    },
+    {
+      "id": "news_jimelk-1",
+      "title": "JimElk 1",
+      "type": "newspaper",
+      "path": "Images/Newspapers/JimElk 1.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/jimelk-1.json"
+    },
+    {
+      "id": "news_jimelk",
+      "title": "JimElk",
+      "type": "newspaper",
+      "path": "Images/Newspapers/JimElk.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/jimelk.json"
+    },
+    {
+      "id": "news_parisnews-june18-1944-page3",
+      "title": "ParisNews_June18_1944_Page3",
+      "type": "newspaper",
+      "path": "Images/Newspapers/ParisNews_June18_1944_Page3.png",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/parisnews-june18-1944-page3.json"
+    },
+    {
+      "id": "news_the-daily-dispatch-austin-tex-vol-1-no-105-ed-1-friday-june-4-1880",
+      "title": "The Daily Dispatch (Austin, Tex.), Vol. 1, No. 105, Ed. 1, Friday, June 4, 1880",
+      "type": "newspaper",
+      "path": "Images/Newspapers/The Daily Dispatch (Austin, Tex.), Vol. 1, No. 105, Ed. 1, Friday, June 4, 1880.png",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/the-daily-dispatch-austin-tex-vol-1-no-105-ed-1-friday-june-4-1880.json"
+    },
+    {
+      "id": "news_the-democrat-mckinney-tex-vol-7-no-17-ed-1-thursday-may-29-1890",
+      "title": "The Democrat. (McKinney, Tex.), Vol. 7, No. 17, Ed. 1 Thursday, May 29, 1890",
+      "type": "newspaper",
+      "path": "Images/Newspapers/The Democrat. (McKinney, Tex.), Vol. 7, No. 17, Ed. 1 Thursday, May 29, 1890.png",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/the-democrat-mckinney-tex-vol-7-no-17-ed-1-thursday-may-29-1890.json"
+    },
+    {
+      "id": "news_cyclone1",
+      "title": "cyclone1",
+      "type": "newspaper",
+      "path": "Images/Newspapers/cyclone1.jpg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/cyclone1.json"
+    },
+    {
+      "id": "news_elk-1",
+      "title": "elk 1",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 1.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-1.json"
+    },
+    {
+      "id": "news_elk-10",
+      "title": "elk 10",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 10.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-10.json"
+    },
+    {
+      "id": "news_elk-11",
+      "title": "elk 11",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 11.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-11.json"
+    },
+    {
+      "id": "news_elk-12",
+      "title": "elk 12",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 12.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-12.json"
+    },
+    {
+      "id": "news_elk-13",
+      "title": "elk 13",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 13.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-13.json"
+    },
+    {
+      "id": "news_elk-14",
+      "title": "elk 14",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 14.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-14.json"
+    },
+    {
+      "id": "news_elk-15",
+      "title": "elk 15",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 15.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-15.json"
+    },
+    {
+      "id": "news_elk-16",
+      "title": "elk 16",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 16.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-16.json"
+    },
+    {
+      "id": "news_elk-17",
+      "title": "elk 17",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 17.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-17.json"
+    },
+    {
+      "id": "news_elk-18",
+      "title": "elk 18",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 18.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-18.json"
+    },
+    {
+      "id": "news_elk-2",
+      "title": "elk 2",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 2.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-2.json"
+    },
+    {
+      "id": "news_elk-3",
+      "title": "elk 3",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 3.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-3.json"
+    },
+    {
+      "id": "news_elk-4",
+      "title": "elk 4",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 4.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-4.json"
+    },
+    {
+      "id": "news_elk-5",
+      "title": "elk 5",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 5.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-5.json"
+    },
+    {
+      "id": "news_elk-6",
+      "title": "elk 6",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 6.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-6.json"
+    },
+    {
+      "id": "news_elk-7",
+      "title": "elk 7",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 7.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-7.json"
+    },
+    {
+      "id": "news_elk-8",
+      "title": "elk 8",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 8.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-8.json"
+    },
+    {
+      "id": "news_elk-9",
+      "title": "elk 9",
+      "type": "newspaper",
+      "path": "Images/Newspapers/elk 9.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/newspapers/elk-9.json"
+    },
+    {
+      "id": "doc_1876-docs-censusform",
+      "title": "1876-Docs-CensusForm",
+      "type": "document",
+      "path": "Images/Documents/1876-Docs-CensusForm.jpeg",
+      "year": "1876",
+      "transcript": "data/transcripts/documents/1876-docs-censusform.json"
+    },
+    {
+      "id": "doc_1880unitedstatesfederalcensus-281972294",
+      "title": "1880UnitedStatesFederalCensus_281972294",
+      "type": "document",
+      "path": "Images/Documents/1880UnitedStatesFederalCensus_281972294.jpg",
+      "year": "1880",
+      "transcript": "data/transcripts/documents/1880unitedstatesfederalcensus-281972294.json"
+    },
+    {
+      "id": "doc_1881-docs-savoybible",
+      "title": "1881-Docs-SavoyBible",
+      "type": "document",
+      "path": "Images/Documents/1881-Docs-SavoyBible.jpeg",
+      "year": "1881",
+      "transcript": "data/transcripts/documents/1881-docs-savoybible.json"
+    },
+    {
+      "id": "doc_1885-docs-savoycharter",
+      "title": "1885-Docs-SavoyCharter",
+      "type": "document",
+      "path": "Images/Documents/1885-Docs-SavoyCharter.jpeg",
+      "year": "1885",
+      "transcript": "data/transcripts/documents/1885-docs-savoycharter.json"
+    },
+    {
+      "id": "doc_1885-docs-townelection",
+      "title": "1885-Docs-TownElection",
+      "type": "document",
+      "path": "Images/Documents/1885-Docs-TownElection.jpeg",
+      "year": "1885",
+      "transcript": "data/transcripts/documents/1885-docs-townelection.json"
+    },
+    {
+      "id": "doc_1895churchregister",
+      "title": "1895ChurchRegister",
+      "type": "document",
+      "path": "Images/Documents/1895ChurchRegister.jpg",
+      "year": "1895",
+      "transcript": "data/transcripts/documents/1895churchregister.json"
+    },
+    {
+      "id": "doc_arterberrymarriage",
+      "title": "ArterberryMarriage",
+      "type": "document",
+      "path": "Images/Documents/ArterberryMarriage.jpg",
+      "year": null,
+      "transcript": "data/transcripts/documents/arterberrymarriage.json"
+    },
+    {
+      "id": "doc_arterberrymarriage-web",
+      "title": "ArterberryMarriage_web",
+      "type": "document",
+      "path": "Images/Documents/ArterberryMarriage_web.jpg",
+      "year": null,
+      "transcript": "data/transcripts/documents/arterberrymarriage-web.json"
+    },
+    {
+      "id": "doc_registerofinfantbaptismsdestroyed",
+      "title": "RegisterOfInfantBaptismsDestroyed",
+      "type": "document",
+      "path": "Images/Documents/RegisterOfInfantBaptismsDestroyed.jpg",
+      "year": null,
+      "transcript": "data/transcripts/documents/registerofinfantbaptismsdestroyed.json"
+    },
+    {
+      "id": "doc_williamsavoy-marriagecert",
+      "title": "WilliamSavoy_MarriageCert",
+      "type": "document",
+      "path": "Images/Documents/WilliamSavoy_MarriageCert.jpg",
+      "year": null,
+      "transcript": "data/transcripts/documents/williamsavoy-marriagecert.json"
+    },
+    {
+      "id": "doc_savoywrennwarrant",
+      "title": "savoyWrennWarrant",
+      "type": "document",
+      "path": "Images/Documents/savoyWrennWarrant.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/documents/savoywrennwarrant.json"
+    },
+    {
+      "id": "doc_savoywrennwarrant2",
+      "title": "savoyWrennWarrant2",
+      "type": "document",
+      "path": "Images/Documents/savoyWrennWarrant2.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/documents/savoywrennwarrant2.json"
+    },
+    {
+      "id": "doc_savoywrennwarrant3",
+      "title": "savoyWrennWarrant3",
+      "type": "document",
+      "path": "Images/Documents/savoyWrennWarrant3.jpeg",
+      "year": null,
+      "transcript": "data/transcripts/documents/savoywrennwarrant3.json"
+    },
+    {
+      "id": "doc_savoytornadolist",
+      "title": "savoytornadoList",
+      "type": "document",
+      "path": "Images/Documents/savoytornadoList.jpg",
+      "year": null,
+      "transcript": "data/transcripts/documents/savoytornadolist.json"
+    }
+  ]
+}

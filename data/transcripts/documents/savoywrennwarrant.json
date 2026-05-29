@@ -1,0 +1,25 @@
+{
+  "id": "savoywrennwarrant",
+  "source_id": "savoywrennwarrant",
+  "type": "document",
+  "image": "Images/Documents/savoyWrennWarrant.jpeg",
+  "title": "Civil Summons / Writ — State of Missouri, Cedar County — Thomas Smith v. James M. Wrenn, 1867",
+  "doc_type": "warrant",
+  "date": "1867",
+  "text": "WRITS — CIVIL SUITS — SENTINEL PRINT, BOLIVAR, MO.\n\nSTATE OF MISSOURI, }\nCounty of Cedar     } ss.  any disinterested white person over the age of 21 years\nThe State of Missouri, to the Sheriff of    of Fannin County, Texas: Greeting:\n\nYOU ARE HEREBY COMMANDED to summons\n\nJames M. Wrenn\n\nif he be found in your county, to be and appear before the Cedar Circuit Court,\non the first day of the next term thereof, to be begun and held at the court house in said county,\non the 3d Monday in March next, then and there to answer the\npetition of Thomas Smith\n\nand have you then and there this writ, and do you certify to our said court how you execute this\nwrit.\n\nIn Testimony Whereof, I, Q. H. Cannaway, Clerk\nof said Court, have hereunto set my hand and seal of\nsaid Court. Done at Stockton this\n14th day of January, A.D., 1867.\nQ. H. Cannaway\nCLERK.",
+  "people": [
+    "James M. Wrenn",
+    "Thomas Smith",
+    "Q. H. Cannaway"
+  ],
+  "places": [
+    "Cedar County, Missouri",
+    "Stockton, Missouri",
+    "Fannin County, Texas"
+  ],
+  "dates": [
+    "January 14, 1867"
+  ],
+  "topics": ["civil suit", "summons", "writ", "circuit court", "Cedar County Missouri"],
+  "notes": "Printed writ form (Sentinel Print, Bolivar, MO) with handwritten entries. Summons directed to the Sheriff of Fannin County, Texas to serve James M. Wrenn to appear before the Cedar Circuit Court, Missouri on the 3rd Monday in March. Case: Thomas Smith (plaintiff) vs. James M. Wrenn. Clerk: Q. H. Cannaway, Stockton, MO. Interesting that the summons was directed to Fannin County, Texas sheriff, suggesting Wrenn had relocated to Texas by 1867."
+}

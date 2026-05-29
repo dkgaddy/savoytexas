@@ -4,31 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Documents — Savoy, Texas</title>
+  <!-- Fonts: Rye (display), Oswald (labels/nav), Lora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/site.js" defer></script>
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="nav-logo" href="index.html">
-      <span class="nav-star">★</span>
-      <div class="nav-title">
-        <strong>Savoy</strong>
-        <span>Grayson County, Texas</span>
-      </div>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="history.html">History</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="timeline.html">Timeline</a></li>
-      <li><a href="newspapers.html">Newspapers</a></li>
-      <li><a href="documents.html" class="active">Documents</a></li>
-      <li><a href="maps.html">Maps</a></li>
-    </ul>
+<header class="site-header">
+
+  <!-- TOP DARK BAR: search the site -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <form class="site-search" onsubmit="return runSearch(this.q.value)">
+        <input name="q" type="text" placeholder="Search the site" aria-label="Search the site" />
+        <button type="submit" title="Search"><i class="fa fa-magnifying-glass"></i></button>
+      </form>
+    </div>
   </div>
-</nav>
+
+  <!-- PARCHMENT NAV BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History <span class="nav-caret">▾</span></a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="photos.html">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html" class="active">Documents <span class="nav-caret">▾</span></a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- OVERLAPPING BADGE — William Savoy portrait -->
+  <div class="badge-layer">
+    <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
+      <span class="badge-name">Savoy</span>
+      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">Texas</span>
+    </a>
+  </div>
+
+</header>
 
 <div class="page-banner">
   <h1>Historical Documents</h1>
@@ -66,7 +91,7 @@
         <div style="font-size:3rem; margin-bottom:1rem;">📄</div>
         <h3 style="font-size:1.2rem; color:var(--brown-deep); margin-bottom:0.75rem;">Savoy Male &amp; Female College</h3>
         <p style="font-size:0.88rem; color:var(--brown-mid); margin-bottom:1.25rem; line-height:1.65;">
-          A comprehensive historical document covering the founding and operation of the Savoy Male and Female College from 1876 to 1890, including faculty, curriculum, and the college's lasting impact on the Savoy community.
+          <em>History of Savoy Male and Female College, 1876–1890</em> by Mattie Lee Boyd — a 1939 University of Texas master's thesis — covering the founding and operation of the college, including faculty, curriculum, and its lasting impact on the Savoy community. The full text is now <a href="search.html?q=college">searchable in the archive</a>.
         </p>
         <a class="btn btn-primary" href="PDFs/Savoy_Male_and_Female_College_1876_1890.pdf" target="_blank" rel="noopener">
           Open PDF
@@ -77,7 +102,7 @@
           <img src="Images/Photos-1850-1899/savoycollege.jpeg" alt="Savoy College" loading="lazy" style="width:100%; filter:sepia(30%); border:1px solid var(--border);" />
         </div>
         <p style="font-size:0.85rem; color:var(--brown-mid); margin-top:0.75rem; font-style:italic;">
-          Founded by R.R. Halsell, the college drew students from across North Texas and operated for fourteen years before closing around 1890. Its legacy was honored decades later by the naming of the Halsell Gymnasium.
+          Founded by R.R. Halsell in 1876, the college drew students from across North Texas and operated for about fourteen years before its building burned on July 3, 1890. Its legacy was honored decades later by the naming of the Halsell Memorial Gymnasium.
         </p>
         <div style="margin-top:1rem;">
           <a href="PDFs/Savoy_Male_and_Female_College_1876_1890.pdf" target="_blank" style="font-size:0.8rem; color:var(--brown-light); text-decoration:none; letter-spacing:0.05em;">

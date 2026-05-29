@@ -1,0 +1,14 @@
+{
+  "id": "elk-57",
+  "source_id": "elk-57",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 57.jpeg",
+  "title": "Leslie Reece Swinney obituary",
+  "date": "",
+  "text": "Leslie Reece Swinney\n\nSAVOY — Funeral servie will be held at 10 a.m. Wednesday in Savoy Church of Christ for Leslie Reece Swinney, 52, a native of Savoy and former resident of Denison, who died June 9 in Chicago, Ill.\n\nC. D. Price, Church of Christ minister, will conduct the service. Burial will be in Sunnyside Cemetery, near Savoy, directed by Johnson-Moore Funeral Home, Denison.\n\nBorn May 5, 1905, Mr. Swinney was a son of the late Mr. and Mrs. John Swinney. In May 1925 he married Miss Lorene Paige in Denison. He was an automobile mechanic and had worked in Chicago for the last year.\n\nSurvivors are three daughters, Miss Beverly Swinney, Mrs. N. C. Spradlin and Mrs. O. C. Spradlin, all of Denison; two sisters, Mrs. M. E. Baldwin of Fulton, Ill., and Mrs. W. L. Wright of Savoy, and four grandchildren.",
+  "people": ["Leslie Reece Swinney", "C. D. Price", "John Swinney", "Mrs. John Swinney", "Lorene Paige", "Beverly Swinney", "Mrs. N. C. Spradlin", "Mrs. O. C. Spradlin", "Mrs. M. E. Baldwin", "Mrs. W. L. Wright"],
+  "places": ["Savoy", "Denison", "Chicago, Ill.", "Sunnyside Cemetery", "Fulton, Ill."],
+  "dates": ["May 5, 1905", "May 1925", "June 9"],
+  "topics": ["obituary", "death", "funeral", "Church of Christ", "Johnson-Moore Funeral Home"],
+  "notes": "Headline typo preserved: 'servie' (sic) for 'service'."
+}

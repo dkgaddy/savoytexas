@@ -1,0 +1,14 @@
+{
+  "id": "elk-65",
+  "source_id": "elk-65",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 65.jpeg",
+  "title": "Savoy Woman Passes 81st Anniversary",
+  "date": "",
+  "text": "Savoy Woman\nPasses 81st\nAnniversary\n\nSAVOY—The 81st birthday of Mrs. L. A. Brown was celebrated at her Savoy home Tuesday. Mrs. Brown, who was very active until stricken with paralysis in June of 1945, was born in Alabama in 1870 and married Mr. Brown in 1908 at Ector.\n\nBefore the stroke, Mrs. Brown had been very active, looking after all the household duties as well as raising turkeys and chickens and tending her garden.\n\nBeing a wheelchair patient for a number of years has not kept Mrs. Brown from pursuing a natural talent for painting. In earlier years she worked with oils, but at present has been using crayons. Mrs. Brown is also known for her beautiful needlework, at present being occupied with difficult designs on guest towels that prove a tedious procedure for a person using two hands and looking almost impossible for one with the use of only one hand.\n\nMr. and Mrs. Brown live alone. He handles most of the house work and cares for her with the aid of a daughter-in-law, Mrs. Paul Brown.",
+  "people": ["Mrs. L. A. Brown", "Mr. Brown", "Mrs. Paul Brown"],
+  "places": ["Savoy", "Alabama", "Ector"],
+  "dates": ["June of 1945", "1870", "1908"],
+  "topics": ["birthday", "anniversary", "paralysis", "painting", "needlework"],
+  "notes": ""
+}

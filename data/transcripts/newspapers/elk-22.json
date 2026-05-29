@@ -1,0 +1,14 @@
+{
+  "id": "elk-22",
+  "source_id": "elk-22",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 22.jpeg",
+  "title": "Ray Booth — obituary",
+  "date": "",
+  "text": "Ray Booth\n\nBELLS—Funeral services were held at 3 p.m. Tuesday in the First Baptist Church, Bells, for Ray Booth, 52, of Bells, Hardwicke-Etter Co. supervisor, who died in a Sherman hospital at 1:45 p.m. Monday, two hours after suffering a heart attack.\n\nThe Rev. Robert Baldridge Baptist minister, and the Rev. William Davis, Methodist minister, both of Bells, conducted the services. Burial was in Rose Hill Cemetery, directed by Earnheart Funeral Home, Whitewright.\n\nMr. Booth was born Aug. 30, 1906 in Savoy, a son of the late V. H. and Sarah Booth. On Oct. 12, 1929, he married Miss Lucille Wilson in Bells. He was a deacon in the Baptist Church, a charter member of the Lions Club, a mason and and a member of the Knights Templar. He was supervisor of the black metal department at Hardwicke-Etter.\n\nSurvivors are his wife; one daughter, Sarah Carolyn Booth; and a son, Donald Wilson Booth, all of Bells; a brother, Roy Booth of Waco; two sisters, Mrs. Carl Orndorff of Savoy and Mrs. Roy Stephens of Sherman.",
+  "people": ["Ray Booth", "Robert Baldridge", "William Davis", "V. H. Booth", "Sarah Booth", "Lucille Wilson", "Sarah Carolyn Booth", "Donald Wilson Booth", "Roy Booth", "Carl Orndorff", "Roy Stephens"],
+  "places": ["Bells", "Savoy", "Sherman", "Whitewright", "Waco", "Rose Hill Cemetery"],
+  "dates": ["Aug. 30, 1906", "Oct. 12, 1929"],
+  "topics": ["obituary", "funeral", "Hardwicke-Etter", "Baptist Church", "Lions Club", "Masons", "Knights Templar"],
+  "notes": ""
+}

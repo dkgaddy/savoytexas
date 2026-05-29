@@ -1,0 +1,14 @@
+{
+  "id": "elk-23",
+  "source_id": "elk-23",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 23.jpeg",
+  "title": "Mrs. Lucy Durrett",
+  "date": "",
+  "text": "Mrs. Lucy Durrett\n\nSAVOY — Funeral services was held Tuesday, at 2:30 p.m. in the First Baptist Church for Mrs. Lucy Durrett, 80, who died Monday 8:30 a.m. in the home of her daughter, Mrs. Maurive Owens in Leonard.\n\nThe Rev. C. H. Longino of Omaha and the Rev. W. A. Rudd of Campbell conducted the services. Burial was in Sunnyside Cemetery, directed by Earnheart Funeral Home.\n\nMrs. Durrett was born July 24, 1879 in Georgia, a daughter of the late Mr. and Mrs. J. W. Dodd. She was a member of the Savoy Baptist Church. She came to Savoy as a child and was married here in 1898 to W. H. Durrett.\n\nSurvivors besides her daughter, are one son, Duke Durrett of Savoy; two grandchildren and two great-grandchildren.",
+  "people": ["Lucy Durrett", "Maurive Owens", "C. H. Longino", "W. A. Rudd", "J. W. Dodd", "Mrs. J. W. Dodd", "W. H. Durrett", "Duke Durrett"],
+  "places": ["Savoy", "First Baptist Church", "Leonard", "Omaha", "Campbell", "Sunnyside Cemetery", "Georgia"],
+  "dates": ["July 24, 1879", "1898"],
+  "topics": ["obituary", "funeral", "death"],
+  "notes": ""
+}

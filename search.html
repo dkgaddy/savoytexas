@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search the Archive — Savoy, Texas</title>
+  <!-- Fonts: Rye (display), Oswald (labels/nav), Lora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/site.js" defer></script>
+  <style>
+    /* Search page specifics */
+    .search-hero { max-width: 760px; margin: 0 auto 1.5rem; }
+    .search-hero form { display: flex; gap: 0.5rem; }
+    .search-hero input {
+      flex: 1; padding: 0.85rem 1rem; font-family: 'Lora', serif; font-size: 1.05rem;
+      background: #fff; border: 2px solid var(--gold-dk); border-radius: 4px; color: var(--brown-deep);
+    }
+    .search-hero input:focus { outline: none; border-color: var(--red); }
+    .search-hero button {
+      padding: 0.85rem 1.4rem; font-family: 'Oswald', sans-serif; text-transform: uppercase;
+      letter-spacing: 0.08em; background: var(--red); color: #fff; border: none; border-radius: 4px; cursor: pointer;
+    }
+    .search-hero button:hover { background: var(--red-dark); }
+    .search-meta { font-family:'Oswald',sans-serif; color: var(--brown-light); font-size:0.85rem;
+      letter-spacing:0.06em; text-transform:uppercase; margin: 0.25rem 0 1.5rem; text-align:center; }
+    .filter-row { display:flex; flex-wrap:wrap; gap:0.5rem; justify-content:center; margin-bottom:2rem; }
+    .res-card {
+      background:#fff; border:1px solid var(--parchment-dk); border-left:4px solid var(--gold);
+      border-radius:4px; padding:1.1rem 1.3rem; margin-bottom:1rem; box-shadow:0 1px 4px rgba(30,14,4,0.06);
+    }
+    .res-card:hover { border-left-color: var(--red); }
+    .res-head { display:flex; flex-wrap:wrap; align-items:baseline; gap:0.6rem; margin-bottom:0.4rem; }
+    .res-head h3 { font-family:'Rye',serif; font-size:1.1rem; color:var(--red); margin:0; font-weight:400; }
+    .res-badge {
+      font-family:'Oswald',sans-serif; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em;
+      padding:0.15rem 0.55rem; border-radius:3px; color:#fff; white-space:nowrap;
+    }
+    .b-book { background: var(--red); }
+    .b-newspaper { background: var(--gold-dk); }
+    .b-document { background: var(--brown-light); }
+    .b-article { background: #5a6e3a; }
+    .res-date { font-family:'Oswald',sans-serif; font-size:0.8rem; color:var(--brown-light); }
+    .res-snip { font-family:'Lora',serif; color:var(--brown-mid); line-height:1.6; margin:0.3rem 0 0.6rem; }
+    .res-snip mark { background: #f3d98a; color: var(--brown-deep); padding:0 1px; }
+    .res-foot { font-family:'Oswald',sans-serif; font-size:0.78rem; letter-spacing:0.04em; }
+    .res-foot a { color: var(--gold-dk); }
+    .res-foot a:hover { color: var(--red); text-decoration:underline; }
+    .res-tags { color: var(--brown-xlight); }
+    .empty { text-align:center; color:var(--brown-light); font-family:'Lora',serif; padding:2rem; }
+    .people-hits { background: var(--parchment-dk); border-radius:4px; padding:1rem 1.3rem; margin-bottom:1.5rem; }
+    .people-hits h4 { font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:0.08em;
+      font-size:0.8rem; color:var(--brown-light); margin:0 0 0.5rem; }
+    .people-hits a { font-family:'Lora',serif; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <form class="site-search" onsubmit="return runSearch(this.q.value)">
+        <input name="q" type="text" placeholder="Search the site" aria-label="Search the site" />
+        <button type="submit" title="Search"><i class="fa fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History <span class="nav-caret">▾</span></a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="photos.html">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents <span class="nav-caret">▾</span></a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="badge-layer">
+    <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
+      <span class="badge-name">Savoy</span>
+      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">Texas</span>
+    </a>
+  </div>
+</header>
+
+<div class="page-banner">
+  <h1>Search the Archive</h1>
+  <p>Full-text search across the College history, newspapers, and documents</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> <span>›</span> <span>Search</span>
+  </div>
+</div>
+
+<section>
+  <div class="inner">
+
+    <div class="search-hero">
+      <form onsubmit="return doSearch(this.q.value)">
+        <input id="q" name="q" type="text" placeholder="Search names, dates, places, stories…" aria-label="Search the archive" autofocus />
+        <button type="submit"><i class="fa fa-magnifying-glass"></i> Search</button>
+      </form>
+    </div>
+
+    <div class="filter-row" id="filter-row">
+      <button class="decade-tab active" data-t="all" onclick="setType(this,'all')">All</button>
+      <button class="decade-tab" data-t="book" onclick="setType(this,'book')">College Book</button>
+      <button class="decade-tab" data-t="newspaper" onclick="setType(this,'newspaper')">Newspapers</button>
+      <button class="decade-tab" data-t="document" onclick="setType(this,'document')">Documents</button>
+      <button class="decade-tab" data-t="article" onclick="setType(this,'article')">Articles</button>
+    </div>
+
+    <div class="search-meta" id="meta"></div>
+    <div id="people-hits"></div>
+    <div id="results"></div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="f-logo">
+        <span class="f-star">★</span>
+        <div class="f-logo-text">
+          <strong>Savoy, Texas</strong>
+          <span>Historical Reference</span>
+        </div>
+      </div>
+      <p>A community archive preserving the history of Savoy, Texas — Grayson County.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Try Searching</h4>
+      <ul>
+        <li><a href="search.html?q=cyclone">cyclone 1880</a></li>
+        <li><a href="search.html?q=Squintum">Squintum Club</a></li>
+        <li><a href="search.html?q=fire">1954 fire</a></li>
+        <li><a href="search.html?q=Truett">George W. Truett</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Savoy, Texas Historical Archive · Grayson County, Texas
+  </div>
+</footer>
+
+<script src="data/search-index.js"></script>
+<script src="data/people-data.js"></script>
+<script>
+let INDEX = [];        // search records
+let PEOPLE = [];       // notable people
+let curType = 'all';
+let lastQuery = '';
+const BOOK_TITLE = 'History of Savoy Male and Female College';
+
+function esc(s){ return (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+function getParam(name){
+  const m = new RegExp('[?&]'+name+'=([^&]*)').exec(window.location.search);
+  return m ? decodeURIComponent(m[1].replace(/\+/g,' ')) : '';
+}
+
+// Load data (data files are plain JS that set window globals,
+// so the page works when opened directly from disk — no server needed)
+function initSearch(){
+  INDEX = (window.SAVOY_INDEX && window.SAVOY_INDEX.records) || [];
+  PEOPLE = (window.SAVOY_PEOPLE && window.SAVOY_PEOPLE.notable) || [];
+  const q = getParam('q');
+  if (q) {
+    document.getElementById('q').value = q;
+    doSearch(q);
+  } else {
+    document.getElementById('meta').textContent =
+      INDEX.length + ' transcribed pages & clippings indexed — type a search above.';
+  }
+}
+
+function setType(btn, t){
+  curType = t;
+  document.querySelectorAll('#filter-row [data-t]').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if (lastQuery) render(search(lastQuery));
+}
+
+function tokens(q){
+  return q.toLowerCase().split(/\s+/).filter(w=>w.length>1);
+}
+
+function search(q){
+  const toks = tokens(q);
+  if (!toks.length) return [];
+  const out = [];
+  for (const r of INDEX){
+    if (curType !== 'all' && r.type !== curType) continue;
+    const hay = (r.text + ' ' + r.title + ' ' + (r.people||[]).join(' ') + ' '
+                 + (r.places||[]).join(' ') + ' ' + (r.topics||[]).join(' ')).toLowerCase();
+    let score = 0, all = true;
+    for (const t of toks){
+      let n = 0, i = hay.indexOf(t);
+      while (i !== -1){ n++; i = hay.indexOf(t, i+t.length); }
+      if (n === 0){ all = false; break; }
+      score += n;
+    }
+    if (!all) continue;
+    // boost title / people matches
+    const tl = (r.title||'').toLowerCase();
+    for (const t of toks){ if (tl.includes(t)) score += 5; }
+    out.push({r, score});
+  }
+  out.sort((a,b)=> b.score - a.score);
+  return out;
+}
+
+function searchPeople(q){
+  const toks = tokens(q);
+  if (!toks.length) return [];
+  return PEOPLE.filter(p=>{
+    const hay = (p.name + ' ' + (p.aka||[]).join(' ') + ' ' + (p.roles||[]).join(' ')
+                 + ' ' + (p.summary||'')).toLowerCase();
+    return toks.every(t => hay.includes(t));
+  }).slice(0,6);
+}
+
+function snippet(text, toks){
+  const low = text.toLowerCase();
+  let pos = -1;
+  for (const t of toks){ const i = low.indexOf(t); if (i!==-1 && (pos===-1 || i<pos)) pos = i; }
+  if (pos === -1) pos = 0;
+  let start = Math.max(0, pos - 90);
+  let end = Math.min(text.length, pos + 220);
+  let s = text.slice(start, end).trim();
+  if (start > 0) s = '… ' + s;
+  if (end < text.length) s = s + ' …';
+  s = esc(s);
+  // highlight
+  for (const t of toks){
+    const re = new RegExp('('+t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig');
+    s = s.replace(re, '<mark>$1</mark>');
+  }
+  return s;
+}
+
+function sourceLink(r){
+  if (r.type === 'book'){
+    return '<a href="'+esc(r.ref)+'" target="_blank" rel="noopener">College history, p. '+esc(String(r.page))+' <i class="fa fa-up-right-from-square"></i></a>';
+  }
+  if (r.type === 'article' && r.ref){
+    return '<a href="'+esc(r.ref)+'" target="_blank" rel="noopener">Read full article <i class="fa fa-up-right-from-square"></i></a>';
+  }
+  if (r.ref){
+    return '<a href="'+esc(r.ref)+'" target="_blank" rel="noopener">View original scan <i class="fa fa-up-right-from-square"></i></a>';
+  }
+  return '';
+}
+
+function render(results){
+  const meta = document.getElementById('meta');
+  const box = document.getElementById('results');
+  const ph = document.getElementById('people-hits');
+  const toks = tokens(lastQuery);
+
+  // People panel
+  const people = searchPeople(lastQuery);
+  if (people.length && curType==='all'){
+    ph.innerHTML = '<div class="people-hits"><h4><i class="fa fa-user"></i> People in the residents database</h4>'
+      + people.map(p=>'<div><a href="people.html?id='+encodeURIComponent(p.id)+'">'+esc(p.name)+'</a>'
+        + (p.roles&&p.roles.length? ' — <span class="res-tags">'+esc(p.roles.join(', '))+'</span>':'')+'</div>').join('')
+      + '</div>';
+  } else { ph.innerHTML = ''; }
+
+  meta.textContent = results.length + ' result' + (results.length===1?'':'s')
+    + ' for “' + lastQuery + '”' + (curType!=='all'? ' in '+curType+'s':'');
+
+  if (!results.length){
+    box.innerHTML = '<div class="empty">No matches found. Try a name, place, or year (e.g. <em>cyclone</em>, <em>Thomasson</em>, <em>1880</em>).</div>';
+    return;
+  }
+  box.innerHTML = results.slice(0,120).map(({r})=>{
+    const badgeMap = {book:'b-book', newspaper:'b-newspaper', document:'b-document', article:'b-article'};
+    const labelMap = {book:'College Book', newspaper:'Newspaper', document:'Document', article:'Article'};
+    const badge = badgeMap[r.type] || 'b-document';
+    const label = labelMap[r.type] || 'Document';
+    const date = r.date || r.year || '';
+    const tags = (r.topics||[]).slice(0,4).join(' · ');
+    return '<div class="res-card">'
+      + '<div class="res-head"><span class="res-badge '+badge+'">'+label+'</span>'
+      + '<h3>'+esc(r.title)+'</h3>'
+      + (date? '<span class="res-date">'+esc(date)+'</span>':'')+'</div>'
+      + '<p class="res-snip">'+snippet(r.text, toks)+'</p>'
+      + '<div class="res-foot">'+sourceLink(r)
+      + (tags? ' &nbsp;·&nbsp; <span class="res-tags">'+esc(tags)+'</span>':'')+'</div>'
+      + '</div>';
+  }).join('');
+}
+
+function doSearch(raw){
+  const q = (raw||'').trim();
+  lastQuery = q;
+  // reflect in URL without reload
+  const url = 'search.html' + (q? '?q='+encodeURIComponent(q):'');
+  history.replaceState(null,'',url);
+  if (!q){ document.getElementById('results').innerHTML=''; document.getElementById('meta').textContent=''; document.getElementById('people-hits').innerHTML=''; return false; }
+  render(search(q));
+  return false;
+}
+
+initSearch();
+</script>
+
+</body>
+</html>

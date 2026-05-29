@@ -1,0 +1,14 @@
+{
+  "id": "elk-47",
+  "source_id": "elk-47",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 47.jpeg",
+  "title": "Mrs. Sarah Booth — obituary",
+  "date": "",
+  "text": "MRS. SARAH BOOTH\n\nSAVOY—Funeral services were held Tuesday at 3:30 p.m. at the Savoy Church of Christ for Mrs. Sarah Booth, 74, a native of Howe who died at her home at Savoy, Monday after an illness of one month. Death was caused by pneumonia.\n\nRalph Edmunson, Church of Christ minister, conducted. Jack King, Church of Christ minister and the Rev. S. B. Byran, of Bells, Methodist minister, assisted. Burial was in Sunnyside Cemetery, directed by Earnheart-Strickland Funeral Home.\n\nMrs. Booth was born Sarah Hanna, Dec. 2, 1875. She was married Oct. 21, 1894 to B. H. Booth Sr. She was a member of the Church of Christ.\n\nSurvivors include: Her husband; three daughters, Mrs. Carl Orendorf and Mrs. Dan Swinney, both of Savoy and Mrs. Roy Stephens of Sherman; three sons, Roy Booth of Waco, Ray Booth of Bells and B. H. Booth Jr. of Savoy; six grandchildren and three great-grandchildren.",
+  "people": ["Sarah Booth", "Sarah Hanna", "Ralph Edmunson", "Jack King", "S. B. Byran", "B. H. Booth Sr.", "Carl Orendorf", "Dan Swinney", "Roy Stephens", "Roy Booth", "Ray Booth", "B. H. Booth Jr."],
+  "places": ["Savoy", "Howe", "Bells", "Sherman", "Waco", "Sunnyside Cemetery"],
+  "dates": ["Dec. 2, 1875", "Oct. 21, 1894"],
+  "topics": ["obituary", "funeral", "Church of Christ"],
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "elk-20",
+  "source_id": "elk-20",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 20.jpeg",
+  "title": "Native of Savoy Dies at Age 88",
+  "date": "",
+  "text": "Native of Savoy\nDies at Age 88\n\nMRS. A. DEATHERAGE.\n\nSAVOY, Texas.—Mrs. Sarah Malissa Deatherage, 88, died at 2 a. m. Friday at her home here following an illness of two months. Funeral services will be held at 2 p. m. Saturday at the residence, with J. B. May, a friend of the family, conducting. Interment will be in Sunnyside cemetery. Talley of Sherman directing.\n\nBorn Aug. 8, 1856, in the Nahurin community south of Savoy, she was the daughter of Mr. and Mrs. James Ray. She was married to A. Deatherage Aug. 26, 1875. Mr. Deatherage died two years ago at the age of 94. A member of the Church of Christ, Mrs. Deatherage lived in this community all her life and at the present home 50 years.\n\nSurvivors include one son, Frank Deatherage of Hugo, Okla.; six daughters, Mrs. B. E. Mathews of Fort Worth, Mrs. W. P. Carter of Dallas, Mrs. J. W. Jenkins of Bells, Mrs. Paul Houston of Lubbock, Mrs. C. D. Hastings of Longview, and Mrs. Ann Tyler, also of Hugo; grandchildren and nine great-grandchildren.",
+  "people": ["Sarah Malissa Deatherage", "J. B. May", "A. Deatherage", "James Ray", "Frank Deatherage", "Mrs. B. E. Mathews", "Mrs. W. P. Carter", "Mrs. J. W. Jenkins", "Mrs. Paul Houston", "Mrs. C. D. Hastings", "Mrs. Ann Tyler"],
+  "places": ["Savoy", "Sunnyside cemetery", "Sherman", "Nahurin community", "Hugo, Okla.", "Fort Worth", "Dallas", "Bells", "Lubbock", "Longview"],
+  "dates": ["Aug. 8, 1856", "Aug. 26, 1875"],
+  "topics": ["obituary", "death", "funeral", "Church of Christ"],
+  "notes": "Photo caption: MRS. A. DEATHERAGE. Portrait photo of an elderly woman. Right margin text slightly clipped on a few lines but substantially complete."
+}

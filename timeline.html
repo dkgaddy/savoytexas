@@ -4,31 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Historical Timeline — Savoy, Texas</title>
+  <!-- Fonts: Rye (display), Oswald (labels/nav), Lora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="js/site.js" defer></script>
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a class="nav-logo" href="index.html">
-      <span class="nav-star">★</span>
-      <div class="nav-title">
-        <strong>Savoy</strong>
-        <span>Grayson County, Texas</span>
-      </div>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="history.html">History</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="timeline.html" class="active">Timeline</a></li>
-      <li><a href="newspapers.html">Newspapers</a></li>
-      <li><a href="documents.html">Documents</a></li>
-      <li><a href="maps.html">Maps</a></li>
-    </ul>
+<header class="site-header">
+
+  <!-- TOP DARK BAR: search the site -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <form class="site-search" onsubmit="return runSearch(this.q.value)">
+        <input name="q" type="text" placeholder="Search the site" aria-label="Search the site" />
+        <button type="submit" title="Search"><i class="fa fa-magnifying-glass"></i></button>
+      </form>
+    </div>
   </div>
-</nav>
+
+  <!-- PARCHMENT NAV BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History <span class="nav-caret">▾</span></a></li>
+        <li><a href="timeline.html" class="active">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="photos.html">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents <span class="nav-caret">▾</span></a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- OVERLAPPING BADGE — William Savoy portrait -->
+  <div class="badge-layer">
+    <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
+      <span class="badge-name">Savoy</span>
+      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">Texas</span>
+    </a>
+  </div>
+
+</header>
 
 <div class="page-banner">
   <h1>Historical Timeline</h1>
@@ -90,7 +115,7 @@
           <div class="tl-dot">★</div>
           <p class="tl-item-year">1880</p>
           <h3>The Great Cyclone</h3>
-          <p>A devastating tornado strikes Savoy, leaving widespread destruction across the town. Newspapers from across Texas cover the disaster — including the <em>Brenham Weekly Banner</em> (June 4 and June 17, 1880) and the <em>Daily Dispatch</em> from Austin. Photographs of the cyclone's aftermath survive, showing the scale of the damage. A cyclone path map was also preserved. Remarkably, the community rebuilds.</p>
+          <p>At about 10:10 p.m. on Friday, May 28, 1880 (the Methodist church register says May 29), a tornado roughly 178 yards wide tears through Savoy — demolishing about 40 houses and every business but one, killing nine and wounding 50 to 60. The seminary becomes a hospital, and relief trains bring doctors from Bonham, Dodd City, Bells, Sherman, and Denison. Newspapers from across Texas and the nation cover the disaster — including the <em>Brenham Weekly Banner</em> (June 4 and June 17, 1880), the <em>Daily Dispatch</em> from Austin, and the Kansas <em>Holton Recorder-Tribune</em>. Photographs of the aftermath survive. Remarkably, the community rebuilds.</p>
           <img class="tl-item-img" src="Images/Photos-1850-1899/SavoyCycloneAftermath.jpeg" alt="1880 Cyclone Aftermath" loading="lazy" />
         </div>
 
@@ -114,9 +139,9 @@
         <!-- 1890 -->
         <div class="tl-item">
           <div class="tl-dot">★</div>
-          <p class="tl-item-year">c. 1890</p>
-          <h3>Savoy College Closes</h3>
-          <p>The Savoy Male and Female College ends its run after approximately fourteen years of operation. A McKinney Democrat article from May 29, 1890 covers events related to the college's closure. Its alumni association continues to hold reunions for decades, a testament to the school's enduring community bonds.</p>
+          <p class="tl-item-year">1890</p>
+          <h3>Savoy College Burns</h3>
+          <p>The Savoy Male and Female College — by then one of the leading colleges in the area — is destroyed by fire on July 3, 1890, after roughly fourteen years of operation. Attempts to revive it fail. Its alumni association continues to hold reunions for decades (beginning in 1937), a testament to the school's enduring community bonds; the reunion later gathered at the Halsell Memorial Gymnasium named for founder R. R. Halsell.</p>
         </div>
 
         <!-- 1895 -->

@@ -1,0 +1,14 @@
+{
+  "id": "elk-35",
+  "source_id": "elk-35",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 35.jpeg",
+  "title": "Savoy Man Wounded in Action in Normandy",
+  "date": "",
+  "text": "Savoy Man Wounded in Action in Normandy\n\nSAVOY, Texas—Pfc. Pete Hubbard, son of Burl Hubbard, was wounded in the Normandy invasion and is now in a hospital in England, the war department has informed his father.",
+  "people": ["Pete Hubbard", "Burl Hubbard"],
+  "places": ["Savoy", "Texas", "Normandy", "England"],
+  "dates": [],
+  "topics": ["World War II", "wounded in action", "Normandy invasion", "military"],
+  "notes": ""
+}

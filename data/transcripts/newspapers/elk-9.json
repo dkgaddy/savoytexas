@@ -1,0 +1,14 @@
+{
+  "id": "elk-9",
+  "source_id": "elk-9",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/elk 9.jpeg",
+  "title": "Bank — Farmers Deposit Bank / First National Bank",
+  "date": "",
+  "text": "BANK.\n\nA few years ago the citizens of Savoy and community put their surplus capital together and organized the Farmers Deposit Bank. It was a paying business from the start and a few years ago the capital was increased to $25,000 and a charter secured for the First National Bank. The deposits were reasonably good and business increased under the management of E. T. Cook and each year the stockholders have realized a divi dend on their investment. Last year Mr. Cook was promoted to the president's chair and J. B. King elected cashier. The bank has been a great help to the town and in fact few small towns can boast of a bank so good. It stood firmly through the money panic and the last statement showed it to be in good shape.",
+  "people": ["E. T. Cook", "J. B. King"],
+  "places": ["Savoy"],
+  "dates": [],
+  "topics": ["bank", "Farmers Deposit Bank", "First National Bank", "business", "finance", "community history"],
+  "notes": "Business/community profile feature from The Elk publication. 'divi dend' is split across a line break in the original."
+}

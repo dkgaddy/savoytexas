@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residents Database — Savoy, Texas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/site.js" defer></script>
+  <style>
+    .ppl-controls { display:flex; flex-wrap:wrap; gap:0.6rem; align-items:center; justify-content:center; margin-bottom:1.5rem; }
+    .ppl-controls input {
+      padding:0.7rem 1rem; font-family:'Lora',serif; font-size:1rem; min-width:280px;
+      background:#fff; border:2px solid var(--gold-dk); border-radius:4px; color:var(--brown-deep);
+    }
+    .ppl-controls input:focus { outline:none; border-color:var(--red); }
+    .filter-row { display:flex; flex-wrap:wrap; gap:0.5rem; justify-content:center; margin-bottom:1.5rem; }
+    .ppl-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem; }
+    .ppl-card {
+      background:#fff; border:1px solid var(--parchment-dk); border-top:4px solid var(--gold);
+      border-radius:4px; padding:1.1rem 1.3rem; cursor:pointer; transition:box-shadow .15s;
+    }
+    .ppl-card:hover { box-shadow:0 3px 12px rgba(30,14,4,0.12); border-top-color:var(--red); }
+    .ppl-card h3 { font-family:'Rye',serif; font-weight:400; font-size:1.15rem; color:var(--red); margin:0 0 0.3rem; }
+    .ppl-era { font-family:'Oswald',sans-serif; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em;
+      color:#fff; background:var(--brown-light); padding:0.12rem 0.5rem; border-radius:3px; }
+    .ppl-roles { font-family:'Oswald',sans-serif; font-size:0.8rem; color:var(--gold-dk); margin:0.5rem 0 0.4rem;
+      text-transform:uppercase; letter-spacing:0.04em; }
+    .ppl-sum { font-family:'Lora',serif; color:var(--brown-mid); line-height:1.55; font-size:0.92rem;
+      display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; }
+    .ppl-meta { font-family:'Oswald',sans-serif; color:var(--brown-light); font-size:0.85rem;
+      text-transform:uppercase; letter-spacing:0.06em; text-align:center; margin-bottom:1.2rem; }
+    /* detail modal */
+    #person-modal { position:fixed; inset:0; background:rgba(20,10,4,0.75); display:none; z-index:1000;
+      overflow-y:auto; padding:3rem 1rem; }
+    #person-modal.open { display:block; }
+    .pm-inner { max-width:720px; margin:0 auto; background:var(--parchment); border:2px solid var(--gold-dk);
+      border-radius:6px; padding:2rem; position:relative; box-shadow:0 10px 40px rgba(0,0,0,0.4); }
+    .pm-close { position:absolute; top:0.8rem; right:1rem; font-size:1.8rem; background:none; border:none;
+      color:var(--brown-light); cursor:pointer; line-height:1; }
+    .pm-close:hover { color:var(--red); }
+    .pm-inner h2 { font-family:'Rye',serif; font-weight:400; color:var(--red); margin:0 0 0.4rem; font-size:1.6rem; }
+    .pm-aka { font-family:'Lora',serif; font-style:italic; color:var(--brown-light); margin:0 0 0.6rem; }
+    .pm-tags { margin:0.4rem 0 1rem; }
+    .pm-tags .ppl-era { margin-right:0.4rem; }
+    .pm-section-h { font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:0.08em;
+      font-size:0.85rem; color:var(--gold-dk); border-bottom:1px solid var(--gold); padding-bottom:0.3rem;
+      margin:1.4rem 0 0.7rem; }
+    .pm-inner p { font-family:'Lora',serif; color:var(--brown-mid); line-height:1.65; }
+    .pm-contrib { font-family:'Lora',serif; color:var(--brown-mid); line-height:1.6; margin-bottom:0.8rem;
+      padding-left:1rem; border-left:3px solid var(--gold); }
+    .pm-srcs { margin-top:0.3rem; }
+    .pm-srcs a { display:inline-block; font-family:'Oswald',sans-serif; font-size:0.72rem; text-transform:uppercase;
+      letter-spacing:0.04em; background:var(--parchment-dk); color:var(--brown-mid); padding:0.12rem 0.5rem;
+      border-radius:3px; margin:0 0.3rem 0.3rem 0; }
+    .pm-srcs a:hover { background:var(--gold); color:#fff; }
+    .note-banner { background:var(--parchment-dk); border-left:4px solid var(--red); padding:0.8rem 1.1rem;
+      font-family:'Lora',serif; color:var(--brown-mid); font-size:0.9rem; border-radius:0 4px 4px 0; margin-top:2rem; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <form class="site-search" onsubmit="return runSearch(this.q.value)">
+        <input name="q" type="text" placeholder="Search the site" aria-label="Search the site" />
+        <button type="submit" title="Search"><i class="fa fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History <span class="nav-caret">▾</span></a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="photos.html">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents <span class="nav-caret">▾</span></a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="badge-layer">
+    <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
+      <span class="badge-name">Savoy</span>
+      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">Texas</span>
+    </a>
+  </div>
+</header>
+
+<div class="page-banner">
+  <h1>Residents Database</h1>
+  <p>Notable people of Savoy, Texas — founders, faculty, students, and citizens drawn from the archive</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> <span>›</span> <span>Residents</span>
+  </div>
+</div>
+
+<section>
+  <div class="inner">
+
+    <div class="ppl-controls">
+      <input id="ppl-q" type="text" placeholder="Filter by name, role, or keyword…" oninput="applyFilters()" />
+    </div>
+    <div class="filter-row" id="era-row">
+      <button class="decade-tab active" data-e="all" onclick="setEra(this,'all')">All Eras</button>
+      <button class="decade-tab" data-e="1850-1899" onclick="setEra(this,'1850-1899')">1850–1899</button>
+      <button class="decade-tab" data-e="1900-1949" onclick="setEra(this,'1900-1949')">1900–1949</button>
+      <button class="decade-tab" data-e="1950-1999" onclick="setEra(this,'1950-1999')">1950–1999</button>
+      <button class="decade-tab" data-e="2000-present" onclick="setEra(this,'2000-present')">2000–present</button>
+    </div>
+
+    <div class="ppl-meta" id="ppl-meta"></div>
+    <div class="ppl-grid" id="ppl-grid"></div>
+
+    <div class="note-banner">
+      <strong>About this database:</strong> The profiles below are curated from the
+      <em>History of Savoy Male and Female College</em> (Mattie Lee Boyd, 1939), period newspapers,
+      and town documents. A further <strong id="idx-count">3,000+</strong> names appear across the
+      transcribed archive — <a href="search.html">search the full archive</a> to find anyone by name.
+    </div>
+
+  </div>
+</section>
+
+<div id="person-modal" onclick="if(event.target===this)closeModal()">
+  <div class="pm-inner" id="pm-body"></div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="f-logo">
+        <span class="f-star">★</span>
+        <div class="f-logo-text">
+          <strong>Savoy, Texas</strong>
+          <span>Historical Reference</span>
+        </div>
+      </div>
+      <p>A community archive preserving the history of Savoy, Texas — Grayson County.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="search.html">Search Archive</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Eras</h4>
+      <ul>
+        <li><a href="people.html?era=1850-1899">Founding &amp; College (1850–1899)</a></li>
+        <li><a href="people.html?era=1900-1949">Early 20th Century</a></li>
+        <li><a href="people.html?era=2000-present">Modern Savoy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Savoy, Texas Historical Archive · Grayson County, Texas
+  </div>
+</footer>
+
+<script src="data/people-data.js"></script>
+<script src="data/search-index.js"></script>
+<script>
+let PEOPLE = [];
+let SRCMAP = {};     // source id -> {ref, type, page, title}
+let curEra = 'all';
+
+function esc(s){ return (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function getParam(name){
+  const m = new RegExp('[?&]'+name+'=([^&]*)').exec(window.location.search);
+  return m ? decodeURIComponent(m[1].replace(/\+/g,' ')) : '';
+}
+
+function initPeople(){
+  const ppl = window.SAVOY_PEOPLE || {notable:[]};
+  const idx = window.SAVOY_INDEX || {records:[]};
+  PEOPLE = ppl.notable || [];
+  (idx.records||[]).forEach(r => { SRCMAP[r.id] = r; });
+  if (ppl.index_count) document.getElementById('idx-count').textContent =
+    ppl.index_count.toLocaleString() + '+';
+  const era = getParam('era');
+  if (era){ curEra = era; document.querySelectorAll('#era-row [data-e]').forEach(b=>{
+    b.classList.toggle('active', b.dataset.e===era); }); }
+  applyFilters();
+  const id = getParam('id');
+  if (id){ const p = PEOPLE.find(x=>x.id===id); if (p) openModal(p); }
+}
+
+function setEra(btn, e){
+  curEra = e;
+  document.querySelectorAll('#era-row [data-e]').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters(){
+  const q = (document.getElementById('ppl-q').value||'').toLowerCase().trim();
+  let list = PEOPLE.filter(p => curEra==='all' || p.era===curEra);
+  if (q){
+    list = list.filter(p=>{
+      const hay = (p.name+' '+(p.aka||[]).join(' ')+' '+(p.roles||[]).join(' ')+' '+(p.summary||'')).toLowerCase();
+      return hay.includes(q);
+    });
+  }
+  render(list);
+}
+
+function render(list){
+  document.getElementById('ppl-meta').textContent =
+    list.length + (list.length===1?' person':' people') + (curEra!=='all'? ' · '+curEra : '');
+  const grid = document.getElementById('ppl-grid');
+  grid.innerHTML = list.map(p=>
+    '<div class="ppl-card" onclick="openModal(PEOPLE.find(x=>x.id===\''+p.id+'\'))">'
+    + '<span class="ppl-era">'+esc(p.era)+'</span>'
+    + '<h3>'+esc(p.name)+'</h3>'
+    + (p.roles&&p.roles.length? '<div class="ppl-roles">'+esc(p.roles.join(' · '))+'</div>':'')
+    + '<p class="ppl-sum">'+esc(p.summary)+'</p>'
+    + '</div>'
+  ).join('') || '<div class="empty" style="grid-column:1/-1;text-align:center;color:var(--brown-light);padding:2rem;">No people match that filter.</div>';
+}
+
+function srcChip(id){
+  const r = SRCMAP[id];
+  if (!r) return '<a title="source">'+esc(id)+'</a>';
+  if (r.type==='book')
+    return '<a href="'+esc(r.ref)+'" target="_blank" rel="noopener">Book p.'+esc(String(r.page))+'</a>';
+  if (r.ref)
+    return '<a href="'+esc(r.ref)+'" target="_blank" rel="noopener">'+esc(r.title||id)+'</a>';
+  return '<a>'+esc(id)+'</a>';
+}
+
+function openModal(p){
+  if (!p) return;
+  const dates = p.dates && (p.dates.born || p.dates.died)
+    ? '<p class="pm-aka">'+esc([p.dates.born?('b. '+p.dates.born):'', p.dates.died?('d. '+p.dates.died):''].filter(Boolean).join(' · '))+'</p>' : '';
+  let html = '<button class="pm-close" onclick="closeModal()" aria-label="Close">×</button>'
+    + '<h2>'+esc(p.name)+'</h2>'
+    + (p.aka&&p.aka.length? '<p class="pm-aka">also: '+esc(p.aka.join(', '))+'</p>':'')
+    + dates
+    + '<div class="pm-tags"><span class="ppl-era">'+esc(p.era)+'</span>'
+    + (p.roles&&p.roles.length? '<span class="ppl-roles" style="display:inline">'+esc(p.roles.join(' · '))+'</span>':'')+'</div>'
+    + '<p>'+esc(p.summary)+'</p>';
+  if (p.contributions && p.contributions.length){
+    html += '<div class="pm-section-h">Contributions &amp; Records</div>';
+    html += p.contributions.map(c=>
+      '<div class="pm-contrib">'+esc(c.text)
+      + (c.sources&&c.sources.length? '<div class="pm-srcs">'+c.sources.map(srcChip).join('')+'</div>':'')
+      + '</div>').join('');
+  }
+  if (p.sources && p.sources.length){
+    html += '<div class="pm-section-h">All Sources</div><div class="pm-srcs">'
+      + p.sources.map(srcChip).join('') + '</div>';
+  }
+  document.getElementById('pm-body').innerHTML = html;
+  document.getElementById('person-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  history.replaceState(null,'','people.html?id='+encodeURIComponent(p.id));
+}
+function closeModal(){
+  document.getElementById('person-modal').classList.remove('open');
+  document.body.style.overflow = '';
+  history.replaceState(null,'','people.html');
+}
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+
+initPeople();
+</script>
+
+</body>
+</html>

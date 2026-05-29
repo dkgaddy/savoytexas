@@ -1,0 +1,14 @@
+{
+  "id": "elk-18",
+  "source_id": "elk-18",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/elk 18.jpeg",
+  "title": "S. A. Harper — grocer",
+  "date": "",
+  "text": "S. A. HARPER.\n\nWe would not undertake to say how long the above named gentleman has been in business here. Since the writer has known anything about Savoy, S. A Harper has been weighing sugar and wrapping bacon for his scores of customers. The oldest inhabitants bought their groceries from him and trained their children to do the same thing. From a little wooden building on Water street, his business now fills a nice brick on Hays street.",
+  "people": ["S. A. Harper"],
+  "places": ["Savoy", "Water street", "Hays street"],
+  "dates": [],
+  "topics": ["business", "grocery", "merchant", "advertisement"],
+  "notes": "Business profile/advertisement feature from The Elk publication. Mentions two Savoy street names: Water street and Hays street."
+}

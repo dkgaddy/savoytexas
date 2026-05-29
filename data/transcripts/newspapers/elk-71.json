@@ -1,0 +1,14 @@
+{
+  "id": "elk-71",
+  "source_id": "elk-71",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 71.jpeg",
+  "title": "R. S. Blakey — obituary",
+  "date": "",
+  "text": "R. S. Blakey\n\nFuneral services for Robert S. Blakey, 71, who died at his home three miles north of Savoy Sunday following several weeks illness, were held at the Methodist church at Savoy Monday at 2 p. m., the Rev. E. J. Holifield officiating. Burial was in Sunnyside cemetery. Nephews were pallbearers.\n\nMr. Blakey was born in Grayson county February 2, 1870, son of Mr. and Mrs. J. W. Blakey. He was married March 2, 1890 to Rebecca Wrenn. He had lived near Savoy for many years.\n\nSurviving are his widow; two daughters, Mrs. George Short and Mrs. R. C. Elk of Savoy; two sons, J. T. and C. A. Blakey of Savoy; a sister, Mrs. Fannie Badgett of Whitewright; a brother, T. E. Blakey of Savoy; 14 grandchildren and three great-grandchildren.",
+  "people": ["Robert S. Blakey", "E. J. Holifield", "J. W. Blakey", "Rebecca Wrenn", "George Short", "R. C. Elk", "J. T. Blakey", "C. A. Blakey", "Fannie Badgett", "T. E. Blakey"],
+  "places": ["Savoy", "Grayson County", "Whitewright", "Sunnyside Cemetery"],
+  "dates": ["February 2, 1870", "March 2, 1890"],
+  "topics": ["obituary", "funeral", "Methodist church"],
+  "notes": "Handwritten annotation 'Feb 12' visible at bottom right, likely a filing date."
+}

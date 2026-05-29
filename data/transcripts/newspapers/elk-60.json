@@ -1,0 +1,14 @@
+{
+  "id": "elk-60",
+  "source_id": "elk-60",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 60.jpeg",
+  "title": "Savoy City Marshal Dies",
+  "date": "",
+  "text": "Savoy City Marshal Dies\n\nSAVOY—William Hollingsworth, 59, Savoy city marshal and a native of Whitewright, died suddenly of a heart attack at 4:30 a. m. today at his home.\n\nFuneral services will be held at 2 p. m. Thursday at the local Baptist Church with the Rev. Evert Springfield, pastor, officiating. Burial will be in Sunnyside Cemetery, directed by Strickland and Earnheart Funeral Home. Pallbearers will be K. J. Bibby, W. C. Beckham, M. O. Brooks, Earl Blakey, Duke Durrett and A. C. Lyles.\n\nMr. Hollingsworth was born at Whitewright Feb. 2, 1886. He and Miss Ivy Johnson were married at Savoy. He had been a member of the Baptist Church 41 years.\n\nSurviving are his wife; a son, Leon Hollingsworth of Savoy; a sister, Mrs. J. W. Smith of Denison; his stepmother, Mrs. A. J. Hollingsworth of Denison and four stepbrothers.",
+  "people": ["William Hollingsworth", "Evert Springfield", "K. J. Bibby", "W. C. Beckham", "M. O. Brooks", "Earl Blakey", "Duke Durrett", "A. C. Lyles", "Ivy Johnson", "Leon Hollingsworth", "Mrs. J. W. Smith", "J. W. Smith", "Mrs. A. J. Hollingsworth", "A. J. Hollingsworth"],
+  "places": ["Savoy", "Whitewright", "Sunnyside Cemetery", "Denison", "Baptist Church"],
+  "dates": ["Feb. 2, 1886"],
+  "topics": ["obituary", "death", "city marshal", "funeral"],
+  "notes": ""
+}

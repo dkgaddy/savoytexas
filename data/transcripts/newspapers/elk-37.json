@@ -1,0 +1,14 @@
+{
+  "id": "elk-37",
+  "source_id": "elk-37",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 37.jpeg",
+  "title": "Savoy — community news items",
+  "date": "",
+  "text": "Savoy\n\nCpl Troy McKinney, Camp Livingston, La. is spending a 11 day furlough with his mother, Mrs. Tim Short, before being transferred to Camp Cook, Cal. Pvt. Trueman McKinney, Camp Maxey; and Miss Mary Jesse McKinney,, Dallas have also been guests in the home.\n\nClarence Rino, of the U. S. Navy, with his wife of Dallas have been visiting his parents Mr. and Mrs. Ernest Rino.\n\nMr. and Mrs. E. E. Patton and children have returned from Wichita Falls.",
+  "people": ["Troy McKinney", "Mrs. Tim Short", "Trueman McKinney", "Mary Jesse McKinney", "Clarence Rino", "Ernest Rino", "E. E. Patton"],
+  "places": ["Savoy", "Camp Livingston, La.", "Camp Cook, Cal.", "Camp Maxey", "Dallas", "Wichita Falls"],
+  "dates": [],
+  "topics": ["World War II", "military", "furlough", "U.S. Navy", "community news"],
+  "notes": "Double comma after 'McKinney,,' in original text — preserved verbatim."
+}

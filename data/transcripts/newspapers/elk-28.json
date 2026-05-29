@@ -1,0 +1,14 @@
+{
+  "id": "elk-28",
+  "source_id": "elk-28",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 28.jpeg",
+  "title": "Robert William Denton, Native of Savoy, Dies",
+  "date": "",
+  "text": "Robert William Denton,\nNative of Savoy, Dies\n\nSAVOY—Funeral service will be held in Savoy Saturday at 2 p.m. for Robert William Denton, 63, a flooring contractor and native of Savoy, who died Wednesday afternoon in the Veterans Hospital in Little Rock, Ark. Burial will be in Sunnyside Cemetery, near here.\n\nMr. Denton was born Oct. 14, 1893, a son of the late Mr. and Mrs. Joe Denton. For the last three years he had lived in Mena, Ark. In May, 1919, he married Miss Mae Large here. He was a veteran of World War I.\n\nSurvivors are his wife; one daughter, Mrs. Francis Horner of Oklahoma; one son, Clarence Denton of Mena, Ark.; a brother, H. A. Denton of Denison; five grandchildren and two great grandchildren.",
+  "people": ["Robert William Denton", "Joe Denton", "Mrs. Joe Denton", "Mae Large", "Mrs. Francis Horner", "Clarence Denton", "H. A. Denton"],
+  "places": ["Savoy", "Little Rock, Ark.", "Sunnyside Cemetery", "Mena, Ark.", "Oklahoma", "Denison"],
+  "dates": ["Oct. 14, 1893", "May, 1919"],
+  "topics": ["obituary", "death", "funeral", "World War I", "veteran"],
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "elk-1",
+  "source_id": "elk-1",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/elk 1.jpeg",
+  "title": "Ray Sampson obituary",
+  "date": "",
+  "text": "Ray Sampson\n\nRay Sampson, 46, of 2116 N. Crockett, died Thursday night at his home after an extended illness. Funeral services will be held at 10 a.m. Saturday in the Dannel Funeral Chapel with Rev. Tom Graves of the Key Memorial Methodist Church conducting the services, assisted by Rev. James L. Koontz of Dallas. Burial will be in Sunnyside Cemetery, Savoy, under the direction of Dannel and Son Funeral Home.\n\nMr. Sampson was born March 13, 1922, in Midlothian, the son of R. S. and Shelia Foster Sampson. On Nov. 17, 1945, he married the former Edna Earle Elk. He had made his home in Sherman for the last 20 years and was a member of the Key Memorial Methodist Church.\n\nSurvivors include his wife; his parents, Mr. and Mrs. R. S. Sampson of Denison; four brothers: Frank Sampson and David Sampson of Denison, Roy Sampson of Tom Bean, and Vernon Sampson of Dallas; three sisters: Mrs. Perry Kinnamon of Denison, Mrs. Leon Fox of Florida, and Mrs. Faye Cole of Sherman; and several nieces and nephews.\n\nPallbearers will be Irby Smith, Howard Hestand Jr., Jim Hartwig, Harold Groner, E. J. Taylor, and Hugh Ballou.\n\nThe family will be at the Dannel and Son Funeral Home Friday from 7:30 to 8:30 p.m. At other times they will be at the family residence, 2116 N. Crockett.",
+  "people": ["Ray Sampson", "Rev. Tom Graves", "Rev. James L. Koontz", "R. S. Sampson", "Shelia Foster Sampson", "Edna Earle Elk", "Mrs. R. S. Sampson", "Frank Sampson", "David Sampson", "Roy Sampson", "Vernon Sampson", "Mrs. Perry Kinnamon", "Mrs. Leon Fox", "Mrs. Faye Cole", "Irby Smith", "Howard Hestand Jr.", "Jim Hartwig", "Harold Groner", "E. J. Taylor", "Hugh Ballou"],
+  "places": ["Savoy", "Midlothian", "Sunnyside Cemetery", "Sherman", "Denison", "Tom Bean", "Dallas", "Florida"],
+  "dates": ["March 13, 1922", "Nov. 17, 1945"],
+  "topics": ["obituary", "death", "funeral", "Methodist Church", "Dannel and Son Funeral Home"],
+  "notes": "Address given as 2116 N. Crockett (Sherman)."
+}

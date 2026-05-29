@@ -1,0 +1,14 @@
+{
+  "id": "elk-43",
+  "source_id": "elk-43",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 43.jpeg",
+  "title": "Dr. J. W. Chenoweth — advertisement",
+  "date": "Oct. 23 1865",
+  "text": "Dr. J. W. Chenoweth,\nOCCULIST AND SURGEON;\nHas Located Two Miles East of\nKy-Town, Grayson Co., Texas,\nWHERE he is prepared to treat all kinds of diseased eyes, with full confidence of giving general satisfaction. He is also prepared to perform any operation on the eye, as well as any other Surgical operation that may be necessary.\n\nKentucky-Town, Oct. 23 1865.",
+  "people": ["J. W. Chenoweth"],
+  "places": ["Kentucky-Town", "Grayson Co., Texas"],
+  "dates": ["Oct. 23 1865"],
+  "topics": ["advertisement", "medicine", "oculist", "surgeon", "eye care"],
+  "notes": "Printed advertisement clipping. 'Ky-Town' is an abbreviation for Kentucky-Town, an early Grayson County community."
+}

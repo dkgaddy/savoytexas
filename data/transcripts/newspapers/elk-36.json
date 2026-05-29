@@ -1,0 +1,14 @@
+{
+  "id": "elk-36",
+  "source_id": "elk-36",
+  "type": "elk_publication",
+  "image": "Images/Newspapers/Elk 36.jpeg",
+  "title": "W. R. Brooks obituary",
+  "date": "",
+  "text": "W. R. Brooks\n\nSAVOY—Funeral services were held at 2 p.m. Monday in the Methodist Church, Savoy, for W. R. Brooks, 81, a retired farmer of Savoy, who died at 12:10 p.m. Sunday in a Bonham rest home, after a long illness.\n\nThe Rev. M. E. Fairchild, pastor, conducted the services. Burial was in Sunnyside Cemetery, directed by Earnheart Funeral Home, Whitewright.\n\nMr. Brooks was born April 4, 1877 in Lampases. He was a member of the Methodist Church.\n\nSurvivors are nieces and nephews.",
+  "people": ["W. R. Brooks", "Rev. M. E. Fairchild"],
+  "places": ["Savoy", "Bonham", "Sunnyside Cemetery", "Whitewright", "Lampases"],
+  "dates": ["April 4, 1877"],
+  "topics": ["obituary", "death", "funeral", "Methodist Church", "Earnheart Funeral Home"],
+  "notes": "Bottom of clipping slightly cut off; last line reads 'phews.' — presumed 'nephews.'"
+}
