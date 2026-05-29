@@ -22,7 +22,7 @@
     :root {
       --nav-bg:        #3d2010;   /* warm dark brown — matches mockup nav */
       --nav-border:    #c4943a;
-      --hero-bg:       #ede8d8;   /* light cream — matches sky tone in hero photo */
+      --hero-bg:       #e8dcc4;   /* matches the "More Ways to Explore" section bg */
       --parchment:     #f0e8d4;   /* three-column section background */
       --parchment-dk:  #e0d0b0;   /* darker parchment */
       --section-alt:   #e8dcc4;   /* alternating section */
@@ -49,50 +49,161 @@
     img { display: block; }
 
     /* ══════════════════════════════════════════
-       NAVIGATION — two-bar layout
+       HEADER — dark top bar + parchment nav + overlapping badge
     ══════════════════════════════════════════ */
-    .site-nav {
-      position: sticky;
-      top: 0;
-      z-index: 300;
-    }
+    .site-header { position: relative; z-index: 100; }
 
-    /* ── Top parchment bar: seal + brand + search ── */
-    .nav-top {
-      background: var(--parchment);
-      border-bottom: 1px solid var(--border);
+    /* ── Top dark utility bar (search) ── */
+    .topbar {
+      background: var(--nav-bg);
+      border-bottom: 1px solid #57361c;
     }
-    .nav-top-inner {
+    .topbar-inner {
       max-width: 1260px;
       margin: 0 auto;
-      padding: 0.5rem 1.5rem;
+      padding: 0.35rem 1.5rem;
       display: flex;
       align-items: center;
-      gap: 0.9rem;
+      min-height: 38px;
+    }
+    .site-search {
+      margin-left: auto;
+      display: flex;
+      align-items: stretch;
+      border: 1px solid #6a4424;
+      background: #321a0c;
+    }
+    .site-search input {
+      width: 190px;
+      padding: 0.34rem 0.65rem;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--cream);
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+    }
+    .site-search input::placeholder {
+      color: #9a7450;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.62rem;
+    }
+    .site-search button {
+      background: var(--gold-dk);
+      border: none;
+      color: #2a1408;
+      padding: 0 0.7rem;
+      cursor: pointer;
+      font-size: 0.72rem;
+      transition: background 0.2s;
+    }
+    .site-search button:hover { background: var(--gold); }
+
+    /* ── Parchment nav bar ── */
+    .navbar {
+      background: var(--section-alt);
+      border-bottom: 2px solid var(--gold);
+    }
+    .navbar-inner {
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 0 1.5rem 0 170px;   /* left gap clears the overlapping badge */
+      display: flex;
+      align-items: center;
+      min-height: 54px;
     }
 
-    /* ── Badge / Seal ── */
-    .nav-seal {
-      flex-shrink: 0;
-      width: 66px;
-      height: 66px;
+    /* ── Nav links — Rye on parchment ── */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 0;
+      margin-left: 0;   /* left-justified, sitting next to the badge */
     }
-    .nav-seal svg { width: 100%; height: 100%; }
+    .nav-links a {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      height: 54px;
+      padding: 0 0.85rem;
+      font-family: 'Rye', serif;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      color: var(--brown-mid);
+      border-bottom: 3px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--red);
+      border-bottom-color: var(--red);
+    }
+    .nav-caret { font-size: 0.55rem; opacity: 0.6; }
 
-    /* ── Brand text (in top bar) ── */
-    .nav-brand {
-      flex-shrink: 0;
-      line-height: 1.15;
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--brown-deep);
+      font-size: 1.5rem;
+      cursor: pointer;
     }
-    .nav-brand-name {
+
+    /* ── Overlapping die-cut badge w/ William Savoy portrait ── */
+    .badge-layer {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      max-width: 1260px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 0;
+      pointer-events: none;
+      z-index: 120;
+    }
+    .brand-badge {
+      position: absolute;
+      top: 7px;
+      left: 1.5rem;
+      width: 140px;
+      padding: 10px 10px 14px;
+      background: #f6f0e0;
+      border: 1px solid rgba(122, 80, 48, 0.30);
+      border-radius: 8px;
+      box-shadow: inset 0 0 0 4px #f6f0e0, inset 0 0 0 5px rgba(160,120,56,0.5),
+                  0 5px 16px rgba(60,32,16,0.22);
+      text-align: center;
+      pointer-events: auto;
+    }
+    .badge-photo {
+      display: block;
+      width: 102px; height: 120px;
+      margin: 0 auto 6px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--gold-dk);
+      background: #1a0b03;
+    }
+    .badge-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      filter: sepia(25%) contrast(1.05) brightness(1.05);
+    }
+    .badge-name {
       display: block;
       font-family: 'Rye', serif;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: var(--brown-deep);
-      letter-spacing: 0.03em;
+      line-height: 1;
+      margin-bottom: 6px;
     }
-    .nav-brand-sub {
+    .badge-sub {
       display: block;
+      margin-top: 5px;
       font-family: 'Oswald', sans-serif;
       font-size: 0.62rem;
       font-weight: 400;
@@ -100,88 +211,29 @@
       text-transform: uppercase;
       color: var(--red);
     }
-    .nav-brand-tag {
-      display: block;
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.52rem;
-      font-weight: 300;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--brown-light);
-    }
 
-    .nav-search-btn {
-      margin-left: auto;
+    /* ── Line · star · line decoration (shared) ── */
+    .deco {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.65rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--brown-light);
-      cursor: pointer;
-      white-space: nowrap;
-      transition: color 0.2s;
+      justify-content: center;
+      gap: 0.6rem;
+      margin: 0.45rem 0 1.25rem;
     }
-    .nav-search-btn:hover { color: var(--red); }
-
-    /* ── Bottom dark bar: nav links ── */
-    .nav-links-bar {
-      background: var(--nav-bg);
-      border-bottom: 2px solid var(--nav-border);
-    }
-    .nav-links-inner {
-      max-width: 1260px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      display: flex;
-      align-items: center;
-    }
-
-    /* ── Nav links ── */
-    .nav-links {
-      display: flex;
-      list-style: none;
-      gap: 0;
-    }
-    .nav-links a {
-      display: flex;
-      align-items: center;
-      gap: 0.2rem;
-      height: 44px;
-      padding: 0 0.85rem;
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 400;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #c4b090;
-      border-bottom: 3px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
-      white-space: nowrap;
-    }
-    .nav-links a:hover, .nav-links a.active {
-      color: var(--cream);
-      border-bottom-color: var(--gold);
-    }
-    .nav-caret { font-size: 0.5rem; opacity: 0.7; }
-
-    .nav-toggle {
-      display: none;
-      background: none;
-      border: none;
-      color: var(--cream);
-      font-size: 1.5rem;
-      cursor: pointer;
-      margin-left: auto;
-    }
+    .deco-line { height: 1px; width: 46px; background: var(--gold-dk); }
+    .deco-star { color: var(--red); font-size: 0.95rem; line-height: 1; }
 
     /* ══════════════════════════════════════════
        HERO — warm tan bg, photo fades in from right
     ══════════════════════════════════════════ */
+    /* Full-width band behind the hero — fills the side gutters with the
+       same tan as the "More Ways to Explore" section */
+    .hero-band { background: var(--section-alt); }
+
     .hero {
       position: relative;
+      max-width: 1260px;     /* match the centered content width — no full-bleed */
+      margin: 0 auto;
       min-height: 520px;
       background: var(--hero-bg);
       /* subtle aged paper texture via repeating gradient */
@@ -191,7 +243,7 @@
           rgba(0,0,0,0.012) 0px, rgba(0,0,0,0.012) 1px,
           transparent 1px, transparent 4px
         ),
-        linear-gradient(160deg, #f0ece0 0%, #ede8d8 35%, #e4deca 65%, #e8e0d0 100%);
+        linear-gradient(160deg, #ece1c9 0%, #e8dcc4 45%, #e3d6ba 75%, #e8dcc4 100%);
       overflow: hidden;
     }
 
@@ -210,7 +262,7 @@
       height: 100%;
       object-fit: cover;
       object-position: center 40%;
-      filter: sepia(55%) contrast(0.88) brightness(0.82);
+      filter: sepia(60%) contrast(0.95) brightness(1.02) saturate(0.85);
     }
 
     /* Text content */
@@ -219,58 +271,60 @@
       z-index: 2;
       max-width: 1260px;
       margin: 0 auto;
-      padding: 3.5rem 1.5rem 5rem;
+      padding: 7rem 1.5rem 5rem;   /* top padding clears the overlapping badge */
       width: 100%;
     }
 
-    .hero-est {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.68rem;
-      font-weight: 400;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .hero-est::before, .hero-est::after {
-      content: '';
-      height: 1px;
-      width: 40px;
-      background: var(--red);
-      opacity: 0.5;
+    /* Left text column — flush left, sitting below the badge */
+    .hero-text {
+      max-width: 480px;
+      margin-left: 0;
+      text-align: left;
     }
 
     .hero-discover {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 300;
-      letter-spacing: 0.25em;
+      font-family: 'Rye', serif;
+      font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+      font-weight: 400;
+      letter-spacing: 0.01em;
       text-transform: uppercase;
-      color: var(--brown-light);
-      line-height: 1.5;
+      color: #1a0b03;
+      line-height: 1.12;
+      margin: 0 auto 0.35rem;   /* centered block */
+      max-width: 8em;           /* wrap "DISCOVER THE / STORY OF" onto two lines */
+      text-align: center;
     }
 
     .hero-title {
       font-family: 'Rye', serif;
-      font-size: clamp(4rem, 8.5vw, 7rem);
+      font-size: clamp(3.5rem, 7vw, 5.5rem);
       font-weight: 400;   /* Rye only has one weight */
-      color: var(--brown-deep);
+      color: var(--red);
       line-height: 0.95;
-      margin-bottom: 1.1rem;
+      margin-bottom: 0.4rem;
       letter-spacing: 0.02em;
       text-shadow: 1px 2px 8px rgba(0,0,0,0.10);
+      text-align: center;
     }
+
+    /* Star · line decoration under the title (left-aligned per mockup) */
+    .hero-deco {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-deco .deco-line { height: 2px; width: 70px; background: var(--gold-dk); }
+    .hero-deco .deco-star { color: var(--red); font-size: 1.7rem; line-height: 1; }
 
     .hero-desc {
       font-family: 'Lora', serif;
       font-size: 0.9rem;
       color: var(--brown-light);
       line-height: 1.8;
-      max-width: 400px;
-      margin-bottom: 1.75rem;
+      max-width: 420px;
+      margin: 0 0 1.75rem;
     }
 
     .btn-hero {
@@ -324,21 +378,13 @@
     .feat-col:last-child { border-right: none; }
 
     .feat-heading {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
+      font-family: 'Rye', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
       color: var(--brown-deep);
-      margin-bottom: 0.6rem;
-    }
-
-    /* Full-width red rule under heading */
-    .feat-rule {
-      height: 2px;
-      background: var(--red);
-      margin-bottom: 1.25rem;
-      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
     }
 
     .feat-gallery-img {
@@ -488,11 +534,11 @@
     }
 
     .section-head h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
+      font-family: 'Rye', serif;
+      font-size: 1.85rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      text-transform: none;
       color: var(--brown-deep);
     }
 
@@ -536,13 +582,14 @@
     }
 
     .tile-heading {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
+      font-family: 'Rye', serif;
+      font-size: 0.95rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      text-transform: none;
       color: var(--brown-deep);
-      margin-bottom: 0.5rem;
+      text-align: center;
+      margin-bottom: 0.55rem;
     }
 
     .tile-text {
@@ -581,7 +628,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 2rem;
+      gap: 1.75rem;
+    }
+
+    .cta-hat {
+      flex-shrink: 0;
+      font-size: 2.8rem;
+      color: var(--gold);
+      opacity: 0.92;
     }
 
     .cta-text h2 {
@@ -789,14 +843,19 @@
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
     }
     @media (max-width: 768px) {
-      .nav-links { display: none; flex-direction: column; width: 100%; }
+      .navbar-inner { padding: 0 1rem; justify-content: flex-end; }
+      .nav-links { display: none; flex-direction: column; width: 100%; margin-left: 0; }
       .nav-links.open { display: flex; }
-      .nav-links a { height: auto; padding: 0.9rem 1.5rem;
-        border-bottom: 1px solid rgba(255,255,255,0.06); }
-      .nav-toggle { display: block; }
-      .nav-search-btn { display: none; }
+      .nav-links a { height: auto; padding: 0.9rem 0.5rem;
+        border-bottom: 1px solid rgba(0,0,0,0.06); }
+      .nav-toggle { display: block; margin-left: auto; }
+      .site-search input { width: 130px; }
+      .brand-badge { width: 108px; top: 5px; }
+      .badge-photo { width: 74px; height: 88px; }
+      .badge-name { font-size: 1rem; }
       .hero-photo { width: 100%; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 20%, black 60%); mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 20%, black 60%); }
       .hero-content { padding: 3rem 1rem 5rem; }
+      .hero-text { max-width: 100%; }
       .feature-strip-inner { grid-template-columns: 1fr; }
       .feat-col { border-right: none; border-bottom: 1px solid var(--border); }
       .feat-col:last-child { border-bottom: none; }
@@ -809,55 +868,23 @@
 <body>
 
 <!-- ═══════════════════════════════════════════
-     NAVIGATION — two-bar
+     HEADER — dark top bar + parchment nav + overlapping badge
 ═══════════════════════════════════════════ -->
-<nav class="site-nav">
+<header class="site-header">
 
-  <!-- TOP BAR: parchment — seal, brand, search -->
-  <div class="nav-top">
-    <div class="nav-top-inner">
-
-      <!-- Circular Seal / Badge -->
-      <a href="index.html" class="nav-seal" title="Savoy, Texas Historical Archive">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
-          <defs>
-            <path id="arc-top" d="M 18,60 A 42,42 0 0,1 102,60"/>
-            <path id="arc-bot" d="M 22,68 A 38,38 0 0,0 98,68"/>
-          </defs>
-          <circle cx="60" cy="60" r="57" fill="#2c1507" stroke="#c4943a" stroke-width="2"/>
-          <circle cx="60" cy="60" r="50" fill="none" stroke="#c4943a" stroke-width="1"/>
-          <circle cx="60" cy="10"  r="2" fill="#c4943a"/>
-          <circle cx="60" cy="110" r="2" fill="#c4943a"/>
-          <circle cx="10" cy="60"  r="2" fill="#c4943a"/>
-          <circle cx="110" cy="60" r="2" fill="#c4943a"/>
-          <polygon points="60,22 66,40 86,40 70,52 77,70 60,58 43,70 50,52 34,40 54,40" fill="#c4943a"/>
-          <text font-family="Oswald, sans-serif" font-size="9" fill="#c4943a" letter-spacing="3">
-            <textPath href="#arc-top" startOffset="10%">GRAYSON COUNTY</textPath>
-          </text>
-          <text font-family="Oswald, sans-serif" font-size="8" fill="#c4943a" letter-spacing="2.5">
-            <textPath href="#arc-bot" startOffset="12%">EST. · 1885 · TEXAS</textPath>
-          </text>
-        </svg>
-      </a>
-
-      <!-- Brand -->
-      <a href="index.html" class="nav-brand">
-        <span class="nav-brand-name">Savoy</span>
-        <span class="nav-brand-sub">Texas</span>
-        <span class="nav-brand-tag">Our Town · Our History</span>
-      </a>
-
-      <!-- Search link -->
-      <a href="#archives" class="nav-search-btn">
-        <i class="fa fa-magnifying-glass"></i> Search the Site
-      </a>
-
+  <!-- TOP DARK BAR: search the site -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <form class="site-search" onsubmit="return runSearch(this.q.value)">
+        <input name="q" type="text" placeholder="Search the site" aria-label="Search the site" />
+        <button type="submit" title="Search"><i class="fa fa-magnifying-glass"></i></button>
+      </form>
     </div>
   </div>
 
-  <!-- BOTTOM BAR: dark brown — nav links -->
-  <div class="nav-links-bar">
-    <div class="nav-links-inner">
+  <!-- PARCHMENT NAV BAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
       <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
@@ -869,13 +896,23 @@
         <li><a href="maps.html">Maps</a></li>
       </ul>
     </div>
+  </nav>
+
+  <!-- OVERLAPPING BADGE — William Savoy portrait -->
+  <div class="badge-layer">
+    <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
+      <span class="badge-name">Savoy</span>
+      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">Texas</span>
+    </a>
   </div>
 
-</nav>
+</header>
 
 <!-- ═══════════════════════════════════════════
      HERO
 ═══════════════════════════════════════════ -->
+<div class="hero-band">
 <div class="hero">
 
   <!-- Fading photo (right side) -->
@@ -885,17 +922,23 @@
 
   <!-- Text content (left, on top of tan bg) -->
   <div class="hero-content">
-    <p class="hero-est">Est. c. 1867</p>
-    <p class="hero-discover">Discover the<br>Story of</p>
-    <h1 class="hero-title">Savoy</h1>
-    <p class="hero-desc">
-      Explore the rich history of our small Texas town —
-      from frontier beginnings and a celebrated college
-      to the close-knit community it remains today.
-    </p>
-    <a class="btn-hero" href="history.html">
-      Explore Our History &nbsp;&#9658;
-    </a>
+    <div class="hero-text">
+      <p class="hero-discover">Discover the Story of</p>
+      <h1 class="hero-title">Savoy</h1>
+      <div class="hero-deco">
+        <span class="deco-line"></span>
+        <span class="deco-star">&#9733;</span>
+        <span class="deco-line"></span>
+      </div>
+      <p class="hero-desc">
+        Explore the rich history of our small Texas town —
+        from frontier beginnings and a celebrated college
+        to the close-knit community it remains today.
+      </p>
+      <a class="btn-hero" href="history.html">
+        Explore Our History &nbsp;&#9658;
+      </a>
+    </div>
   </div>
 
   <!-- Torn paper bottom edge — reveals parchment section below -->
@@ -907,6 +950,7 @@
   </div>
 
 </div>
+</div>
 
 <!-- ═══════════════════════════════════════════
      THREE-COLUMN FEATURE STRIP
@@ -917,7 +961,7 @@
     <!-- Gallery -->
     <div class="feat-col">
       <p class="feat-heading">Photo Gallery</p>
-      <div class="feat-rule"></div>
+      <div class="deco"><span class="deco-line"></span><span class="deco-star">&#9733;</span><span class="deco-line"></span></div>
       <img class="feat-gallery-img" src="Images/Photos-1850-1899/downtown-savoy_small.jpg"
            alt="Historic downtown Savoy" loading="lazy" />
       <p class="feat-text">
@@ -929,7 +973,7 @@
     <!-- Timeline -->
     <div class="feat-col">
       <p class="feat-heading">Timeline</p>
-      <div class="feat-rule"></div>
+      <div class="deco"><span class="deco-line"></span><span class="deco-star">&#9733;</span><span class="deco-line"></span></div>
       <ul class="tl-mini">
         <li><strong>c. 1867</strong>Savoy is settled by the Savoy family in Grayson County, Texas.</li>
         <li><strong>1876</strong>R.R. Halsell founds the Savoy Male &amp; Female College, bringing higher education to North Texas.</li>
@@ -942,7 +986,7 @@
     <!-- Archives / Search -->
     <div class="feat-col" id="archives">
       <p class="feat-heading">Search Our Archives</p>
-      <div class="feat-rule"></div>
+      <div class="deco"><span class="deco-line"></span><span class="deco-star">&#9733;</span><span class="deco-line"></span></div>
       <p class="feat-text">Search hundreds of records, documents, newspaper articles, photos, and more.</p>
       <div class="search-row">
         <input class="search-input" type="text" placeholder="Search by keyword, name, event…" id="site-search" />
@@ -1050,6 +1094,7 @@
 ═══════════════════════════════════════════ -->
 <div class="cta-strip">
   <div class="cta-inner">
+    <i class="fa-solid fa-hat-cowboy cta-hat"></i>
     <div class="cta-text">
       <h2>Help Preserve Our History</h2>
       <p>Our history belongs to all of us. Share your photos, stories, and artifacts to help keep Savoy's past alive for future generations.</p>
@@ -1170,15 +1215,20 @@
 </footer>
 
 <script>
+function runSearch(raw) {
+  const q = (raw || '').trim().toLowerCase();
+  if (!q) return false;
+  let dest = 'photos.html';
+  if (q.includes('map') || q.includes('cyclone path')) dest = 'maps.html';
+  else if (q.includes('paper') || q.includes('news') || q.includes('fire')) dest = 'newspapers.html';
+  else if (q.includes('doc') || q.includes('charter') || q.includes('census')) dest = 'documents.html';
+  else if (q.includes('photo') || q.includes('gallery')) dest = 'photos.html';
+  else if (q.includes('timeline') || q.includes('history')) dest = 'timeline.html';
+  window.location.href = dest;
+  return false;
+}
 function doSearch() {
-  const q = document.getElementById('site-search').value.trim().toLowerCase();
-  if (!q) return;
-  if (q.includes('map') || q.includes('cyclone path')) window.location.href = 'maps.html';
-  else if (q.includes('paper') || q.includes('news') || q.includes('fire')) window.location.href = 'newspapers.html';
-  else if (q.includes('doc') || q.includes('charter') || q.includes('census')) window.location.href = 'documents.html';
-  else if (q.includes('photo') || q.includes('gallery')) window.location.href = 'photos.html';
-  else if (q.includes('timeline') || q.includes('history')) window.location.href = 'timeline.html';
-  else window.location.href = 'photos.html';
+  return runSearch(document.getElementById('site-search').value);
 }
 document.getElementById('site-search').addEventListener('keydown', e => {
   if (e.key === 'Enter') doSearch();

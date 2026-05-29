@@ -1,2 +1,11 @@
 .DS_Store
 .claude/settings.local.json
+
+# Local screenshot tooling & scratch renders (not part of the site)
+shot.js
+shot_clip.js
+shot_wide.js
+iter*.png
+clip_top.png
+wide.png
+out.png
