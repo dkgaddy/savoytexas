@@ -375,6 +375,10 @@
     .feat-col {
       padding: 2.25rem 2rem 2rem;
       border-right: 1px solid var(--border);
+      background-image: url('Images/tornpage.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     .feat-col:last-child { border-right: none; }
 
@@ -621,6 +625,7 @@
       border-bottom: 2px solid var(--gold);
       padding: 2.4rem 1.5rem;
       position: relative;
+      overflow: visible;
     }
 
     .cta-inner {
@@ -634,16 +639,18 @@
 
     .cta-hat {
       flex-shrink: 0;
-      font-size: 2.8rem;
-      color: var(--gold);
-      opacity: 0.92;
+      height: 178px;
+      width: auto;
+      margin: -48px 0;
+      align-self: center;
+      display: block;
     }
 
     .cta-text h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.4rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
+      font-family: 'Rye', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--cream);
       margin-bottom: 0.35rem;
@@ -978,7 +985,7 @@
       <p class="feat-heading">Timeline</p>
       <div class="deco"><span class="deco-line"></span><span class="deco-star">&#9733;</span><span class="deco-line"></span></div>
       <ul class="tl-mini">
-        <li><strong>c. 1867</strong>Savoy is settled by the Savoy family in Grayson County, Texas.</li>
+        <li><strong>c. 1867</strong>Savoy is settled by the Savoy family in Fannin County, Texas.</li>
         <li><strong>1876</strong>R.R. Halsell founds the Savoy Male &amp; Female College, bringing higher education to North Texas.</li>
         <li><strong>1880</strong>A devastating cyclone strikes the town; newspapers across Texas cover the disaster.</li>
         <li><strong>1885+</strong>Savoy receives its town charter. Commerce, churches, and schools flourish for generations.</li>
@@ -1097,7 +1104,7 @@
 ═══════════════════════════════════════════ -->
 <div class="cta-strip">
   <div class="cta-inner">
-    <i class="fa-solid fa-hat-cowboy cta-hat"></i>
+    <img class="cta-hat" src="Images/hat-cut.png" alt="Cowboy hat" />
     <div class="cta-text">
       <h2>Help Preserve Our History</h2>
       <p>Our history belongs to all of us. Share your photos, stories, and artifacts to help keep Savoy's past alive for future generations.</p>
@@ -1212,7 +1219,7 @@
   </div>
 
   <div class="footer-bottom">
-    <span>&copy; 2025 Savoy, Texas Historical Archive &nbsp;&middot;&nbsp; Grayson County, Texas</span>
+    <span>&copy; 2025 Savoy, Texas Historical Archive &nbsp;&middot;&nbsp; Fannin County, Texas</span>
     <span><a href="#">Privacy Policy</a></span>
   </div>
 </footer>

@@ -12,6 +12,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/site.js" defer></script>
+  <style>
+    /* Inline article figures: float left so the prose wraps alongside */
+    .prose .inline-fig {
+      float: left;
+      max-width: 380px;
+      margin: 0.4rem 1.75rem 1.1rem 0;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    /* Each section starts below any floated figure above it */
+    .prose h2 { clear: both; }
+    @media (max-width: 640px) {
+      .prose .inline-fig { float: none; max-width: 100%; margin: 1.5rem 0; }
+    }
+  </style>
 </head>
 <body>
 
@@ -58,7 +73,7 @@
 
 <div class="page-banner">
   <h1>The History of Savoy, Texas</h1>
-  <p>From frontier settlement to present-day community — 150 years in Grayson County</p>
+  <p>From frontier settlement to present-day community — 150 years in Fannin County</p>
   <div class="breadcrumb">
     <a href="index.html">Home</a> <span>›</span> <span>History</span>
   </div>
@@ -72,8 +87,12 @@
       <article class="prose">
 
         <h2 id="founding">Founding &amp; the Savoy Family</h2>
+        <div class="inline-fig">
+          <img src="Images/Photos-1850-1899/HHArterberryDryGoods.jpg" alt="H.H. Arterberry Dry Goods" loading="lazy" style="width:100%; filter:sepia(25%);" />
+          <div style="padding:0.6rem 0.75rem; background:var(--parchment); font-size:0.78rem; color:var(--brown-light); font-style:italic; border-top:1px solid var(--border-light);">H.H. Arterberry Dry Goods — one of Savoy's earliest businesses</div>
+        </div>
         <p>
-          Savoy, Texas, takes its name from the family that planted roots in this corner of Grayson County
+          Savoy, Texas, takes its name from the family that planted roots in this corner of Fannin County
           in the years following the Civil War. Col. William Savoy — whose portrait and engraving survive
           in this archive — was among the earliest settlers, joined by his son George Washington Savoy and
           other family members including Marshal Savoy. They settled in the rolling farmland of North Texas,
@@ -86,12 +105,11 @@
           family were also among the early pioneers who gave Savoy its social and civic character.
         </p>
 
-        <div style="margin:1.5rem 0; border:1px solid var(--border); padding:0; overflow:hidden; max-width:380px;">
-          <img src="Images/Photos-1850-1899/HHArterberryDryGoods.jpg" alt="H.H. Arterberry Dry Goods" loading="lazy" style="width:100%; filter:sepia(25%);" />
-          <div style="padding:0.6rem 0.75rem; background:var(--parchment); font-size:0.78rem; color:var(--brown-light); font-style:italic; border-top:1px solid var(--border-light);">H.H. Arterberry Dry Goods — one of Savoy's earliest businesses</div>
-        </div>
-
         <h2 id="college">Savoy Male &amp; Female College (1876–1890)</h2>
+        <div class="inline-fig">
+          <img src="Images/Photos-1850-1899/savoymalefemalecollegefacilty.jpeg" alt="Savoy College Faculty" loading="lazy" style="width:100%; filter:sepia(25%);" />
+          <div style="padding:0.6rem 0.75rem; background:var(--parchment); font-size:0.78rem; color:var(--brown-light); font-style:italic; border-top:1px solid var(--border-light);">Savoy Male &amp; Female College Faculty, c. 1880s</div>
+        </div>
         <p>
           The defining institution of early Savoy was its college. In 1876, R.R. Halsell — a photograph
           of whom survives, captioned simply "rrhalsellcollege-founder" — established the Savoy Male
@@ -124,11 +142,6 @@
           available in the <a href="documents.html#pdf">Documents section</a>, and its full text is now
           <a href="search.html?q=college">searchable in the archive</a>.
         </p>
-
-        <div style="margin:1.5rem 0; border:1px solid var(--border); overflow:hidden; max-width:380px;">
-          <img src="Images/Photos-1850-1899/savoymalefemalecollegefacilty.jpeg" alt="Savoy College Faculty" loading="lazy" style="width:100%; filter:sepia(25%);" />
-          <div style="padding:0.6rem 0.75rem; background:var(--parchment); font-size:0.78rem; color:var(--brown-light); font-style:italic; border-top:1px solid var(--border-light);">Savoy Male &amp; Female College Faculty, c. 1880s</div>
-        </div>
 
         <h2 id="cyclone">The Great Cyclone of 1880</h2>
         <p>
@@ -173,6 +186,10 @@
         </p>
 
         <h2 id="earlytwentieth">The Early Twentieth Century</h2>
+        <div class="inline-fig">
+          <img src="Images/Photos-1900-1919/downtown-savoy-south-side-of-street-1900ish.jpg" alt="Downtown Savoy c.1900" loading="lazy" style="width:100%; filter:sepia(25%);" />
+          <div style="padding:0.6rem 0.75rem; background:var(--parchment); font-size:0.78rem; color:var(--brown-light); font-style:italic; border-top:1px solid var(--border-light);">Downtown Savoy — South side of the street, c. 1900</div>
+        </div>
         <p>
           Savoy entered the new century as a functioning small town. The <em>Savoy Star</em> newspaper
           chronicled community life. Currency from the Savoy Bank survives in the archive. The town's
@@ -185,11 +202,6 @@
           and high school buildings document the town's investment in public education.
         </p>
 
-        <div style="margin:1.5rem 0; border:1px solid var(--border); overflow:hidden; max-width:380px;">
-          <img src="Images/Photos-1900-1919/downtown-savoy-south-side-of-street-1900ish.jpg" alt="Downtown Savoy c.1900" loading="lazy" style="width:100%; filter:sepia(25%);" />
-          <div style="padding:0.6rem 0.75rem; background:var(--parchment); font-size:0.78rem; color:var(--brown-light); font-style:italic; border-top:1px solid var(--border-light);">Downtown Savoy — South side of the street, c. 1900</div>
-        </div>
-
         <h2 id="depression">The Depression &amp; New Schools (1930s)</h2>
         <p>
           The 1930s brought hardship to Savoy as to the rest of the country, but also investment. Photographs
@@ -201,6 +213,10 @@
         </p>
 
         <h2 id="postwar">Post-War Life &amp; The Great Fire (1940s–1950s)</h2>
+        <div class="inline-fig">
+          <img src="Images/Photos-1940-1959/SavoyFire(1954).jpg" alt="1954 Fire" loading="lazy" style="width:100%; filter:sepia(15%);" />
+          <div style="padding:0.6rem 0.75rem; background:var(--parchment); font-size:0.78rem; color:var(--brown-light); font-style:italic; border-top:1px solid var(--border-light);">The 1954 fire — one of the most destructive events in Savoy's twentieth-century history</div>
+        </div>
         <p>
           The 1940s saw Savoy's young men go to war. A 1944 Paris News article on page 3 reflects the
           regional war coverage that touched every small Texas community. In 1946, a newspaper story
@@ -218,11 +234,6 @@
           and its aftermath. Mayor S.A. Bibby presided over the community's response. By 1956, a new City
           Hall and Fire Station had been built — the community's answer to the disaster.
         </p>
-
-        <div style="margin:1.5rem 0; border:1px solid var(--border); overflow:hidden; max-width:380px;">
-          <img src="Images/Photos-1940-1959/SavoyFire(1954).jpg" alt="1954 Fire" loading="lazy" style="width:100%; filter:sepia(15%);" />
-          <div style="padding:0.6rem 0.75rem; background:var(--parchment); font-size:0.78rem; color:var(--brown-light); font-style:italic; border-top:1px solid var(--border-light);">The 1954 fire — one of the most destructive events in Savoy's twentieth-century history</div>
-        </div>
 
         <h2 id="later">Later Decades (1960s–2000s)</h2>
         <p>
@@ -321,7 +332,7 @@
           <span>Historical Reference</span>
         </div>
       </div>
-      <p>A community archive preserving the history of Savoy, Texas — Grayson County.</p>
+      <p>A community archive preserving the history of Savoy, Texas — Fannin County.</p>
     </div>
     <div>
       <h4>Quick Links</h4>
@@ -346,7 +357,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    &copy; 2025 Savoy, Texas Historical Archive · Grayson County, Texas
+    &copy; 2025 Savoy, Texas Historical Archive · Fannin County, Texas
   </div>
 </footer>
 

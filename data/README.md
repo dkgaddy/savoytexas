@@ -32,7 +32,7 @@ data/
   "date": "1876",              // best-known date or null
   "text": "Full word-for-word transcription...",
   "people": ["William Savoy", "Hazle Lee Rice"],
-  "places": ["Savoy", "Grayson County"],
+  "places": ["Savoy", "Fannin County"],
   "topics": ["college", "founding"],
   "notes": "transcriber note, e.g. illegible word marked [?]"
 }
