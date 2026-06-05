@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tales from Savoy — Savoy, Texas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tales.css" />
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="topbar-inner">
+      <form class="site-search" onsubmit="return runSearch(this.q.value)">
+        <input name="q" type="text" placeholder="Search the site" aria-label="Search the site" />
+        <button type="submit" title="Search"><i class="fa fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History <span class="nav-caret">▾</span></a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="tales.html" class="active">Tales from Savoy</a></li>
+        <li><a href="photos.html">Photos &amp; Media <span class="nav-caret">▾</span></a></li>
+        <li><a href="yearbooks.html">Yearbooks</a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents <span class="nav-caret">▾</span></a></li>
+        <li><a href="maps.html">Maps</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="badge-layer">
+    <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
+      <span class="badge-name">Savoy</span>
+      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">Texas</span>
+    </a>
+  </div>
+</header>
+
+<div class="page-banner">
+  <h1>Tales from Savoy</h1>
+  <p>Stories drawn from the archive — the people and moments that made this town</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> <span>›</span> <span>Tales from Savoy</span>
+  </div>
+</div>
+
+<section>
+  <div class="inner">
+
+    <div class="tales-intro">
+      <p>The archive holds thousands of documents, photographs, and newspaper clippings spanning a century and a half.
+         These tales draw on that record to tell the stories that gave Savoy its character — the deals,
+         the disasters, the institutions, and the people who kept building something worth remembering.</p>
+    </div>
+
+    <div class="tales-grid">
+
+      <a href="tale-colonel.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Photos-1850-1899/ColSavoy_Engraving.jpg" alt="Col. William Savoy engraving" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1872 &nbsp;·&nbsp; Founding</div>
+          <div class="tale-card-title">Forty Acres and a Name</div>
+          <p class="tale-card-teaser">A Mississippi-born adventurer gave forty acres to a railroad and asked for one thing in return: that the town bear his name. The deed was filed in Bonham on October 29, 1872.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-cyclone.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Photos-1850-1899/SavoyCycloneAftermath.jpeg" alt="Cyclone aftermath" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1880 &nbsp;·&nbsp; Disaster</div>
+          <div class="tale-card-title">The Night the Cyclone Came</div>
+          <p class="tale-card-teaser">At 10:10 p.m. on Friday, May 28, 1880, a tornado tore through the center of Savoy. The hotel keeper later said it was over in five seconds.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-college.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Photos-1850-1899/savoycollegephilosophyclass.jpeg" alt="Savoy College philosophy class" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1876–1890 &nbsp;·&nbsp; Education</div>
+          <div class="tale-card-title">The Colonel's College</div>
+          <p class="tale-card-teaser">For fourteen years, the Savoy Male and Female College was one of the genuine intellectual centers of North Texas. Then the building burned, and the last class was never dismissed.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-press.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Photos-1940-1959/savoystarpress.jpeg" alt="Savoy Star printing press" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1890s–1940s &nbsp;·&nbsp; Commerce</div>
+          <div class="tale-card-title">The Press That Wouldn't Die</div>
+          <p class="tale-card-teaser">An 1830 Washington hand press printed the Savoy Star for forty-one years. When it finally stopped, the Sherman Democrat bought it as a museum piece.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-fire.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Photos-1940-1959/SavoyFire(1954).jpg" alt="1954 Savoy fire" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1954 &nbsp;·&nbsp; Disaster</div>
+          <div class="tale-card-title">Saturday Before Dawn</div>
+          <p class="tale-card-teaser">The fire in downtown Savoy started around 4:30 in the morning, when most of the town was still asleep. By the time anyone could respond, it had already taken three buildings.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-bell.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Photos-1940-1959/SavoyMethodistChurch(1950).jpg" alt="Savoy Methodist Church" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1878–2005 &nbsp;·&nbsp; Community</div>
+          <div class="tale-card-title">The Bell on Fowler Street</div>
+          <p class="tale-card-teaser">Col. Savoy gave the town his name. He also gave the lot on Fowler Street where the Methodist church was built in 1878. More than 125 years later, the bell still rings.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-five-seconds.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Newspapers/cyclone1.jpg" alt="Cyclone retrospective" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">May 28, 1880 &nbsp;·&nbsp; Eyewitness</div>
+          <div class="tale-card-title">Five Seconds</div>
+          <p class="tale-card-teaser">The hotel keeper was asked what the cyclone was like. He thought about it and said: five seconds. That was all the time it gave the town before it was gone.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-doctor.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Photos-1850-1899/SavoyCycloneAftermath2.jpeg" alt="Cyclone aftermath" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">May 28, 1880 &nbsp;·&nbsp; Eyewitness</div>
+          <div class="tale-card-title">The Doctor in the Dark</div>
+          <p class="tale-card-teaser">Dr. McKee was a physician in Savoy on the night the cyclone struck. His wife broke her arm. The seminary became a hospital. Someone in Bonham thought: send ice.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-premonition.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Photos-1850-1899/1880-savoy-1.jpg" alt="Cyclone damage" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">May 28, 1880 &nbsp;·&nbsp; Eyewitness</div>
+          <div class="tale-card-title">The Premonition</div>
+          <p class="tale-card-teaser">On the evening of May 28, 1880, a Savoy blacksmith moved his family out of their house. He couldn't say why — he just felt something was wrong. Two hours later, the cyclone took the house.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-rilla.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Documents/savoytornadoList.jpg" alt="Tornado victim list" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">May 28–29, 1880 &nbsp;·&nbsp; The Cyclone</div>
+          <div class="tale-card-title">Rilla</div>
+          <p class="tale-card-teaser">The cyclone threw her forty or fifty yards clear of the wreckage. She was not found until daylight. They brought her to the seminary, and she died the next morning.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-cows.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Newspapers/1993-News-Cyclone.jpeg" alt="1993 cyclone retrospective" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1880 / 1937 / 1993 &nbsp;·&nbsp; Memory</div>
+          <div class="tale-card-title">Cows Were Found with Their Feathers</div>
+          <p class="tale-card-teaser">Fifty-seven years after the cyclone, survivors still told the strange stories. Two doctors blown naked. Balls of electricity rolling across a floor. Chicken feathers driven into cattle hides.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-poem.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Newspapers/1930-News-CyclonePoem.jpeg" alt="1930 cyclone poem" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1930 &nbsp;·&nbsp; Memory</div>
+          <div class="tale-card-title">The Anniversary Poem</div>
+          <p class="tale-card-teaser">On the fiftieth anniversary of the cyclone, a woman named M. May published a poem in the local paper. It began: "'Twas in the year of 1880 on the 28th of May."</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-indian.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Newspapers/1964-News-GoldRush.jpeg" alt="1964 gold rush story" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1884 &nbsp;·&nbsp; The Colonel</div>
+          <div class="tale-card-title">The Colonel and the Indian</div>
+          <p class="tale-card-teaser">In 1884, Col. Savoy boarded a train carrying California gold nuggets from his 1849 trip. He met a man he'd once known in Indian Territory who pulled out a gold nugget of his own.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-register.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Documents/RegisterOfInfantBaptismsDestroyed.jpg" alt="Destroyed church register" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1880–1895 &nbsp;·&nbsp; Memory &amp; Record</div>
+          <div class="tale-card-title">What the Register Lost</div>
+          <p class="tale-card-teaser">The original church records of Savoy's Methodist congregation were lost in the 1880 cyclone. When a new register was compiled from memory, someone wrote in the margin: "probably in some instances incorrect."</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-eula.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Newspapers/2007-News-EulaPhillips.jpeg" alt="Eula Phillips profile" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">Mid-20th Century &nbsp;·&nbsp; Community</div>
+          <div class="tale-card-title">Eula Phillips, Stringer</div>
+          <p class="tale-card-teaser">For years, Eula Phillips filed news dispatches from Savoy to the county paper. She wasn't paid much. She was paid attention. The whole town knew that if something happened, Eula would write it down.</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+      <a href="tale-supersack.html" class="tale-card" style="text-decoration:none; color:inherit;">
+        <img class="tale-card-img" src="Images/Newspapers/1988-News-SuperSack.jpeg" alt="Super Sack groundbreaking 1988" loading="lazy" />
+        <div class="tale-card-body">
+          <div class="tale-card-era">1969–1990s &nbsp;·&nbsp; Industry</div>
+          <div class="tale-card-title">The Super Sack Town</div>
+          <p class="tale-card-teaser">In 1969, a company put a plant in Savoy and started making bags. By 1988, 177 employees cheered at a groundbreaking. The name became so ubiquitous that competitors' customers started asking for "some super sacks."</p>
+          <span class="tale-card-link">Read the tale <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></span>
+        </div>
+      </a>
+
+    </div><!-- /tales-grid -->
+
+  </div><!-- /inner -->
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="f-logo">
+        <span class="f-star">★</span>
+        <div class="f-logo-text">
+          <strong>Savoy, Texas</strong>
+          <span>Historical Reference</span>
+        </div>
+      </div>
+      <p>A community archive preserving the history of Savoy, Texas — Fannin County.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="photos.html">Photo Gallery</a></li>
+        <li><a href="newspapers.html">Newspapers</a></li>
+        <li><a href="documents.html">Documents</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Tales</h4>
+      <ul>
+        <li><a href="tale-colonel.html">Forty Acres and a Name</a></li>
+        <li><a href="tale-cyclone.html">The Night the Cyclone Came</a></li>
+        <li><a href="tale-college.html">The Colonel's College</a></li>
+        <li><a href="tale-press.html">The Press That Wouldn't Die</a></li>
+        <li><a href="tale-fire.html">Saturday Before Dawn</a></li>
+        <li><a href="tale-bell.html">The Bell on Fowler Street</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Savoy, Texas Historical Archive · Fannin County, Texas
+  </div>
+</footer>
+
+</body>
+</html>
