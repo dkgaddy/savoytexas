@@ -1,7 +1,7 @@
 /* ============================================================
    SAVOY, TEXAS — Historical Reference Website
    "Prairieville" western theme — shared styles for subpages.
-   Fonts: Rye (display), Oswald (labels/nav), Lora (body).
+   Fonts: Rye (display), Lora (body).
    Matches the design established in index.html.
    ============================================================ */
 
@@ -78,7 +78,7 @@ a { color: var(--red); text-decoration: none; }
   border: none;
   outline: none;
   color: var(--cream);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.72rem;
   letter-spacing: 0.08em;
 }
@@ -169,7 +169,7 @@ a { color: var(--red); text-decoration: none; }
   top: 7px;
   left: 1.5rem;
   width: 140px;
-  padding: 10px 10px 14px;
+  padding: 10px 10px 10px;
   background: #f6f0e0;
   border: 1px solid rgba(122, 80, 48, 0.30);
   border-radius: 8px;
@@ -196,7 +196,7 @@ a { color: var(--red); text-decoration: none; }
 .badge-name {
   display: block;
   font-family: 'Rye', serif;
-  font-size: 1.4rem;
+  font-size: 1.15rem;
   color: var(--brown-deep);
   line-height: 1;
   margin-bottom: 6px;
@@ -204,10 +204,10 @@ a { color: var(--red); text-decoration: none; }
 .badge-sub {
   display: block;
   margin-top: 5px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.62rem;
   font-weight: 400;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--red);
 }
@@ -246,7 +246,7 @@ a { color: var(--red); text-decoration: none; }
 
 .breadcrumb {
   margin-top: 1rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -265,7 +265,7 @@ a { color: var(--red); text-decoration: none; }
 .btn {
   display: inline-block;
   padding: 0.7rem 1.7rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.76rem;
   font-weight: 400;
   letter-spacing: 0.18em;
@@ -317,7 +317,7 @@ section.dark {
 }
 
 .section-label {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.7rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -401,7 +401,7 @@ section.dark .section-head p { color: var(--brown-xlight); }
   margin-bottom: 1.25rem;
 }
 .sidebar-card h4 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.72rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -458,7 +458,7 @@ section.dark .section-head p { color: var(--brown-xlight); }
   background: var(--cream);
   color: var(--brown-mid);
   cursor: pointer;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.74rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -475,7 +475,7 @@ section.dark .section-head p { color: var(--brown-xlight); }
 .decade-panel.active { display: block; }
 
 .decade-count {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.74rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -552,7 +552,7 @@ section.dark .section-head p { color: var(--brown-xlight); }
   margin-bottom: 0.2rem;
 }
 .arch-cap span {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.66rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -601,7 +601,7 @@ section.dark .section-head p { color: var(--brown-xlight); }
 .map-card-body p { font-size: 0.85rem; color: var(--brown-mid); }
 
 .card-arrow-link {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -718,7 +718,7 @@ section.dark .section-head p { color: var(--brown-xlight); }
   opacity: 0.9;
 }
 #lightbox-counter {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   color: var(--brown-xlight);
   font-size: 0.72rem;
   margin-top: 0.3rem;
@@ -790,7 +790,7 @@ footer {
   color: var(--cream);
 }
 .f-logo-text span {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.62rem;
   letter-spacing: 0.26em;
   text-transform: uppercase;
@@ -805,7 +805,7 @@ footer p, footer li {
 }
 
 footer h4 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.26em;
@@ -826,7 +826,7 @@ footer ul li a:hover { color: var(--gold); }
 .footer-bottom {
   max-width: 1260px;
   margin: 1.25rem auto 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rye', serif;
   font-size: 0.65rem;
   letter-spacing: 0.08em;
   color: var(--brown-light);
@@ -860,7 +860,7 @@ footer ul li a:hover { color: var(--gold); }
   .site-search input { width: 130px; }
   .brand-badge { width: 108px; top: 5px; }
   .badge-photo { width: 74px; height: 88px; }
-  .badge-name { font-size: 1rem; }
+  .badge-name { font-size: 0.82rem; }
 }
 
 @media (max-width: 640px) {

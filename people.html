@@ -6,7 +6,7 @@
   <title>Residents Database — Savoy, Texas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/site.js" defer></script>
@@ -25,13 +25,13 @@
     }
     .ppl-card:hover { box-shadow:0 3px 12px rgba(30,14,4,0.12); border-top-color:var(--red); }
     .ppl-card h3 { font-family:'Rye',serif; font-weight:400; font-size:1.15rem; color:var(--red); margin:0 0 0.3rem; }
-    .ppl-era { font-family:'Oswald',sans-serif; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em;
+    .ppl-era { font-family:'Rye', serif; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em;
       color:#fff; background:var(--brown-light); padding:0.12rem 0.5rem; border-radius:3px; }
-    .ppl-roles { font-family:'Oswald',sans-serif; font-size:0.8rem; color:var(--gold-dk); margin:0.5rem 0 0.4rem;
+    .ppl-roles { font-family:'Rye', serif; font-size:0.8rem; color:var(--gold-dk); margin:0.5rem 0 0.4rem;
       text-transform:uppercase; letter-spacing:0.04em; }
     .ppl-sum { font-family:'Lora',serif; color:var(--brown-mid); line-height:1.55; font-size:0.92rem;
       display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; }
-    .ppl-meta { font-family:'Oswald',sans-serif; color:var(--brown-light); font-size:0.85rem;
+    .ppl-meta { font-family:'Rye', serif; color:var(--brown-light); font-size:0.85rem;
       text-transform:uppercase; letter-spacing:0.06em; text-align:center; margin-bottom:1.2rem; }
     /* detail modal */
     #person-modal { position:fixed; inset:0; background:rgba(20,10,4,0.75); display:none; z-index:1000;
@@ -46,14 +46,14 @@
     .pm-aka { font-family:'Lora',serif; font-style:italic; color:var(--brown-light); margin:0 0 0.6rem; }
     .pm-tags { margin:0.4rem 0 1rem; }
     .pm-tags .ppl-era { margin-right:0.4rem; }
-    .pm-section-h { font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:0.08em;
+    .pm-section-h { font-family:'Rye', serif; text-transform:uppercase; letter-spacing:0.08em;
       font-size:0.85rem; color:var(--gold-dk); border-bottom:1px solid var(--gold); padding-bottom:0.3rem;
       margin:1.4rem 0 0.7rem; }
     .pm-inner p { font-family:'Lora',serif; color:var(--brown-mid); line-height:1.65; }
     .pm-contrib { font-family:'Lora',serif; color:var(--brown-mid); line-height:1.6; margin-bottom:0.8rem;
       padding-left:1rem; border-left:3px solid var(--gold); }
     .pm-srcs { margin-top:0.3rem; }
-    .pm-srcs a { display:inline-block; font-family:'Oswald',sans-serif; font-size:0.72rem; text-transform:uppercase;
+    .pm-srcs a { display:inline-block; font-family:'Rye', serif; font-size:0.72rem; text-transform:uppercase;
       letter-spacing:0.04em; background:var(--parchment-dk); color:var(--brown-mid); padding:0.12rem 0.5rem;
       border-radius:3px; margin:0 0.3rem 0.3rem 0; }
     .pm-srcs a:hover { background:var(--gold); color:#fff; }
@@ -91,9 +91,9 @@
   </nav>
   <div class="badge-layer">
     <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
-      <span class="badge-name">Savoy</span>
-      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
-      <span class="badge-sub">Texas</span>
+      <span class="badge-name">Chat with</span>
+      <span class="badge-photo"><img src="Images/ColSavoy-head.png" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">the Colonel</span>
     </a>
   </div>
 </header>
@@ -280,5 +280,6 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
 initPeople();
 </script>
 
+  <script src="js/colonel-chat.js"></script>
 </body>
 </html>

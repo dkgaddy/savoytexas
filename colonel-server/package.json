@@ -1,0 +1,16 @@
+{
+  "name": "colonel-chat-server",
+  "version": "1.0.0",
+  "description": "Backend for 'Chat with the Colonel' on the Savoy, Texas history website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.0",
+    "express": "^4.21.2"
+  }
+}

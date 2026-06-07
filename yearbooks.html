@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yearbooks — Savoy, Texas</title>
-  <!-- Fonts: Rye (display), Oswald (labels/nav), Lora (body) -->
+  <!-- Fonts: Rye (display), Lora (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
@@ -48,7 +48,7 @@
       line-height: 1;
     }
     .shelf-pages {
-      font-family: 'Oswald', sans-serif; font-size: .72rem; letter-spacing: .08em;
+      font-family: 'Rye', serif; font-size: .72rem; letter-spacing: .08em;
       text-transform: uppercase; color: var(--brown-light, #7a5030); margin-top: .15rem;
     }
 
@@ -61,7 +61,7 @@
       margin-bottom: 1.2rem;
     }
     .yb-btn {
-      font-family: 'Oswald', sans-serif; font-size: .8rem; letter-spacing: .06em;
+      font-family: 'Rye', serif; font-size: .8rem; letter-spacing: .06em;
       text-transform: uppercase; cursor: pointer;
       background: var(--red, #8b2000); color: #f5ead2; border: none;
       padding: .5rem .9rem; border-radius: 3px; transition: background .15s;
@@ -77,11 +77,11 @@
       margin: 0 .4rem;
     }
     .yb-count {
-      font-family: 'Oswald', sans-serif; font-size: .8rem; letter-spacing: .06em;
+      font-family: 'Rye', serif; font-size: .8rem; letter-spacing: .06em;
       color: var(--brown-light, #7a5030); margin-left: auto;
     }
     .yb-jump {
-      font-family: 'Oswald', sans-serif; font-size: .8rem;
+      font-family: 'Rye', serif; font-size: .8rem;
       padding: .45rem .5rem; border: 1px solid var(--border, #c8a870);
       border-radius: 3px; background: var(--parchment, #f0e8d4);
       color: var(--brown-mid, #4a2c14);
@@ -182,7 +182,7 @@
     }
     #ybZoom .zoom-hint {
       position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
-      z-index: 2; font-family: 'Oswald', sans-serif; font-size: .8rem;
+      z-index: 2; font-family: 'Rye', serif; font-size: .8rem;
       letter-spacing: .08em; color: #d9c9a8; text-transform: uppercase;
       background: rgba(40,22,6,.6); padding: .4rem .9rem; border-radius: 3px;
     }
@@ -223,9 +223,9 @@
   </nav>
   <div class="badge-layer">
     <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
-      <span class="badge-name">Savoy</span>
-      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
-      <span class="badge-sub">Texas</span>
+      <span class="badge-name">Chat with</span>
+      <span class="badge-photo"><img src="Images/ColSavoy-head.png" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">the Colonel</span>
     </a>
   </div>
 </header>
@@ -588,5 +588,6 @@
 })();
 </script>
 
+  <script src="js/colonel-chat.js"></script>
 </body>
 </html>

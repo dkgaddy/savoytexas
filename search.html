@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Search the Archive — Savoy, Texas</title>
-  <!-- Fonts: Rye (display), Oswald (labels/nav), Lora (body) -->
+  <!-- Fonts: Rye (display), Lora (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Oswald:wght@300;400;600&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
@@ -22,11 +22,11 @@
     }
     .search-hero input:focus { outline: none; border-color: var(--red); }
     .search-hero button {
-      padding: 0.85rem 1.4rem; font-family: 'Oswald', sans-serif; text-transform: uppercase;
+      padding: 0.85rem 1.4rem; font-family: 'Rye', serif; text-transform: uppercase;
       letter-spacing: 0.08em; background: var(--red); color: #fff; border: none; border-radius: 4px; cursor: pointer;
     }
     .search-hero button:hover { background: var(--red-dark); }
-    .search-meta { font-family:'Oswald',sans-serif; color: var(--brown-light); font-size:0.85rem;
+    .search-meta { font-family:'Rye', serif; color: var(--brown-light); font-size:0.85rem;
       letter-spacing:0.06em; text-transform:uppercase; margin: 0.25rem 0 1.5rem; text-align:center; }
     .filter-row { display:flex; flex-wrap:wrap; gap:0.5rem; justify-content:center; margin-bottom:2rem; }
     .res-card {
@@ -37,23 +37,23 @@
     .res-head { display:flex; flex-wrap:wrap; align-items:baseline; gap:0.6rem; margin-bottom:0.4rem; }
     .res-head h3 { font-family:'Rye',serif; font-size:1.1rem; color:var(--red); margin:0; font-weight:400; }
     .res-badge {
-      font-family:'Oswald',sans-serif; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em;
+      font-family:'Rye', serif; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em;
       padding:0.15rem 0.55rem; border-radius:3px; color:#fff; white-space:nowrap;
     }
     .b-book { background: var(--red); }
     .b-newspaper { background: var(--gold-dk); }
     .b-document { background: var(--brown-light); }
     .b-article { background: #5a6e3a; }
-    .res-date { font-family:'Oswald',sans-serif; font-size:0.8rem; color:var(--brown-light); }
+    .res-date { font-family:'Rye', serif; font-size:0.8rem; color:var(--brown-light); }
     .res-snip { font-family:'Lora',serif; color:var(--brown-mid); line-height:1.6; margin:0.3rem 0 0.6rem; }
     .res-snip mark { background: #f3d98a; color: var(--brown-deep); padding:0 1px; }
-    .res-foot { font-family:'Oswald',sans-serif; font-size:0.78rem; letter-spacing:0.04em; }
+    .res-foot { font-family:'Rye', serif; font-size:0.78rem; letter-spacing:0.04em; }
     .res-foot a { color: var(--gold-dk); }
     .res-foot a:hover { color: var(--red); text-decoration:underline; }
     .res-tags { color: var(--brown-xlight); }
     .empty { text-align:center; color:var(--brown-light); font-family:'Lora',serif; padding:2rem; }
     .people-hits { background: var(--parchment-dk); border-radius:4px; padding:1rem 1.3rem; margin-bottom:1.5rem; }
-    .people-hits h4 { font-family:'Oswald',sans-serif; text-transform:uppercase; letter-spacing:0.08em;
+    .people-hits h4 { font-family:'Rye', serif; text-transform:uppercase; letter-spacing:0.08em;
       font-size:0.8rem; color:var(--brown-light); margin:0 0 0.5rem; }
     .people-hits a { font-family:'Lora',serif; }
   </style>
@@ -90,9 +90,9 @@
 
   <div class="badge-layer">
     <a href="index.html" class="brand-badge" title="Savoy, Texas — Our Town, Our History">
-      <span class="badge-name">Savoy</span>
-      <span class="badge-photo"><img src="Images/Photos-1850-1899/ColWilliamSavoy.jpg" alt="Colonel William Savoy" /></span>
-      <span class="badge-sub">Texas</span>
+      <span class="badge-name">Chat with</span>
+      <span class="badge-photo"><img src="Images/ColSavoy-head.png" alt="Colonel William Savoy" /></span>
+      <span class="badge-sub">the Colonel</span>
     </a>
   </div>
 </header>
@@ -330,5 +330,6 @@ function doSearch(raw){
 initSearch();
 </script>
 
+  <script src="js/colonel-chat.js"></script>
 </body>
 </html>
