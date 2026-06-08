@@ -11,7 +11,7 @@
   // ---- CONFIG ---------------------------------------------------
   // After deploying colonel-server to Railway, paste its URL here:
   //   const COLONEL_API = "https://YOUR-APP.up.railway.app/api/chat";
-  const COLONEL_API = "https://YOUR-RAILWAY-APP.up.railway.app/api/chat";
+  const COLONEL_API = "https://savoytexas-production.up.railway.app/api/chat";
 
   // Head image for the chat header (same one used on the badge).
   const HEAD_IMG = "Images/ColSavoy-head.png";

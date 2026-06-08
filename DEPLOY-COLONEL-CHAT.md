@@ -82,13 +82,13 @@ it accurate.
 In a terminal (or your browser for the first two):
 ```bash
 # health check — should say "Chat with the Colonel — alive and well."
-curl https://YOUR-APP.up.railway.app/
+curl https://savoytexas-production.up.railway.app
 
 # status — shows today's spend, the cap, and the model
-curl https://YOUR-APP.up.railway.app/api/status
+curl https://savoytexas-production.up.railway.app/api/status
 
 # a real question to the Colonel (costs a fraction of a cent)
-curl -X POST https://YOUR-APP.up.railway.app/api/chat \
+curl -X POST https://savoytexas-production.up.railway.app/api/chat \
   -H 'Content-Type: application/json' \
   -d '{"messages":[{"role":"user","content":"How did the town get its name?"}]}'
 ```
@@ -100,7 +100,7 @@ If the last one returns a reply in the Colonel's voice, the backend works. 🎉
 
 1. Open **`js/colonel-chat.js`** and find this line near the top (~line 16):
    ```js
-   const COLONEL_API = "https://YOUR-RAILWAY-APP.up.railway.app/api/chat";
+   const COLONEL_API = "https://savoytexas-production.up.railway.app/api/chat";
    ```
 2. Replace it with your real URL from Step 5 (keep the `/api/chat` on the end):
    ```js
@@ -143,7 +143,7 @@ live URL works, restrict it to your site's origin:
   busy with town business" until the next day (UTC).
 - To make it more usable, raise the cap on Railway — **no code change**, just set
   `DAILY_CAP_USD` (e.g. `0.25` or `1.00`) in Variables.
-- Watch spend anytime at `https://YOUR-APP.up.railway.app/api/status`.
+- Watch spend anytime at `https://savoytexas-production.up.railway.app/api/status`.
 
 ---
 
