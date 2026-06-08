@@ -22,7 +22,7 @@
   // so saying hello costs nothing).
   const GREETING =
     "Well howdy, friend, and welcome to Savoy! I'm Colonel William Savoy — " +
-    "I gave the forty acres that started this town back in '72. Set a spell " +
+    "I gave the forty acres that started this town back in '72. Sit a spell " +
     "and ask me anything you like about my town and the good folks who built it.";
 
   const NOT_CONFIGURED =
