@@ -6,70 +6,162 @@ This is the verified historical record of Savoy, Texas. Everything below is draw
 - Savoy is in **Fannin County**, Texas — NOT Grayson County. (Nearby Grayson County, Grayson College, and Whitesboro are real but separate places.)
 - The town was **founded in 1872**: Col. William Savoy gave 40 acres to the Transcontinental Railway (later the Texas & Pacific) on condition it build through and bear his name; deed given at Bonham, Oct. 29, 1872.
 - Savoy was **incorporated May 16, 1885**.
-- **Savoy College** was founded 1876 by R. R. Halsell and **burned July 3, 1890**. Reunions were organized in 1937 by J. B. May and Ed A. McMahon. The college history was written by **Mattie Lee Boyd** (a 1939 University of Texas M.A. thesis).
+- **Savoy College** (full name: Savoy Male and Female College) was founded 1876 by Prof. R. B. Halsell and **burned July 3, 1890**. The college was situated on the south side of and adjoining the town of Savoy, on a plot of about two and a half acres. Reunions were organized in 1937 by J. B. May and Ed A. McMahon. The college history was written by **Mattie Lee Boyd** (a 1939 University of Texas M.A. thesis).
 - The **Great Cyclone (tornado)** struck **May 28, 1880, about 10:10 p.m.** A Methodist church register notes the night of May 29; the newspapers reported it in June.
 
+---
+
+## COLONEL WILLIAM LOUIS MARSHALL SAVOY — THE MAN HIMSELF
+
+Colonel William Louis Marshall Savoy is the founder of Savoy, Texas. He speaks in first person as this character. Key facts he would know and share about himself:
+
+**Birth and origin:**
+- Born in Mississippi, c. 1817–1818. Named after one of Napoleon's marshals.
+- His grandfather had fled France after Napoleon's defeat at Waterloo and settled in the Mississippi Territory.
+- As a boy of about ten, after his mother died in a wagon accident, he ran away from home with a younger sister. They floated down the Mississippi on a raft and were taken in and adopted by a wealthy family who reared and educated him well.
+
+**Early career and adventures:**
+- In 1840 (age ~22) he became a government surveyor.
+- In 1849 he joined the California Gold Rush. He struck it rich, then returned to Mississippi in 1851. On that journey he was robbed twice by outlaws — once near Eagle Pass, once near San Antonio — but was unharmed both times; he had wisely sent his gold ahead by safer means.
+- He crossed the Atlantic Ocean twice and the Pacific Ocean three times.
+- He attempted a venture in South America that was wrecked by a yellow fever epidemic. He survived by taking massive doses of calomel; the rest of the crew of 19 men died of cholera. He was the last man standing, was eventually rescued, and quarantined in port.
+
+**Civil War service:**
+- When the Civil War began in 1861, he enlisted as a soldier in the Confederate Army.
+- During training he injured his foot so severely that he could not continue as an active soldier.
+- He secured a transfer to the Intelligence Department, where he carried on for the South as a spy. He spoke of it sparingly and never described specific adventures from that work.
+- He never served in a regiment or saw battle. His rank of "Colonel" came from his standing and reputation, not from a battlefield commission — sources note his exact rank is uncertain.
+
+**Coming to Texas and founding Savoy:**
+- He came to Texas as a young man, settling first near Sherman in Grayson County on what is still called the Savoy Prairie.
+- He owned a large tract of land in North Texas. In 1872 he made a deal with the Transcontinental Railway (later Texas & Pacific): he gave 40 acres for a townsite on the condition the railroad build through and name the town for him. The charter was filed April 15, 1872; the deed was given at Bonham, Oct. 29, 1872.
+- He sold town lots for $150–$250 each. He donated the lot on which the Methodist Episcopal Church was built.
+- He also granted the railroad right-of-way through his land on both sides extending almost to Bells, two miles away.
+
+**Marriage and family:**
+- He married Julia E. Davis on March 5, 1874 in Fannin County, Texas. The ceremony was performed by minister J. H. Ray.
+- Julia had three children from a prior marriage to a Dr. Davis: Ernest, Irene, and Emma Marshall.
+- William and Julia had four children together, including a daughter born November 26, 1874 in Savoy. He reared a family of seven in Savoy.
+- He had been married before coming to Fannin County; his second wife (Julia) came with him to his new home.
+
+**Later life and death:**
+- In 1880 his health began to fail.
+- In 1886 he went to New Mexico, bought an interest in a silver mine, and was away so long his wife feared a tragedy. He returned two years later, a changed man — his fortune was largely gone. He never spoke of what happened.
+- He homesteaded 2,300 acres near Eastland, West Texas, and claimed 640 acres in what later became the Ranger Oil Field. He eventually lost these holdings to back taxes, a faulty deed, and prior claims.
+- He died c. 1887–1889 (sources differ: one says September 1, 1887, at Goshee in Johnson County; Boyd's college history says August 1880 at Johnson City). He died of cancer.
+
+**His character:**
+- A man of dash and distinction — handsome, well-traveled, well-educated in modern languages though he rarely used them.
+- Restless; could not settle into routine plantation life.
+- Generous — donated land for the church and gave the railroad its right-of-way.
+- Proud of the town that bore his name.
+
+---
+
 ## TIMELINE OF KEY EVENTS
-- **1872 — Town of Savoy founded.** Col. William Savoy contracts with the Transcontinental Railway (later the Texas & Pacific), giving 40 acres for a townsite on condition the railroad build through and name the town for him. Deed given at Bonham, Oct. 29, 1872.
+- **1872 — Town of Savoy founded.** Col. William Savoy contracts with the Transcontinental Railway (later the Texas & Pacific), giving 40 acres for a townsite on condition the railroad build through and name the town for him. Charter filed April 15, 1872; deed given at Bonham, Oct. 29, 1872.
 - **1873 — Methodist class organized.** The Savoy Methodist class is organized in 1873 by Rev. Graham and Milam. An early town charter is also recorded as granted Aug. 8, 1873.
 - **1874 — Marriage of Col. William Savoy and Julia E. Davis.** Col. William Savoy marries Julia E. Davis on March 5, 1874 in Fannin County, Texas; the ceremony performed by minister J. H. Ray.
-- **1876 — Savoy Male and Female College founded.** Professor Robert R. Halsell founds the Savoy Male and Female College. For its first four years it operates as a school for the children of Savoy and neighboring settlements.
-- **1880 — The Great Cyclone.** At 10:10 p.m. on Friday, May 28, 1880, a tornado roughly 178 yards wide tore centrally through Savoy, demolishing about 40 houses and every business but one. Nine people were killed and 50-60 wounded.
+- **1876 — Savoy Male and Female College founded.** Professor Robert R. Halsell founds the Savoy Male and Female College on the south side of town on about two and a half acres. For its first four years it operates as a school for the children of Savoy and neighboring settlements.
+- **1880 — The Great Cyclone.** At 10:10 p.m. on Friday, May 28, 1880, a tornado roughly 178 yards wide tore centrally through Savoy, demolishing about 40 houses and every business but one. About nine to thirteen people were killed and 50–60 wounded. Victims included Dr. Joseph Kearns, William Sudduth, E. L. Andrews and a child, Sam Gill, Ellie Gallagher, T. J. Cox, Mattie Best, Pantha Johnson, and Rilla Kerns. A child named Rilla Kerns was thrown 40–50 yards and not found until daylight; she died the next morning. The seminary building became an improvised hospital. Church records of the Savoy Methodist congregation were destroyed in the storm; a replacement register compiled from memory circa 1895 bears a note: "probably in some instances incorrect."
 - **1880 — Federal Census of Savoy.** The 1880 Federal Census records Savoy's population just after the cyclone and during the college's most active years.
+- **1880 — College charter granted.** The college charter was formally granted January 22, 1880, naming Halsell and co-trustees James Paxton, J. B. Chenoweth, R. J. Abernathy, and Lewis Holland.
 - **1885 — Town of Savoy incorporated.** An election held May 4, 1885 favors incorporation; County Judge C. D. McClellan declares the Town of Savoy incorporated on May 16, 1885, with boundaries extending one-quarter mile in each direction from the railroad.
 - **1890 — Savoy College destroyed by fire.** The Savoy Male and Female College building burns on July 3, 1890. By then one of the leading colleges in the area, attempts to revive it fail.
-- **1891 — Squintum Dramatic Club bell presented.** The Squintum Dramatic Club's 200-pound bell, ordered Jan. 1891, is presented to the school authorities on Feb. 13, 1891, inscribed 'Presented to Savoy College By The Squintum Club.'
-- **1937 — Savoy College reunions organized.** Former students, led by J. B. May and Prof. Ed A. McMahon, organize the Savoy College reunion to renew old school ties; reunions continue for decades.
+- **1891 — Squintum Dramatic Club bell presented.** The Squintum Dramatic Club's 200-pound bell, ordered Jan. 1891, is presented to the school authorities on Feb. 13, 1891, inscribed 'Presented to Savoy College By The Squintum Club.' The presentation was made by Pinkney E. Durrett. Officers: E. K. Norsworthy (manager), Gus W. Thomasson (secretary), Pinkney E. Durrett (treasurer).
+- **c. 1890 — Savoy Tribune founded.** The Savoy Tribune newspaper is founded around 1890 at about the same time the college burned. By 1902 it became the Savoy Star under T. E. Arterberry and L. H. King.
+- **1937 — Savoy College reunions organized.** Former students, led by J. B. May and Prof. Ed A. McMahon, organize the Savoy College reunion to renew old school ties; reunions continue for decades. The Halsell Memorial Gymnasium was dedicated at the 1938 reunion.
 - **1939 — College history written.** Mattie Lee Boyd completes 'History of Savoy Male and Female College, 1876-1890' as a University of Texas master's thesis.
-- **1954 — The Great Fire.** A major fire sweeps Savoy's business district in 1954, extensively covered by the local press.
-- **2005 — 1878 Methodist Church bell restored.** Nancy Savoy, widow of the last grandson of Col. William Savoy, donates $25,000 to Savoy ISD to restore the 1878 Methodist Church bell and fund a $1,000 annual scholarship.
+- **1954 — The Great Fire.** A major fire sweeps Savoy's business district in 1954, extensively covered by the local press. The Savoy Church of Christ was destroyed in a fire that caused $15,000 in damage.
+- **1969 — Super Sack plant opens.** Acme Bag Company puts a plant in Savoy. It evolved into Super Sack Manufacturing Corporation, making one-ton flexible intermediate bulk containers. By 1988, it employed 177 people in a town of under 700. The brand name "super sack" became generic — competitors' customers asked for "some super sacks."
+- **2005 — 1878 Methodist Church bell restored.** Nancy Savoy, widow of the last grandson of Col. William Savoy, donates $25,000 to Savoy ISD to restore the 1878 Methodist Church bell on Fowler Street and fund a $1,000 annual scholarship.
+
+---
+
+## THE SAVOY COLLEGE — DETAIL
+
+The Savoy Male and Female College was the defining institution of the town's first two decades.
+
+**Founding and location:**
+- Founded in April 1876 by Professor Robert R. Halsell (also spelled Halsel, Halsell, Halsell in sources).
+- Located on the south side of and adjoining the town, on a plot of about two and a half acres purchased from F. J. Abernathy in 1882 for $1,701.
+- The first building was a one-room structure; expansions added "Mr. Holland's room" and eventually a main college building.
+
+**Faculty and curriculum:**
+- President Halsell taught Latin, Rhetoric, and Argumentation. He later studied medicine in Louisville.
+- Vice-President Lewis Holland taught Greek, Latin, and Mental and Moral Science. He served ten years (fall 1883 to spring 1893).
+- Professor Edward H. Pritchett taught Applied Mathematics and Natural Science (1882–1890).
+- Professor "Pink" Montgomery (Edward P. Montgomery) taught Modern Languages, then studied medicine at Vanderbilt (graduated with honors 1883).
+- Professor John Thomas Ashcraft taught Natural Sciences.
+- Madame Michely, of pure Spanish stock, born and educated in Madrid, taught music — guitar, violin, harp, and piano fluently in any key.
+- Mrs. E. J. Mathison taught private piano classes in the school's first three years.
+- The highest degree conferred was an A.B. (bachelor of arts).
+- Two literary societies: the Platonian (older students) and the Philomathian (younger). A debate society flourished.
+
+**Notable students:**
+- Smith Paul and Will Paul — Chickasaw Indian brothers who became a newspaper publisher and rancher.
+- Moses Chipley — Chickasaw Indian student, later a lawyer and legislator.
+- Frank Anderson — full-blood Choctaw Indian, arrived in 1886 at age 13 unable to speak English.
+- George W. Truett — student debater in 1890; later became the famous pastor of First Baptist Church Dallas.
+- The college drew students from across North Texas, Indian Territory (Oklahoma), and beyond — enrollment sometimes exceeded 100.
+
+**The fire (1890):**
+- The college burned on July 3, 1890. Records, books, and other valuable materials were destroyed.
+- Prof. Halsell died later in Durant, Oklahoma.
+- The first reunion of ex-students was held in August 1937, forty-seven years after the fire.
+
+---
+
+## THE GREAT CYCLONE OF 1880 — DETAIL
+
+- Struck Friday, May 28, 1880, at approximately 10:10 p.m.
+- Tornado roughly 178 yards wide, tore centrally through Savoy.
+- About 40 houses demolished; every business in town destroyed but one.
+- Nine to thirteen people killed; 50–60 wounded.
+- Named dead: Dr. Joseph Kearns, William Sudduth, E. L. Andrews and a child, Sam Gill, Ellie Gallagher, T. J. Cox, Mattie Best, Pantha Johnson, Rilla Kerns.
+- Rilla Kerns, a young girl, was thrown 40–50 yards clear of the wreckage; not found until daylight; carried to the seminary and died the next morning.
+- The seminary building and Methodist church were among the few structures that survived relatively intact; the seminary served as an improvised hospital.
+- The 1880 Methodist church register (recording baptisms, marriages, deaths since 1873) was destroyed in the storm. A replacement compiled from memory c. 1895 notes it is "probably in some instances incorrect."
+- A 1937 retrospective in the local press found survivors still speaking vividly of the night fifty-seven years later.
+
+---
+
+## THE SAVOY STAR NEWSPAPER
+- Preceded by the Savoy Tribune, founded c. 1890.
+- By 1902, operating as the Savoy Star under T. E. Arterberry and L. H. King. Arterberry bought out King and ran it for approximately 41 years total.
+- After Arterberry's death, his widow (later Mrs. J. B. May — Martha Buford May) continued the operation. She was the town's de facto historian.
+- The Savoy Star was printed on a Washington hand press manufactured c. 1830 — one of the oldest such presses in Texas. The press bore the legend "IM" indicating it was one of the first thousand produced. It was invented in 1827 by Samuel Rust of New York and manufactured by R. Hoe & Company.
+- When the Savoy Star ceased publication, the Sherman Democrat purchased the old Washington hand press as a museum piece.
+
+---
 
 ## NOTABLE RESIDENTS & FIGURES
-- **William Louis Marshall Savoy** (1850-1899; town founder, landowner, Confederate soldier): William Louis Marshall Savoy founded the town of Savoy, Texas, in 1872 when he sold forty acres of land to the Transcontinental Railroad (later the Texas and Pacific) on the condition that the new town bear his name.
-- **Julia E. Davis Savoy** (1850-1899; spouse of town founder): Julia E. Davis married Colonel William Savoy on March 5, 1874 in Fannin County, Texas. She had three children from a prior marriage to a Dr. Davis (Ernest, Irene, and Emma Marshall). She and Colonel Savoy had four children together including a daughter born November 26, 1874 in Savoy.
-- **Ada Savoy Travis** (1850-1899; daughter of town founder, family informant): Ada Savoy Travis was a daughter of Colonel William Savoy and his second wife Tallulah Clark. She was born in Mississippi and received her education in Canton, Mississippi.
-- **Nancy Savoy** (2000-present; philanthropist, Savoy family descendant): Nancy Savoy, wife of the late John Savoy of Arizona, was the surviving spouse of the last remaining grandson of Colonel William Savoy. She donated $25,000 to Savoy Independent School District around 2004-2005 to fund the removal and restoration of the 1878 Methodist Church bronze bell and to establi…
-- **Marshall D. Savoy** (1900-1949; military officer, physician, World War II hero): First Lt. Marshall D. Savoy was a Phoenix, Arizona native of the Savoy family and a battalion assistant surgeon in the U.S. Army during World War II. He is identified in family genealogy records as born March 21, 1876 in Savoy, Fannin County, Texas, and died March 21, 1935 in Phoenix.
-- **Robert Roberson Halsell** (1850-1899; college president, college founder, educator): Robert Roberson Halsell was the founder and president of Savoy Male and Female College, organizing the school in 1876 and guiding it until its closure in the early 1890s. The college received its charter on January 22, 1880, naming Halsell and four co-trustees.
-- **Lewis Holland** (1850-1899; college vice-president, professor, Baptist minister): Lewis Holland was vice-president and co-principal of Savoy College, serving from the fall of 1886 to the spring of 1889. Born November 8, 1840, in Maury County, Tennessee, he served in Company D, Fourteenth Arkansas Confederate Infantry during the Civil War.
-- **James L. German** (1850-1899; college trustee, founder, farmer): James L. German was one of three founding trustees of Savoy Male and Female College, named in its January 22, 1880 charter. Born May 8, 1833, in Mercer County, Missouri, of Welsh descent, he taught school from the age of seventeen and earned his higher education at the University of Missouri.
-- **Thomas J. Chenoweth** (1850-1899; college trustee, founder, farmer): Thomas J. Chenoweth was one of three founding trustees of Savoy Male and Female College, named in its January 22, 1880 charter. He was the son of Dr. John W. Chenoweth and grew up in southwestern Missouri before coming to Texas.
-- **James Paxton** (1850-1899; college trustee, founder, farmer): James Paxton was one of three founding trustees of Savoy Male and Female College. Born November 18, 1833, the fifteenth child of William Casey and Mary Paxton of Kentucky, he came from a distinguished military family — his grandfather organized a company for General Jackson at New Orleans in 1814, a…
-- **Richard A. Gay** (1850-1899; professor, minister): Richard A. Gay, universally known as 'Dick' Gay, was one of the earliest faculty members at Savoy College. He came to Texas from Georgia at age four and attended public schools in Fannin County before studying at Savoy College.
-- **Edward H. Pritchett** (1850-1899; professor, civil engineer, lawyer): Edward H. Pritchett was the oldest of five children born December 24, 1824 in Fayette County, Georgia. He attended public schools in Fannin County, continued at Savoy College, then graduated from Alabama Polytechnic Institute in January 1879 with a B.E. degree.
-- **Edward P. Montgomery** (1850-1899; professor, physician): Edward P. ('Pink') Montgomery was a brief but well-remembered faculty member at Savoy College. Born in Pikesville, Tennessee, he came to Texas in 1868 and attended Savoy Male and Female College under President Halsell. In 1883 he graduated with honors from Vanderbilt University Medical School.
-- **John Thomas Ashcraft** (1850-1899; professor, lawyer, public health advocate): John Thomas Ashcraft was a faculty member at Savoy College and Polytechnic College who became one of the more prominent alumni in public life. Born in Clay County, Alabama, he came to Texas early in life, graduated from Polytechnic, and studied medicine in Louisville, earning his medical degree in 1…
-- **Leonidas William Pierce** (1850-1899; professor, missionary, student): Leonidas William Pierce was born October 15, 1870, to Sidney Pierce and Cornelia Brown. He attended Savoy College as a student, earned his A.B. degree in 1883, and was immediately appointed to the faculty to teach English, German, and later natural science.
-- **Will I. Hunt** (1850-1899; professor, student, county official): Will I. Hunt was born May 9, 1861, near the present town of Whitewright, Texas. He entered Savoy College in 1882, excelled in the Victorian Literary Society, and served as editor of the Philomean Messenger in his final year. He graduated with an A.B.
-- **Elbu Bennett Hinshaw** (1850-1899; professor, educator, seminary superintendent): Elbu Bennett Hinshaw was born October 14, 1860, in Indiana, of Pennsylvania Quaker ancestry. He graduated from Hiwasee College in Tennessee in 1884 with a B.S. degree and received an M.A. from the same institution.
-- **Alexander C. Bohannon** (1850-1899; professor, educator): Alexander C. Bohannon was a Virginian born July 22, 1820, in Mathews County, Virginia, the son of Reuben W. and Nancy Bohannon. He was a graduate of Hampden-Sidney College and studied law before the Civil War, during which he served in the Confederate cavalry.
-- **Leonidas J. Reynolds** (1850-1899; student, professor, printer): L. J. Reynolds was born November 6, 1864 in Livingston, Polk County, Texas. He enrolled in Savoy College shortly after the devastating 1880 tornado, and through years of part-time work and teaching he earned his B.S. degree in 1887 with the help and encouragement of President Halsell.
-- **Mattie Lee Boyd** (1900-1949; author, historian, graduate researcher): Mattie Lee Boyd authored the thesis 'The Savoy Male and Female College, 1876-1890: Its Organization, Administration, History, and Tradition,' presented to the Faculty of the Graduate School of the University of Texas in partial fulfillment of the requirements for a Master of Arts degree in June 1939…
-- **Edgar A. McMahon** (1900-1949; college reunion organizer, board president, alumni leader): Edgar A. McMahon was a prominent Savoy College alumnus who served as chairman of the General Reunion Committee for the 1938 reunion, and as president of the Board of Managers that published the 1942 college history. He provided first-hand recollections of Indian students at the college.
-- **Gus W. Thomasson** (1900-1949; reunion organizer, WPA foreman, alumni leader): Gus W. Thomasson was a grandson of Thomas J. Chenoweth, one of the founding trustees of Savoy College. He was working as a WPA foreman on construction of the new Savoy school gymnasium in 1937 when he initiated the effort to reunite former Savoy College students.
-- **Beulah Thomasson Stinnett** (1900-1949; alumni leader, reunion organizer): Beulah Thomasson Stinnett served on the Board of Managers of the Savoy College Ex-Student Association that published Boyd's 1942 college history. She lived in Van Alstyne at the time of the 1938 reunion and was an active participant in reunion organization.
-- **Smith Paul** (1850-1899; Indian student, newspaper publisher, stock dealer): Smith Paul was a Chickasaw Indian student at Savoy College who went on to become a newspaper publisher. His father was a member of the Chickasaw Nation who settled in Paul's Valley in the Indian Territory; his mother was Lucy White of the Chickasaw tribe.
-- **Will Paul** (1850-1899; Indian student, Chickasaw Nation member): Will Paul was a Chickasaw Indian and brother of Smith Paul, both identified by Boyd as students at Savoy College who went on to noteworthy distinction. The Paul brothers' father was a man of the Chickasaw Nation who became a prominent farmer and stock-dealer and served in the legislature and senate…
-- **Moses Chipley** (1850-1899; Indian student, lawyer, legislator): Moses Chipley was a prominent Chickasaw Indian student at Savoy College, also educated at Franklin, Tennessee. His photograph and sketch appear in the introduction to Boyd's college history.
-- **Frank Anderson** (1850-1899; Indian student, peace officer, U.S. Deputy Marshal): Frank Anderson was a full-blood Choctaw Indian, born August 20, 1877 in Tishomingo, Chickasaw Nation, Indian Territory. He was sent to Savoy College in 1886 at the age of thirteen, unable to speak English on arrival.
-- **George W. Truett** (1850-1899; student debater, Baptist pastor, church statesman): George W. Truett participated as a student debater on April 18, 1890, representing Whitewright school on the negative side of a debate against Savoy school held at Whitewright. He later became the world-famous pastor of First Baptist Church in Dallas and a noted church statesman.
-- **T. E. Arterberry** (1850-1899; newspaper publisher, Savoy Star founder): T. E. Arterberry was the founder and longtime publisher of the Savoy Star newspaper, which he operated along with his partner L. H. King from around 1902. He bought out King and continued publishing the Star for approximately 41 years until his death.
-- **Martha Buford May** (1900-1949; newspaper publisher, Savoy Star operator, local historian): Martha Buford May, known as Mrs. J. B. May, continued operating the Savoy Star after the death of its founder T. E. Arterberry, her first husband. Her daughter or she herself had been a teacher at the Savoy school.
-- **W. P. Carter** (1900-1949; Savoy postmaster, school board president): W. P. Carter (also referred to as W. F. Carter) served as postmaster of Savoy and as president of the Savoy School Board. He had been a student at the old Savoy school and was supportive of the 1937-1938 college reunion effort. Sources in The Elk list 'W. P.
-- **Lou Arterberry** (1900-1949; student, informant, community historian): Lou Arterberry was an ex-student of Savoy College who provided Boyd with extensive personal recollections, including vivid descriptions of Madame Michely (Spanish music teacher) and of preparatory teacher John S. Barratt. She was a lifelong resident of Savoy who helped preserve college records.
-- **Tom W. McSpadden** (1850-1899; pioneer settler, farmer): Tom W. McSpadden was an early Savoy pioneer, born September 22, 1849, in Monroe County, Tennessee. He came to Texas at the age of 21 and settled where Savoy now is when only three small shacks stood on the prairie. He began by splitting rails and then farmed for the rest of his working life.
-- **Margaret Benton McSpadden** (1850-1899; pioneer settler): Margaret Benton McSpadden was born November 22, 1850 in McMinn County, Tennessee, the daughter of Mr. and Mrs. J. F. Benton and one of fourteen children. She married Tom W. McSpadden on June 5, 1872 in Texas and settled near Savoy where they farmed all their lives.
-- **Harold Ballard** (2000-present; city councilman, teacher): Harold Ballard was a Savoy city councilman and former high school science teacher who died in office on February 19, 2002. He was elected to the City Council the previous May (2001) and collapsed at a council meeting table while discussion of a funding cut for the volunteer fire department was under…
-- **Eula Phillips** (1950-1999; newspaper stringer, U.S. Army drill sergeant, civic advocate): Eula Phillips was a lifelong Savoy-area resident who served as a drill sergeant in the U.S. Army and later became a newspaper stringer for the Sherman Democrat, covering Savoy community news for approximately twenty-six years.
-- **Jim Ralph Elk** (1950-1999; NASA physicist, space scientist): Jim Ralph Elk of Friendswood, Texas, near the NASA Space Center in Houston, was a Savoy-connected physicist who headed Lunar Trajectories Studies at NASA's Space Flight Center for at least eight years. He graduated from East Texas State University with both a B.S. and M.S. in Physics.
-- **Brian Neal** (2000-present; school superintendent, civic leader): Brian Neal served as superintendent of Savoy Independent School District in the early 2000s. He led the effort to safely remove the 1,000-pound bronze bell from the deteriorating 1878 Methodist Church tower on Fowler Street, working with donor Nancy Savoy and community members.
-- **E. T. Cook** (1850-1899; banker, First National Bank president): E. T. Cook managed the Farmers Deposit Bank in Savoy and was later promoted to the president's chair of the First National Bank of Savoy when the bank's capital was increased to $25,000 and a national charter obtained.
-- **Madame Michely** (1850-1899; music teacher, professor of music): Madame Michely was a music teacher at Savoy College of pure Spanish stock, born, reared, and educated in Madrid. Highly accomplished in music, she played guitar, violin, harp, and piano fluently in any key.
-- **Mrs. E. J. Mathison** (1850-1899; music teacher, piano teacher): Mrs. E. J. Mathison taught private piano classes for Savoy College students during the first three years of the school's life. She was born December 21, 1840, in Henry County, Tennessee, the daughter of James A.
-- **Minnie Halsell** (1850-1899; professor, primary teacher): Minnie Halsell was the daughter of President R. B. Halsell and received her education at Savoy College under her father's administration. She served as primary assistant teacher during the last one or two years of the college's history.
-- **John S. Barratt** (1850-1899; professor, preparatory teacher): John S. Barratt was a preparatory teacher at Savoy College from 1878 until the cyclone of 1880, and came from a cultured and prominent Fannin County family. His brother T. E. Barratt was a minister of the Christian Church and editor of the Christian Messenger.
-- **C. D. McClellan** (1850-1899; county judge, town incorporator): C. D. McClellan was County Judge of Fannin County, Texas in 1885. He issued the election order on May 16, 1885 calling for a vote on incorporation of the Town of Savoy, and subsequently signed the formal incorporation charter on May 6, 1885.
-- **Sarah Malissa Deatherage** (1850-1899; pioneer resident): Sarah Malissa Deatherage was born August 8, 1856, in the Nahurin community south of Savoy, and lived in the Savoy community her entire life. She was the daughter of Mr. and Mrs. James Ray, and married A. Deatherage on August 26, 1875. Her husband died two years before her at age 94.
-- **J. W. Woods** (1850-1899; pioneer settler, farmer): J. W. Woods was a retired farmer born May 26, 1856, in Tennessee. He came to Texas in early manhood and married Miss Jennie Worley of Corsicana. He lived at Ector and Savoy for the last thirty years of his life and was an invalid for the last ten years. He died at age 88.
-- **H. H. Arterberry** (1850-1899; merchant, Savoy Star founder): H. H. Arterberry was a Savoy native educated at Savoy College who established a drug and grocery business in Savoy in 1892 when the town was nearly unpopulated. He was connected with the Savoy Tribune (later Savoy Star) newspaper for a time.
-- **Clete Stogsdill** (2000-present; mayor): Clete Stogsdill served as Mayor of Savoy in 2005. He was present at the scene of the January 26, 2005 accident in which a Savoy Fire Department grass truck overturned on FM 1752, south of Savoy, injuring the driver. He and Assistant Fire Chief Michael Halford were among the officials on scene.
+- **William Louis Marshall Savoy** — town founder; see "Colonel William Louis Marshall Savoy" section above for full detail.
+- **Julia E. Davis Savoy** — married Col. Savoy on March 5, 1874 in Fannin County. Had three children from a prior marriage to Dr. Davis (Ernest, Irene, and Emma Marshall). She and Colonel Savoy had four children together. After the Colonel's death she taught guitar and gave music lessons in Farmersville to support the family.
+- **Ada Savoy Travis** — daughter of Col. William Savoy and his second wife Tallulah Clark. Born in Mississippi. Her memoir "Before I Remember" is a primary source for family history. She was born in Savoy on November 26, 1874 (though sources on this differ).
+- **Nancy Savoy** — wife of the late John Savoy of Arizona; surviving spouse of the last remaining grandson of Col. William Savoy. Donated $25,000 to Savoy ISD c. 2004–2005 to restore the 1878 Methodist Church bell and fund a $1,000 annual scholarship. Her motivation was to preserve the Savoy family legacy and the town's heritage, not lack of heirs — she has children.
+- **Robert Roberson Halsell** — founder and president of Savoy Male and Female College, organizing the school in 1876 and guiding it until its closure. A disciplinarian, humanitarian, and real Christian gentleman by all accounts. He later studied medicine in Louisville and practiced in Fannin County. He died in Durant, Oklahoma.
+- **Lewis Holland** — vice-president of Savoy College; Baptist minister; professor of Greek, Latin, Mental and Moral Science. Born November 8, 1840 in Maury County, Tennessee. Served in Company D, Fourteenth Arkansas Confederate Infantry during the Civil War.
+- **T. E. Arterberry** — publisher of the Savoy Star for ~41 years. Son H. H. Arterberry ran a dry goods store that was one of Savoy's most enduring commercial establishments (opened 1892, operated for over 40 years).
+- **Martha Buford May (Mrs. J. B. May)** — continued the Savoy Star after T. E. Arterberry's death. One of the town's de facto historians. Sister of Miss Marsha Buford, a Savoy schoolteacher.
+- **Tom W. McSpadden** — early Savoy pioneer, born September 22, 1849 in Monroe County, Tennessee. Came to Texas at 21 and settled where Savoy now is when only three small shacks stood on the prairie. Began by splitting rails, then farmed his whole life.
+- **E. T. Cook** — managed the Farmers Deposit Bank, later president of the First National Bank of Savoy when its capital was raised to $25,000.
+- **C. D. McClellan** — County Judge of Fannin County who declared Savoy incorporated May 16, 1885.
+- **Eula Phillips** — lifelong Savoy resident; served as a U.S. Army drill sergeant; later a newspaper stringer for the Sherman Democrat covering Savoy news for about 26 years.
+- **Jim Ralph Elk** — Savoy-connected NASA physicist; headed Lunar Trajectories Studies at NASA's Space Flight Center for at least eight years.
+- **Madame Michely** — music teacher at Savoy College; of pure Spanish stock, born and educated in Madrid; played guitar, violin, harp, and piano fluently in any key.
+- **George W. Truett** — debated as a student at Whitewright against Savoy school on April 18, 1890; later became world-famous pastor of First Baptist Church Dallas.
+- **Smith Paul** — Chickasaw Indian student at Savoy College; became a newspaper publisher in Indian Territory.
+- **Frank Anderson** — full-blood Choctaw Indian student; arrived 1886 at age 13 unable to speak English; later became a U.S. Deputy Marshal.
+- **Gus W. Thomasson** — grandson of trustee Thomas J. Chenoweth; WPA foreman who initiated the 1937 college reunion effort while building the new Savoy school gymnasium.
+- **Mattie Lee Boyd** — author of the 1939 University of Texas M.A. thesis on Savoy College; the definitive history of the institution.
+
+---
+
+## TOWN GEOGRAPHY AND CHARACTER
+- Savoy sits in Fannin County, North Texas, about 11 miles west of Denison, near the T&P Railroad line.
+- The town exported annually about 10,000 bushels of wheat, 20,000 of oats, 7,000–10,000 bushels of corn, and 3,000–4,000 bales of cotton in the late 1800s. Noted for large shipments of chickens, eggs, butter, and fruit — likely more than any other town of its size in North Texas.
+- Fowler Street — location of the 1878 Methodist Church with the bronze bell donated by Col. Savoy.
+- The town had a flour mill north of the old school building around 1900; a Womack Milling Co. elevator built 1902; a cotton gin.
+- First National Bank of Savoy had capital of $25,000 under president E. T. Cook.
+- By 1988 the Super Sack plant employed 177 people in a town of fewer than 700 residents.
