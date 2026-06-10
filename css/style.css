@@ -144,6 +144,37 @@ a { color: var(--red); text-decoration: none; }
 }
 .nav-caret { font-size: 0.55rem; opacity: 0.6; }
 
+/* ── Dropdown menus ── */
+.nav-dropdown { position: relative; }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--section-alt);
+  border: 1px solid var(--gold);
+  border-top: 3px solid var(--red);
+  min-width: 190px;
+  z-index: 200;
+  list-style: none;
+  padding: 0.3rem 0;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+.dropdown-menu li a {
+  display: block;
+  height: auto;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.78rem;
+  border-bottom: none !important;
+  border-left: 3px solid transparent;
+}
+.dropdown-menu li a:hover {
+  border-left-color: var(--red);
+  background: rgba(0,0,0,0.04);
+  color: var(--red);
+}
+.nav-dropdown:hover .dropdown-menu { display: block; }
+
 .nav-toggle {
   display: none;
   background: none;
@@ -857,6 +888,10 @@ footer ul li a:hover { color: var(--gold); }
     border-bottom: 1px solid rgba(0,0,0,0.06);
   }
   .nav-toggle { display: block; margin-left: auto; }
+  .dropdown-menu { position: static; display: block; box-shadow: none;
+    border: none; border-left: 3px solid var(--gold); margin: 0 0 0 1rem;
+    padding: 0; }
+  .dropdown-menu li a { padding: 0.6rem 0.8rem; font-size: 0.78rem; }
   .site-search input { width: 130px; }
   .brand-badge { width: 108px; top: 5px; }
   .badge-photo { width: 74px; height: 88px; }
