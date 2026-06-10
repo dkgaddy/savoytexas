@@ -27,31 +27,30 @@
   <link rel="stylesheet" href="css/tales.css" />
   <script src="js/site.js" defer></script>
   <style>
-    /* ── College toon header ── */
+    /* ── College toon — floats right, bleeds up over page banner ── */
     .college-toon-wrap {
-      text-align: center;
-      margin: 0 0 2rem 0;
-      padding: 1.5rem 0 0;
+      float: right;
+      width: 380px;
+      margin: -100px 0 1rem 2rem;
+      position: relative;
+      z-index: 5;
     }
     .college-toon-wrap img {
-      max-width: 560px;
-      width: 90%;
+      width: 100%;
       height: auto;
-      display: inline-block;
+      display: block;
     }
 
     /* ── Halsell portrait — floats left, text wraps around it ── */
     .college-founder-fig {
       float: left;
-      width: 200px;
-      margin: 0.2rem 2rem 1.5rem 0;
+      width: 230px;
+      margin: 2rem 2rem 1.5rem 0;
       text-align: center;
     }
     .college-founder-fig img {
       width: 100%;
       height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.35);
     }
     .college-founder-fig figcaption {
       font-family: 'Lora', serif;
@@ -209,11 +208,6 @@
 <section>
   <div class="inner">
     <article class="tale-article">
-      <div class="tale-era-bar">
-        <span class="tale-era-label">Era</span>
-        <span class="tale-era-val">1876–1890 &nbsp;·&nbsp; Education &nbsp;·&nbsp; Savoy, Fannin County, Texas</span>
-      </div>
-
       <div class="tale-prose">
 
         <!-- Decorative building toon at the top -->
@@ -234,12 +228,6 @@
         <p>Mattie Lee Boyd, who wrote the definitive history of the college in her 1939 University of Texas master's thesis, summed it up plainly: <em>"Not only the people of Savoy and surrounding country enjoyed the services of its excellent teachers, but people came from far and wide over Texas and Indian Territory to seek knowledge within its walls."</em></p>
 
         <div class="clr"></div>
-
-        <!-- The building photo -->
-        <figure class="college-fig-wide">
-          <img src="Images/Photos-1850-1899/savoycollege.jpeg" alt="The Savoy Male and Female College building" loading="lazy" onclick="openLightbox(this)" />
-          <figcaption>The Savoy Male and Female College — a two-story frame building with cupola, situated on the south side of town on approximately two and a half acres</figcaption>
-        </figure>
 
         <h2>A School Takes Shape</h2>
 
@@ -295,17 +283,6 @@
         <p>The college drew students from a wide radius, including from Indian Territory to the north. Among the most notable were <strong>Smith Paul</strong> and <strong>Will Paul</strong>, brothers of Chickasaw heritage, and <strong>Moses Chipley</strong>, also Chickasaw, who went on to serve as a legislator. <strong>Frank Anderson</strong>, of Choctaw descent, arrived in 1886 at the age of thirteen, unable to speak a word of English. He graduated, went on to read law, and eventually served as a United States Deputy Marshal.</p>
 
         <p>The most celebrated student the college ever produced, however, came near the very end. In 1890, a young man named <strong>George W. Truett</strong> took part in a debate at Savoy College — likely one of the last major events before the fire. He went on to become pastor of the First Baptist Church of Dallas, a pulpit he held for nearly fifty years. He became one of the most famous Baptist ministers in the world. He had his first taste of public speaking, it seems, in a schoolroom in Savoy, Texas.</p>
-
-        <div class="college-fig-pair">
-          <figure>
-            <img src="Images/Photos-1850-1899/1876-Photos-Halsell.jpeg" alt="Prof. R.B. Halsell, c. 1876" loading="lazy" onclick="openLightbox(this)" />
-            <figcaption>Prof. Robert Roberson Halsell, c. 1876 — founder and President of Savoy Male and Female College</figcaption>
-          </figure>
-          <figure>
-            <img src="Images/Photos-1850-1899/1876-Photos-Holland.jpeg" alt="Rev. Lewis Holland, co-founder" loading="lazy" onclick="openLightbox(this)" />
-            <figcaption>Rev. Lewis Holland — Vice-President and co-founder, "profoundly learned" scholar who served the college for a decade</figcaption>
-          </figure>
-        </div>
 
         <h2>The Fire of July 3, 1890</h2>
 
