@@ -1076,7 +1076,6 @@
         <a class="cat-btn" href="maps.html"><i class="fa fa-map"></i> Maps</a>
         <a class="cat-btn" href="documents.html"><i class="fa fa-scroll"></i> Documents</a>
       </div>
-      <a class="feat-link" href="photos.html">Advanced Search &rarr;</a>
     </div>
 
   </div>
@@ -1285,19 +1284,8 @@
   </div>
 </footer>
 
+  <script src="js/site.js"></script>
 <script>
-function runSearch(raw) {
-  const q = (raw || '').trim().toLowerCase();
-  if (!q) return false;
-  let dest = 'photos.html';
-  if (q.includes('map') || q.includes('cyclone path')) dest = 'maps.html';
-  else if (q.includes('paper') || q.includes('news') || q.includes('fire')) dest = 'newspapers.html';
-  else if (q.includes('doc') || q.includes('charter') || q.includes('census')) dest = 'documents.html';
-  else if (q.includes('photo') || q.includes('gallery')) dest = 'photos.html';
-  else if (q.includes('timeline') || q.includes('history')) dest = 'timeline.html';
-  window.location.href = dest;
-  return false;
-}
 function doSearch() {
   return runSearch(document.getElementById('site-search').value);
 }
